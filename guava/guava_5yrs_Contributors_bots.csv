@@ -1,0 +1,8 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+guava,java-team-github-bot@google.com,173,\bbot\b,name='Google Java Core Libraries' email='java-team-github-bot@google.com' | name='Google Java Core Libraries' email='java-team-github-bot@google.com' | name='Google Java Core Libraries' email='java-team-github-bot@google.com'
+guava,49699333+dependabot[bot]@users.noreply.github.com,136,\[bot\];\bbot\b;dependabot;github\.com,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+guava,marcono1234@users.noreply.github.com,5,github\.com,name='Marcono1234' email='Marcono1234@users.noreply.github.com' | name='Marcono1234' email='Marcono1234@users.noreply.github.com' | name='Marcono1234' email='Marcono1234@users.noreply.github.com'
+guava,95772109+codemaster7000@users.noreply.github.com,1,github\.com,name='CodeMaster7000' email='95772109+CodeMaster7000@users.noreply.github.com'
+guava,16943514+williamcollishaw@users.noreply.github.com,1,github\.com,name='William Collishaw' email='16943514+WilliamCollishaw@users.noreply.github.com'
+guava,51754303+certseeds@users.noreply.github.com,1,github\.com,name='Certseeds' email='51754303+Certseeds@users.noreply.github.com'
+guava,perceptron8@users.noreply.github.com,1,github\.com,name='perceptron8' email='perceptron8@users.noreply.github.com'

@@ -1,0 +1,8 @@
+repo,commit_sha,commit_date,health_file
+shadowsocks-windows,da568ad0471cf8ab33dd243654624679a36862b5,2020-12-07,README.md
+shadowsocks-windows,3688b41ceed4b694147d983fb678616a174b3ee4,2020-10-18,README.md
+shadowsocks-windows,676e6069610c6e2a3a34b2f987f0c98df0bea3aa,2020-07-20,README.md
+shadowsocks-windows,a00ec9982a76d00ca9d58c0f12498c305b6386df,2020-07-12,.github/PULL_REQUEST_TEMPLATE.md
+shadowsocks-windows,a00ec9982a76d00ca9d58c0f12498c305b6386df,2020-07-12,CONTRIBUTING.md
+shadowsocks-windows,a00ec9982a76d00ca9d58c0f12498c305b6386df,2020-07-12,LICENSE.txt
+shadowsocks-windows,a00ec9982a76d00ca9d58c0f12498c305b6386df,2020-07-12,README.md

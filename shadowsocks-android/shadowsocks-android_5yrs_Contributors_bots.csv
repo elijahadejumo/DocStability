@@ -1,0 +1,4 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+shadowsocks-android,dev4u@users.noreply.github.com,12,github\.com,name='dev4u' email='dev4u@users.noreply.github.com' | name='dev4u' email='dev4u@users.noreply.github.com' | name='dev4u' email='dev4u@users.noreply.github.com'
+shadowsocks-android,1464693+made-by-love@users.noreply.github.com,1,github\.com,name='Robot5' email='1464693+made-by-love@users.noreply.github.com'
+shadowsocks-android,62885475+cyber386@users.noreply.github.com,1,github\.com,name='cyber386' email='62885475+cyber386@users.noreply.github.com'

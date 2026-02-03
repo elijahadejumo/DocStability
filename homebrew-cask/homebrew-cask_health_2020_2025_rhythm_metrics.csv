@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+homebrew-cask,month,61,40,0.6557377049180327,1.1384967559848285,1.7362075528768635,0.0,0.36065573770491804,unstable

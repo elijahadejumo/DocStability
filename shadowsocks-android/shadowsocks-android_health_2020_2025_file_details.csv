@@ -1,0 +1,14 @@
+repo,commit_sha,commit_date,health_file
+shadowsocks-android,7e7116b6d57b7ccf21387b62b93fbea0ac05a08f,2024-08-28,release.sh
+shadowsocks-android,a7a852affb5ecb99d1195c5728f41a6e6c2e9c0a,2022-12-20,README.md
+shadowsocks-android,5510e44abebfda220080233c927ca4b7ff5babef,2022-02-22,README.md
+shadowsocks-android,c6d5369bc1587c5473ead72b88f2456ed1ab09cd,2021-09-05,README.md
+shadowsocks-android,247c4a1f36d44e1d8d15f5d715264b959b3a6b0c,2021-07-06,release.sh
+shadowsocks-android,700f4d264c9e0117d95072b89a592d6c550a368b,2020-12-31,README.md
+shadowsocks-android,4f38bedc55d78cc7c2001be91aac08a8e848fccf,2020-12-25,README.md
+shadowsocks-android,4bff3fb63ddaa9e5ac539058fcbf3dcfab1abf14,2020-07-17,README.md
+shadowsocks-android,3ba3bf0ff5200ed0c787434de0acb0b7c50dfa02,2020-07-08,AUTHORS
+shadowsocks-android,3ba3bf0ff5200ed0c787434de0acb0b7c50dfa02,2020-07-08,CONTRIBUTING.md
+shadowsocks-android,3ba3bf0ff5200ed0c787434de0acb0b7c50dfa02,2020-07-08,LICENSE
+shadowsocks-android,3ba3bf0ff5200ed0c787434de0acb0b7c50dfa02,2020-07-08,README.md
+shadowsocks-android,3ba3bf0ff5200ed0c787434de0acb0b7c50dfa02,2020-07-08,release.sh

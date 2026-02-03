@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+spark,month,72,54,0.75,1.195649390410388,1.5941991872138506,0.0,0.4305555555555556,unstable

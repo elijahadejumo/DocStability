@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+symfony,month,61,173,2.8360655737704916,2.79392393041789,0.9851408078352097,0.0,0.9836065573770492,unstable

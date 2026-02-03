@@ -1,0 +1,8 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+jquery,timmywil@users.noreply.github.com,58,github\.com,name='Timmy Willison' email='timmywil@users.noreply.github.com' | name='Timmy Willison' email='timmywil@users.noreply.github.com' | name='Timmy Willison' email='timmywil@users.noreply.github.com'
+jquery,49699333+dependabot[bot]@users.noreply.github.com,30,\[bot\];\bbot\b;dependabot;github\.com,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+jquery,89127124+fecore1@users.noreply.github.com,2,github\.com,name='fecore1' email='89127124+fecore1@users.noreply.github.com' | name='fecore1' email='89127124+fecore1@users.noreply.github.com'
+jquery,79802170+ac-mmi@users.noreply.github.com,1,github\.com,name='ac-mmi' email='79802170+ac-mmi@users.noreply.github.com'
+jquery,3234522+dimitripapadopoulos@users.noreply.github.com,1,github\.com,name='Dimitri Papadopoulos Orfanos' email='3234522+DimitriPapadopoulos@users.noreply.github.com'
+jquery,7699524+ygj6@users.noreply.github.com,1,github\.com,name='ygj6' email='7699524+ygj6@users.noreply.github.com'
+jquery,beatrizrezener@users.noreply.github.com,1,github\.com,name='Beatriz Rezener' email='beatrizrezener@users.noreply.github.com'

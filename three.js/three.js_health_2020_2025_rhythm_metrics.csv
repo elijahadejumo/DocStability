@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+three.js,month,61,64,1.0491803278688525,1.4192278359281232,1.3527015311189923,0.0,0.47540983606557374,unstable

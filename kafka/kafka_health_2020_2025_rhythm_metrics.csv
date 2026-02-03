@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+kafka,month,61,69,1.1311475409836065,1.5649857276885475,1.3835381070869768,0.0,0.4918032786885246,unstable

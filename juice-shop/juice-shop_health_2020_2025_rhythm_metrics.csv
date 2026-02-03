@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+juice-shop,month,61,140,2.2950819672131146,2.2236925918771684,0.9688946293179092,0.0,0.819672131147541,unstable

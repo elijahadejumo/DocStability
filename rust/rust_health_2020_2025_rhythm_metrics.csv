@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+rust,month,61,1772,29.049180327868854,14.137923267472486,0.48668923211953813,0.053243071521847485,1.0,stable

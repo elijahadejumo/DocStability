@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+todomvc,month,61,3,0.04918032786885246,0.2843841010673605,5.782476721702997,0.0,0.03278688524590164,sparse

@@ -1,0 +1,3 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+data,fivethirtyeight.aws@gmail.com,2,\bbot\b,name='FiveThirtyEight Bot' email='fivethirtyeight.aws@gmail.com' | name='FiveThirtyEight Bot' email='fivethirtyeight.aws@gmail.com'
+data,61800622+hfuong@users.noreply.github.com,1,github\.com,name='Holly Fuong' email='61800622+hfuong@users.noreply.github.com'

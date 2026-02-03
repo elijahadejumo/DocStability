@@ -1,0 +1,10 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+AdminLTE,49699333+dependabot[bot]@users.noreply.github.com,526,\[bot\];\bbot\b;dependabot;github\.com,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+AdminLTE,50356015+danny007in@users.noreply.github.com,316,github\.com,name='Daniel' email='50356015+danny007in@users.noreply.github.com' | name='Daniel' email='50356015+danny007in@users.noreply.github.com' | name='Daniel' email='50356015+danny007in@users.noreply.github.com'
+AdminLTE,smileyzn@users.noreply.github.com,2,github\.com,name='Cleverson' email='SmileYzn@users.noreply.github.com' | name='Cleverson' email='SmileYzn@users.noreply.github.com'
+AdminLTE,mineminemine@users.noreply.github.com,2,github\.com,name='Ryan' email='mineminemine@users.noreply.github.com' | name='Ryan' email='mineminemine@users.noreply.github.com'
+AdminLTE,luzpaz@users.noreply.github.com,1,github\.com,name='luzpaz' email='luzpaz@users.noreply.github.com'
+AdminLTE,surfskidude@users.noreply.github.com,1,github\.com,name='surfskidude' email='surfskidude@users.noreply.github.com'
+AdminLTE,37549984+vanhanenjla@users.noreply.github.com,1,github\.com,name='Jouni Vanhanen' email='37549984+VanhanenJLA@users.noreply.github.com'
+AdminLTE,3331946+alexkuc@users.noreply.github.com,1,github\.com,name='Alexander Kucheryuk' email='3331946+alexkuc@users.noreply.github.com'
+AdminLTE,27856297+dependabot-preview[bot]@users.noreply.github.com,1,\[bot\];\bbot\b;dependabot;github\.com,name='dependabot-preview[bot]' email='27856297+dependabot-preview[bot]@users.noreply.github.com'

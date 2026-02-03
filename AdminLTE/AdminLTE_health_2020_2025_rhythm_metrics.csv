@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+AdminLTE,month,61,30,0.4918032786885246,1.1346504721671211,2.307122626739813,0.0,0.26229508196721313,unstable

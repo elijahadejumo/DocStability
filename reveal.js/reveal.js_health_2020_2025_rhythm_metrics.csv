@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+reveal.js,month,61,24,0.39344262295081966,0.953566787113697,2.4236489172473132,0.0,0.22950819672131148,unstable

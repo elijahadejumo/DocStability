@@ -1,0 +1,26 @@
+{
+  "repo": "ardupilot",
+  "since": "2020-06-30",
+  "until": "2025-06-29",
+  "analysis_type": "project_health_files",
+  "tracked_files": [
+    "README",
+    "CONTRIBUTING",
+    "CHANGELOG",
+    "SECURITY",
+    "CODE_OF_CONDUCT",
+    "LICENSE",
+    "GOVERNANCE",
+    "etc."
+  ],
+  "granularities": [
+    "month"
+  ],
+  "output_directory": "outputs/ardupilot",
+  "total_health_file_commits": 28,
+  "outputs": {
+    "metrics_csv": "outputs/ardupilot/ardupilot_health_2020_2025_rhythm_metrics.csv",
+    "timeseries_csv": null,
+    "file_details_csv": "outputs/ardupilot/ardupilot_health_2020_2025_file_details.csv"
+  }
+}

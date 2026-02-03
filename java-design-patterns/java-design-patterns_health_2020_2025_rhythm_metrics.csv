@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+java-design-patterns,month,61,462,7.573770491803279,16.53426645524726,2.1830957873811316,0.0,0.8032786885245902,unstable

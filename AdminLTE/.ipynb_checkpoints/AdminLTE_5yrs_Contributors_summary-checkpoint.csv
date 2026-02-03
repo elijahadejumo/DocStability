@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+AdminLTE,2020-06-30,2025-06-29,1150,851,9,299,21,0.8555502468545946,0.8963210702341137,0.9331103678929766,0.9632107023411371

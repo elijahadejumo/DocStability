@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+Marlin,month,61,41,0.6721311475409836,0.9612719260682664,1.4301850607357134,0.0,0.4262295081967213,unstable

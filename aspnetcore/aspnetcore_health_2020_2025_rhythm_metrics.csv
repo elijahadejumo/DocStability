@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+aspnetcore,month,61,37,0.6065573770491803,1.0210891003334,1.6834171654145242,0.0,0.36065573770491804,unstable

@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+socket.io,month,61,349,5.721311475409836,7.071376922827651,1.2359713246203057,0.0,0.7213114754098361,unstable

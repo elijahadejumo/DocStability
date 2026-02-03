@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+jekyll,2020-06-30,2025-06-29,844,258,57,586,126,0.7664012135001896,0.7167235494880546,0.7474402730375427,0.7764505119453925

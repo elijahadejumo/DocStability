@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+lantern,2020-06-30,2025-06-29,538,36,2,502,4,0.6225099601593624,0.99800796812749,1.0,1.0

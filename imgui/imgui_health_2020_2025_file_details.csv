@@ -1,0 +1,16 @@
+repo,commit_sha,commit_date,health_file
+imgui,2fd474132d4af57c61b3474af0fc9fd7bbe12f93,2025-05-14,.github/pull_request_template.md
+imgui,a0f907933d8def4ffcb29fffe887889339c82f11,2025-01-06,LICENSE.txt
+imgui,c528b688cf4a7a9a9aa74d0e31a3a4d372c9bc6c,2024-01-04,.github/issue_template.md
+imgui,26eef4df871819e21a0d5132aca321cac693fa05,2024-01-04,.github/issue_template.md
+imgui,718fa0eec6dd6e6fbe6c139cebc2f1e23cd4861b,2024-01-02,LICENSE.txt
+imgui,357f752bed2716651f5ae69cebd9cbf0bcccccbe,2023-09-11,.github/issue_template.md
+imgui,52c61deaf9bce9ba75da3b16a8b602ca2f4fd764,2023-01-02,LICENSE.txt
+imgui,ae2fb557f38924d23584b81ced1c42b423efc8ee,2022-05-23,.github/issue_template.md
+imgui,ae2fb557f38924d23584b81ced1c42b423efc8ee,2022-05-23,.github/pull_request_template.md
+imgui,814ecedd1e86400a4ddb0ac468c8ceed9acc1103,2022-05-23,CONTRIBUTING.md
+imgui,92d7869fc7c491da602c0a808c4bbf70d26b80d3,2022-01-03,LICENSE.txt
+imgui,66102880a3f31d4f5100eb3f0bbf497264df3bf4,2021-08-30,.github/issue_template.md
+imgui,66102880a3f31d4f5100eb3f0bbf497264df3bf4,2021-08-30,.github/pull_request_template.md
+imgui,760c394707d1429522770a331b32a74b3b8143f7,2021-02-24,.github/issue_template.md
+imgui,8ec5daf35df3a5e973175075875e66ed48ec5230,2021-01-03,LICENSE.txt

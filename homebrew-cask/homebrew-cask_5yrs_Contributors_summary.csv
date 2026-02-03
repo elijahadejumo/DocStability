@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+homebrew-cask,2020-06-30,2025-06-29,145553,77075,1460,68478,3456,0.9221493598782198,0.30907736791378254,0.42946639796723035,0.623630947165513

@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+spark,2020-06-30,2025-06-29,17199,253,68,16946,1033,0.8616415973797071,0.20128643927770565,0.2759943349463,0.4147291396199693

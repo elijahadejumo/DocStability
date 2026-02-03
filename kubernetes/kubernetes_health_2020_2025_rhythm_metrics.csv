@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+kubernetes,month,61,21,0.3442622950819672,0.6294242316498294,1.828327530030457,0.0,0.2786885245901639,unstable

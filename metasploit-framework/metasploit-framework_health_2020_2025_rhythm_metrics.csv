@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+metasploit-framework,month,61,79,1.2950819672131149,3.046004280447211,2.351977988699745,0.0,0.4098360655737705,unstable

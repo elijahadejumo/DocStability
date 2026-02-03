@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+pdf.js,month,61,29,0.47540983606557374,0.7660843595203073,1.6114188251978878,0.0,0.36065573770491804,unstable

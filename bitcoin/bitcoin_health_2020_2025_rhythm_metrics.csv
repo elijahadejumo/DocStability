@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+bitcoin,month,61,66,1.0819672131147542,1.0375464964233831,0.9589444891185813,0.0,0.6721311475409836,unstable

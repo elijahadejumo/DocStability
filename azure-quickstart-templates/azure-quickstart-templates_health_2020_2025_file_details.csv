@@ -1,0 +1,6 @@
+repo,commit_sha,commit_date,health_file
+azure-quickstart-templates,956b07225902695c7e22c79b32089e6807484835,2025-01-27,README.md
+azure-quickstart-templates,44a99e70e4b3f099b65438a0ceca4dfcbfc096a7,2022-07-05,README.md
+azure-quickstart-templates,b78c03663dda64c098b22377b0105c13f7cd515f,2022-05-20,SECURITY.md
+azure-quickstart-templates,917736b2b9d5748972738c473711c4b7c1452ca8,2021-07-12,README.md
+azure-quickstart-templates,8ffd5156b714208989b8d7d6e1abe481f4f71681,2021-01-15,README.md

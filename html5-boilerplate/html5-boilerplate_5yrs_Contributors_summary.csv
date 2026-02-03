@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+html5-boilerplate,2020-06-30,2025-06-29,486,362,15,124,18,0.7473118279569892,0.8306451612903226,0.8951612903225806,0.9354838709677419

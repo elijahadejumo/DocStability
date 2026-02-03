@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+jquery,month,61,26,0.4262295081967213,0.7844109550790882,1.8403487792240147,0.0,0.3114754098360656,unstable

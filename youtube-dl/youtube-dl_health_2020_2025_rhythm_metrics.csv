@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+youtube-dl,month,61,104,1.7049180327868851,4.561959601951344,2.6757647665291535,0.0,0.2786885245901639,unstable

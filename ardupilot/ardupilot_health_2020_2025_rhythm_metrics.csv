@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+ardupilot,month,61,28,0.45901639344262296,0.7653707269858026,1.6674147980762126,0.0,0.32786885245901637,unstable

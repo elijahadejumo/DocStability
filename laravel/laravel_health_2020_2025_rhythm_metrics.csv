@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+laravel,month,61,184,3.0163934426229506,2.061486545179542,0.6834276046519134,0.0,0.9672131147540983,unstable

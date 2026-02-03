@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+terraform,month,61,562,9.21311475409836,7.810494551346414,0.8477583053952514,0.0,0.9180327868852459,unstable

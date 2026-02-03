@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+PHPMailer,month,61,115,1.8852459016393444,2.510633125035315,1.3317271358882974,0.0,0.5737704918032787,unstable
