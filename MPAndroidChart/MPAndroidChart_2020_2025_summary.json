@@ -2,25 +2,13 @@
   "repo": "MPAndroidChart",
   "since": "2020-06-30",
   "until": "2025-06-29",
-  "analysis_type": "project_health_files",
-  "tracked_files": [
-    "README",
-    "CONTRIBUTING",
-    "CHANGELOG",
-    "SECURITY",
-    "CODE_OF_CONDUCT",
-    "LICENSE",
-    "GOVERNANCE",
-    "etc."
-  ],
-  "granularities": [
-    "month"
-  ],
-  "output_directory": "outputs/MPAndroidChart",
-  "total_health_file_commits": 5,
-  "outputs": {
-    "metrics_csv": "outputs/MPAndroidChart/MPAndroidChart_2020_2025_rhythm_metrics.csv",
-    "timeseries_csv": null,
-    "file_details_csv": "outputs/MPAndroidChart/MPAndroidChart_2020_2025_file_details.csv"
-  }
+  "dominant_threshold": 0.5,
+  "bots_included": false,
+  "output_csv": "outputs/MPAndroidChart/MPAndroidChart_2020_2025_health_docs_intention_summary.csv",
+  "notes": [
+    "Counts are over commits in [since, until] by author date.",
+    "health_docs are matched strictly by your include patterns AND not excluded.",
+    "Dominant mixed uses file-count share (health_files / total_files).",
+    "Partition check should equal health_docs_touch_commits."
+  ]
 }

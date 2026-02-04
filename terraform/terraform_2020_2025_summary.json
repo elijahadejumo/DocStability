@@ -1,10 +1,10 @@
 {
-  "repo": "android-open-projects-app",
+  "repo": "terraform",
   "since": "2020-06-30",
   "until": "2025-06-29",
   "dominant_threshold": 0.5,
   "bots_included": false,
-  "output_csv": "outputs/android-open-projects-app/android-open-projects-app_2020_2025_health_docs_intention_summary.csv",
+  "output_csv": "outputs/terraform/terraform_2020_2025_health_docs_intention_summary.csv",
   "notes": [
     "Counts are over commits in [since, until] by author date.",
     "health_docs are matched strictly by your include patterns AND not excluded.",

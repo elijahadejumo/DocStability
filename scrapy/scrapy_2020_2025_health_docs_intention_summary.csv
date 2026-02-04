@@ -1,0 +1,2 @@
+repo,since,until,dominant_threshold,bots_included,total_commits_in_range,health_docs_touch_commits,health_docs_only_commits,health_docs_dominant_mixed_commits,health_docs_mixed_non_dominant_commits,health_docs_only_rate,health_docs_dominant_mixed_rate,health_docs_mixed_non_dominant_rate,health_docs_partition_check_sum
+scrapy,2020-06-30,2025-06-29,0.500,no,2115,40,7,5,28,0.175000,0.125000,0.700000,40

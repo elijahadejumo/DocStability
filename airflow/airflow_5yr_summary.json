@@ -1,0 +1,13 @@
+{
+  "repo": "airflow",
+  "since": "2020-06-30",
+  "until": "2025-06-29",
+  "window_months": 3,
+  "step_months": 1,
+  "bots_included": false,
+  "total_windows": 61,
+  "outputs": {
+    "newcomer_retention_csv": "outputs/airflow/airflow_5yr_newcomer_retention.csv",
+    "bots_csv": "outputs/airflow/airflow_5yr_bots.csv"
+  }
+}
