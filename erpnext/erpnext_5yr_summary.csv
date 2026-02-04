@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+erpnext,2020-06-30,2025-06-29,15017,2378,192,12639,280,0.8738957082951861,0.30690719202468547,0.42266002057124774,0.6373130785663422

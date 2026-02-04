@@ -1,0 +1,26 @@
+{
+  "repo": "zxing",
+  "since": "2020-06-30",
+  "until": "2025-06-29",
+  "analysis_type": "project_health_files",
+  "tracked_files": [
+    "README",
+    "CONTRIBUTING",
+    "CHANGELOG",
+    "SECURITY",
+    "CODE_OF_CONDUCT",
+    "LICENSE",
+    "GOVERNANCE",
+    "etc."
+  ],
+  "granularities": [
+    "month"
+  ],
+  "output_directory": "outputs/zxing",
+  "total_health_file_commits": 18,
+  "outputs": {
+    "metrics_csv": "outputs/zxing/zxing_health_2020-06-30_2025-06-29_rhythm_metrics.csv",
+    "timeseries_csv": null,
+    "file_details_csv": "outputs/zxing/zxing_health_2020-06-30_2025-06-29_file_details.csv"
+  }
+}

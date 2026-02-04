@@ -1,2 +1,0 @@
-repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
-MPAndroidChart,month,61,5,0.08196721311475409,0.3783773234578201,4.616203346185405,0.0,0.04918032786885246,unstable

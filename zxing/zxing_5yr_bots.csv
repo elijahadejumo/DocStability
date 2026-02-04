@@ -1,0 +1,10 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+zxing,49699333+dependabot[bot]@users.noreply.github.com,79,\[bot\];\bbot\b;dependabot;github\.com,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+zxing,87009702+alexgeller1@users.noreply.github.com,20,github\.com,name='AlexGeller1' email='87009702+AlexGeller1@users.noreply.github.com' | name='AlexGeller1' email='87009702+AlexGeller1@users.noreply.github.com' | name='AlexGeller1' email='87009702+AlexGeller1@users.noreply.github.com'
+zxing,gitlost@users.noreply.github.com,4,github\.com,name='gitlost' email='gitlost@users.noreply.github.com' | name='gitlost' email='gitlost@users.noreply.github.com' | name='gitlost' email='gitlost@users.noreply.github.com'
+zxing,elevenfive@users.noreply.github.com,1,github\.com,name='Matthew Zavislak' email='elevenfive@users.noreply.github.com'
+zxing,165570940+cinsttool@users.noreply.github.com,1,github\.com,name='cinsttool' email='165570940+cinsttool@users.noreply.github.com'
+zxing,tharvik@users.noreply.github.com,1,github\.com,name='Valérian Rousset' email='tharvik@users.noreply.github.com'
+zxing,49305700+xpple@users.noreply.github.com,1,github\.com,name='Frederik van der Els' email='49305700+xpple@users.noreply.github.com'
+zxing,104624559+omrfdk@users.noreply.github.com,1,github\.com,name='omrfdk' email='104624559+omrfdk@users.noreply.github.com'
+zxing,yerar@users.noreply.github.com,1,github\.com,name='yerar' email='yerar@users.noreply.github.com'
