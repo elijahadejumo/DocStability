@@ -1,0 +1,14 @@
+{
+  "repo": "html5-boilerplate",
+  "since": "2020-06-30",
+  "until": "2025-06-29",
+  "dominant_threshold": 0.5,
+  "bots_included": false,
+  "output_csv": "outputs/html5-boilerplate/hmtl5-boilerplate_2020_2025_health_docs_ownership_summary.csv",
+  "notes": [
+    "Ownership metrics computed over commit counts (not lines changed).",
+    "Top-K shares and Bus50/Bus80 are computed per category: touch/only/dominant/non_dominant.",
+    "Commit categories are based on STRICT health_docs include/exclude rules you provided.",
+    "Partition check verifies: touch = only + dominant + non_dominant (commit-level)."
+  ]
+}

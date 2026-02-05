@@ -1,2 +1,2 @@
 repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
-android-open-projects-app,2020-06-30,2025-06-29,0,0,0,0,0,0.0,0.0,0.0,0.0
+animate.css,2020-06-30,2025-06-29,173,127,6,46,17,0.462915601023018,0.5,0.6956521739130435,0.8478260869565217

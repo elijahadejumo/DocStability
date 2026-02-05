@@ -4,11 +4,11 @@
   "until": "2025-06-29",
   "dominant_threshold": 0.5,
   "bots_included": false,
-  "output_csv": "outputs/rails/rails_2020_2025_health_docs_intention_summary.csv",
+  "output_csv": "outputs/rails/rails_2020_2025_health_docs_ownership_summary.csv",
   "notes": [
-    "Counts are over commits in [since, until] by author date.",
-    "health_docs are matched strictly by your include patterns AND not excluded.",
-    "Dominant mixed uses file-count share (health_files / total_files).",
-    "Partition check should equal health_docs_touch_commits."
+    "Ownership metrics computed over commit counts (not lines changed).",
+    "Top-K shares and Bus50/Bus80 are computed per category: touch/only/dominant/non_dominant.",
+    "Commit categories are based on STRICT health_docs include/exclude rules you provided.",
+    "Partition check verifies: touch = only + dominant + non_dominant (commit-level)."
   ]
 }
