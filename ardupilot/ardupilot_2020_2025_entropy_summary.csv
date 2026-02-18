@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+ardupilot,2020-06-30,2025-06-29,61,no,25456,28,20,0.327869,0.705141,0.107143,0.285714,0.500000,0.742389

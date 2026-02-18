@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+erpnext,2020-06-30,2025-06-29,61,no,15017,42,17,0.278689,0.589591,0.309524,0.500000,0.690476,0.845433

@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+Rocket.Chat,2020-06-30,2025-06-29,61,no,8732,390,44,0.721311,0.870657,0.058974,0.158974,0.279487,0.526692

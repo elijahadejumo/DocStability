@@ -1,0 +1,2 @@
+repo,since,until,months,bots_included,total_commits_in_range,health_docs_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+AdminLTE,2020-06-30,2025-06-29,61,no,361,14,7,0.114754,0.406998,0.428571,0.714286,0.928571,0.927400

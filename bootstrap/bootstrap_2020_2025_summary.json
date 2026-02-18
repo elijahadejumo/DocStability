@@ -2,13 +2,25 @@
   "repo": "bootstrap",
   "since": "2020-06-30",
   "until": "2025-06-29",
-  "dominant_threshold": 0.5,
-  "bots_included": false,
-  "output_csv": "outputs/bootstrap/bootstrap_2020_2025_health_docs_ownership_summary.csv",
+  "include_merges": false,
+  "months": 61,
+  "total_commits_in_range": 3179,
+  "health_file_commits": 89,
+  "active_months": 42,
+  "active_month_rate": 0.6885245901639344,
+  "entropy_norm": 0.8630946823160978,
+  "top1_month_share": 0.06741573033707865,
+  "top3_month_share": 0.19101123595505617,
+  "top6_month_share": 0.33707865168539325,
+  "gini_month_concentration": 0.5407994105728495,
+  "outputs": {
+    "monthly_distribution_csv": "outputs/bootstrap/bootstrap_2020_2025_monthly_distribution.csv",
+    "entropy_summary_csv": "outputs/bootstrap/bootstrap_2020_2025_entropy_summary.csv",
+    "sha_list": null
+  },
   "notes": [
-    "Ownership metrics computed over commit counts (not lines changed).",
-    "Top-K shares and Bus50/Bus80 are computed per category: touch/only/dominant/non_dominant.",
-    "Commit categories are based on STRICT health_docs include/exclude rules you provided.",
-    "Partition check verifies: touch = only + dominant + non_dominant (commit-level)."
+    "Aligned with doc_touch_rhythm.py: git log --name-only, same include/exclude patterns.",
+    "entropy_norm is normalized Shannon entropy over monthly health-file commit distribution (0..1).",
+    "Lower entropy => activity concentrated into fewer months; higher entropy => spread across months."
   ]
 }

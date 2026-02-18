@@ -1,0 +1,25 @@
+{
+  "repo": "AdminLTE",
+  "since": "2020-06-30",
+  "until": "2025-06-29",
+  "bots_included": false,
+  "months": 61,
+  "total_commits_in_range": 361,
+  "health_docs_commits": 14,
+  "active_months": 7,
+  "active_month_rate": 0.11475409836065574,
+  "entropy_norm": 0.4069982242035323,
+  "top1_month_share": 0.42857142857142855,
+  "top3_month_share": 0.7142857142857143,
+  "top6_month_share": 0.9285714285714286,
+  "gini_month_concentration": 0.9274004683840749,
+  "outputs": {
+    "monthly_distribution_csv": "outputs/AdminLTE/AminLTE_2020_2025_health_docs_monthly_distribution.csv",
+    "entropy_summary_csv": "outputs/AdminLTE/AminLTE_2020_2025_health_docs_entropy_summary.csv"
+  },
+  "notes": [
+    "entropy_norm is normalized Shannon entropy over months in range (0..1).",
+    "Lower entropy => activity concentrated into fewer months; higher entropy => more evenly spread.",
+    "topK_month_share shows how much of doc activity occurs in the top K most-active months."
+  ]
+}

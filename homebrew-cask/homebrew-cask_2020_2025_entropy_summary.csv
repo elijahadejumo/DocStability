@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+homebrew-cask,2020-06-30,2025-06-29,61,no,145553,40,22,0.360656,0.707154,0.125000,0.325000,0.525000,0.754098

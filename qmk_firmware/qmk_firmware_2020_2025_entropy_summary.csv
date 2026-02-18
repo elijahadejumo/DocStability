@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+qmk_firmware,2020-06-30,2025-06-29,61,no,10609,43,24,0.393443,0.760012,0.069767,0.186047,0.325581,0.668700

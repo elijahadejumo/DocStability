@@ -2,13 +2,25 @@
   "repo": "qmk_firmware",
   "since": "2020-06-30",
   "until": "2025-06-29",
-  "dominant_threshold": 0.5,
-  "bots_included": false,
-  "output_csv": "outputs/qmk_firmware/qmk_firmware_2020_2025_health_docs_ownership_summary.csv",
+  "include_merges": false,
+  "months": 61,
+  "total_commits_in_range": 10609,
+  "health_file_commits": 43,
+  "active_months": 24,
+  "active_month_rate": 0.39344262295081966,
+  "entropy_norm": 0.7600122078091428,
+  "top1_month_share": 0.06976744186046512,
+  "top3_month_share": 0.18604651162790697,
+  "top6_month_share": 0.32558139534883723,
+  "gini_month_concentration": 0.6686999618757148,
+  "outputs": {
+    "monthly_distribution_csv": "outputs/qmk_firmware/qmk_firmware_2020_2025_monthly_distribution.csv",
+    "entropy_summary_csv": "outputs/qmk_firmware/qmk_firmware_2020_2025_entropy_summary.csv",
+    "sha_list": null
+  },
   "notes": [
-    "Ownership metrics computed over commit counts (not lines changed).",
-    "Top-K shares and Bus50/Bus80 are computed per category: touch/only/dominant/non_dominant.",
-    "Commit categories are based on STRICT health_docs include/exclude rules you provided.",
-    "Partition check verifies: touch = only + dominant + non_dominant (commit-level)."
+    "Aligned with doc_touch_rhythm.py: git log --name-only, same include/exclude patterns.",
+    "entropy_norm is normalized Shannon entropy over monthly health-file commit distribution (0..1).",
+    "Lower entropy => activity concentrated into fewer months; higher entropy => spread across months."
   ]
 }

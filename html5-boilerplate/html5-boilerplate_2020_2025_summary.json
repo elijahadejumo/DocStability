@@ -2,13 +2,25 @@
   "repo": "html5-boilerplate",
   "since": "2020-06-30",
   "until": "2025-06-29",
-  "dominant_threshold": 0.5,
-  "bots_included": false,
-  "output_csv": "outputs/html5-boilerplate/html5-boilerplate_2020_2025_health_docs_intention_summary.csv",
+  "include_merges": false,
+  "months": 61,
+  "total_commits_in_range": 486,
+  "health_file_commits": 42,
+  "active_months": 24,
+  "active_month_rate": 0.39344262295081966,
+  "entropy_norm": 0.7375716815373302,
+  "top1_month_share": 0.09523809523809523,
+  "top3_month_share": 0.2857142857142857,
+  "top6_month_share": 0.4523809523809524,
+  "gini_month_concentration": 0.7181889149102263,
+  "outputs": {
+    "monthly_distribution_csv": "outputs/html5-boilerplate/html5-boilerplate_2020_2025_monthly_distribution.csv",
+    "entropy_summary_csv": "outputs/html5-boilerplate/html5-boilerplate_2020_2025_entropy_summary.csv",
+    "sha_list": null
+  },
   "notes": [
-    "Counts are over commits in [since, until] by author date.",
-    "health_docs are matched strictly by your include patterns AND not excluded.",
-    "Dominant mixed uses file-count share (health_files / total_files).",
-    "Partition check should equal health_docs_touch_commits."
+    "Aligned with doc_touch_rhythm.py: git log --name-only, same include/exclude patterns.",
+    "entropy_norm is normalized Shannon entropy over monthly health-file commit distribution (0..1).",
+    "Lower entropy => activity concentrated into fewer months; higher entropy => spread across months."
   ]
 }

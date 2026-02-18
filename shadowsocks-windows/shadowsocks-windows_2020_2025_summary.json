@@ -2,13 +2,25 @@
   "repo": "shadowsocks-windows",
   "since": "2020-06-30",
   "until": "2025-06-29",
-  "dominant_threshold": 0.5,
-  "bots_included": false,
-  "output_csv": "outputs/shadowsocks-windows/shadowsocks-windows_2020_2025_health_docs_ownership_summary.csv",
+  "include_merges": false,
+  "months": 61,
+  "total_commits_in_range": 78,
+  "health_file_commits": 4,
+  "active_months": 3,
+  "active_month_rate": 0.04918032786885246,
+  "entropy_norm": 0.25291964803425165,
+  "top1_month_share": 0.5,
+  "top3_month_share": 1.0,
+  "top6_month_share": 1.0,
+  "gini_month_concentration": 0.959016393442623,
+  "outputs": {
+    "monthly_distribution_csv": "outputs/shadowsocks-windows/shadowsocks-windows_2020_2025_monthly_distribution.csv",
+    "entropy_summary_csv": "outputs/shadowsocks-windows/shadowsocks-windows_2020_2025_entropy_summary.csv",
+    "sha_list": null
+  },
   "notes": [
-    "Ownership metrics computed over commit counts (not lines changed).",
-    "Top-K shares and Bus50/Bus80 are computed per category: touch/only/dominant/non_dominant.",
-    "Commit categories are based on STRICT health_docs include/exclude rules you provided.",
-    "Partition check verifies: touch = only + dominant + non_dominant (commit-level)."
+    "Aligned with doc_touch_rhythm.py: git log --name-only, same include/exclude patterns.",
+    "entropy_norm is normalized Shannon entropy over monthly health-file commit distribution (0..1).",
+    "Lower entropy => activity concentrated into fewer months; higher entropy => spread across months."
   ]
 }
