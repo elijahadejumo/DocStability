@@ -3,24 +3,14 @@
   "since": "2020-06-30",
   "until": "2025-06-29",
   "include_merges": false,
-  "months": 61,
-  "total_commits_in_range": 4230,
-  "health_file_commits": 105,
-  "active_months": 42,
-  "active_month_rate": 0.6885245901639344,
-  "entropy_norm": 0.8656538097218606,
-  "top1_month_share": 0.06666666666666667,
-  "top3_month_share": 0.17142857142857143,
-  "top6_month_share": 0.29523809523809524,
-  "gini_month_concentration": 0.5377049180327869,
-  "outputs": {
-    "monthly_distribution_csv": "outputs/etcd/etcd_2020_2025_monthly_distribution.csv",
-    "entropy_summary_csv": "outputs/etcd/etcd_2020_2025_entropy_summary.csv",
-    "sha_list": null
-  },
+  "dominant_threshold": 0.5,
+  "output_csv": "outputs/etcd/etcd_2020_2025_health_docs_intention_summary.csv",
+  "touch_shas_txt": null,
+  "audit_csv": null,
   "notes": [
-    "Aligned with doc_touch_rhythm.py: git log --name-only, same include/exclude patterns.",
-    "entropy_norm is normalized Shannon entropy over monthly health-file commit distribution (0..1).",
-    "Lower entropy => activity concentrated into fewer months; higher entropy => spread across months."
+    "Commit enumeration uses COMMITTER time (%ct) and --name-only, matching doc_touch_rhythm.py.",
+    "health_docs detection uses the same include/exclude logic (exclude first, then match).",
+    "For intention classification, excluded paths are ignored (same worldview as rhythm).",
+    "partition_check_sum should equal health_docs_touch_commits."
   ]
 }

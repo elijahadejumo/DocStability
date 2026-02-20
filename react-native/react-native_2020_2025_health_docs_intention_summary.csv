@@ -1,2 +1,2 @@
-repo,since,until,dominant_threshold,bots_included,total_commits_in_range,health_docs_touch_commits,health_docs_only_commits,health_docs_dominant_mixed_commits,health_docs_mixed_non_dominant_commits,health_docs_only_rate,health_docs_dominant_mixed_rate,health_docs_mixed_non_dominant_rate,health_docs_partition_check_sum
-react-native,2020-06-30,2025-06-29,0.500,no,16703,204,191,3,10,0.936275,0.014706,0.049020,204
+repo,since,until,include_merges,dominant_threshold,total_commits_in_range,health_docs_touch_commits,health_docs_only_commits,health_docs_dominant_mixed_commits,health_docs_mixed_non_dominant_commits,health_docs_only_rate,health_docs_dominant_mixed_rate,health_docs_mixed_non_dominant_rate,partition_check_sum
+react-native,2020-06-30,2025-06-29,no,0.500,17069,221,210,6,5,0.950226,0.027149,0.022624,221

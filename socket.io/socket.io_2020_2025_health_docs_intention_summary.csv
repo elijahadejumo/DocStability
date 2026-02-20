@@ -1,2 +1,2 @@
-repo,since,until,dominant_threshold,bots_included,total_commits_in_range,health_docs_touch_commits,health_docs_only_commits,health_docs_dominant_mixed_commits,health_docs_mixed_non_dominant_commits,health_docs_only_rate,health_docs_dominant_mixed_rate,health_docs_mixed_non_dominant_rate,health_docs_partition_check_sum
-socket.io,2020-06-30,2025-06-29,0.500,no,1160,333,82,42,209,0.246246,0.126126,0.627628,333
+repo,since,until,include_merges,dominant_threshold,total_commits_in_range,health_docs_touch_commits,health_docs_only_commits,health_docs_dominant_mixed_commits,health_docs_mixed_non_dominant_commits,health_docs_only_rate,health_docs_dominant_mixed_rate,health_docs_mixed_non_dominant_rate,partition_check_sum
+socket.io,2020-06-30,2025-06-29,no,0.500,1243,349,113,70,166,0.323782,0.200573,0.475645,349

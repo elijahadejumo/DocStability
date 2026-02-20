@@ -2,25 +2,15 @@
   "repo": "bootstrap",
   "since": "2020-06-30",
   "until": "2025-06-29",
-  "include_merges": false,
-  "months": 61,
-  "total_commits_in_range": 3179,
-  "health_file_commits": 89,
-  "active_months": 42,
-  "active_month_rate": 0.6885245901639344,
-  "entropy_norm": 0.8630946823160978,
-  "top1_month_share": 0.06741573033707865,
-  "top3_month_share": 0.19101123595505617,
-  "top6_month_share": 0.33707865168539325,
-  "gini_month_concentration": 0.5407994105728495,
-  "outputs": {
-    "monthly_distribution_csv": "outputs/bootstrap/bootstrap_2020_2025_monthly_distribution.csv",
-    "entropy_summary_csv": "outputs/bootstrap/bootstrap_2020_2025_entropy_summary.csv",
-    "sha_list": null
-  },
+  "dominant_threshold": 0.5,
+  "bots_included_in_attr": false,
+  "merges_included": false,
+  "output_csv": "outputs/bootstrap/bootstrap_2020_2025_health_docs_ownership_summary.csv",
   "notes": [
-    "Aligned with doc_touch_rhythm.py: git log --name-only, same include/exclude patterns.",
-    "entropy_norm is normalized Shannon entropy over monthly health-file commit distribution (0..1).",
-    "Lower entropy => activity concentrated into fewer months; higher entropy => spread across months."
+    "Commit counts (_commits columns) include ALL authors (bots + humans) to match rhythm script.",
+    "Contributor counts and concentration metrics (top-K, bus-X) exclude bots unless --include_bots.",
+    "Path handling is rhythm-identical: files are appended with strip() only, no lstrip('./').",
+    "Parsing uses %ct (committer time) + --name-only, matching rhythm.",
+    "Partition check uses all-inclusive counts: touch = only + dominant + non_dominant."
   ]
 }

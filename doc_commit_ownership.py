@@ -4,19 +4,29 @@ health_docs_ownership_summary.py
 
 Repo-level ownership/concentration metrics for STRICT health_docs over a date range.
 
+CONSISTENCY GOAL (with your rhythm script):
+- Uses git log with:
+  - committer time (%ct) like rhythm
+  - --name-only like rhythm
+  - --no-merges by default (unless --include_merges is passed) like rhythm
+- Uses the SAME include/exclude logic as rhythm:
+  - excluded paths are ignored entirely (not counted as "other")
+  - health docs are matched only after exclusions
+- Path handling is IDENTICAL to rhythm (no lstrip, no extra normalization)
+- Bot filtering applies ONLY to ownership attribution metrics, NOT to commit counts
+  (so health_docs_touch_commits matches rhythm's health_file_commits exactly)
+
 We classify commits into four categories (mutually exclusive within doc_touch):
   - doc_touch:        commit touches >=1 health_docs file
-  - doc_only:         doc_touch AND touches no other files
-  - doc_dominant:     doc_touch AND touches other files AND doc_share >= dominant_threshold
-  - doc_non_dominant: doc_touch AND touches other files AND doc_share <  dominant_threshold
+  - doc_only:         doc_touch AND touches no other (non-excluded) files
+  - doc_dominant:     doc_touch AND touches other (non-excluded) files AND doc_share >= dominant_threshold
+  - doc_non_dominant: doc_touch AND touches other (non-excluded) files AND doc_share <  dominant_threshold
 
 Then for each category, compute:
-  - commit count
-  - unique contributors
-  - Top-K shares: Top1, Top3, Top5, Top10 (by commit counts)
+  - commit count  (ALL commits, including bots, to match rhythm)
+  - unique contributors (bots excluded unless --include_bots)
+  - Top-K shares: Top1, Top3, Top5, Top10 (by commit counts, bots excluded unless --include_bots)
   - Bus50 / Bus80: smallest number of contributors accounting for >=50% / >=80% of commits
-
-Bots are excluded by default (recommended for ownership metrics).
 
 Outputs:
   outputs/<repo_name>/<out_prefix>_health_docs_ownership_summary.csv
@@ -41,11 +51,11 @@ import re
 import subprocess
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
-from typing import Dict, Iterator, List, Optional, Tuple
+from typing import Dict, Iterator, List, Optional, Sequence, Tuple
 
 
 # ---------------------------------------------------------------------------
-# YOUR STRICT HEALTH_DOCS INCLUDE/EXCLUDE RULES (as provided)
+# STRICT HEALTH_DOCS INCLUDE/EXCLUDE RULES (MATCH RHYTHM SCRIPT EXACTLY)
 # ---------------------------------------------------------------------------
 
 ROOT_HEALTH_FILES = [
@@ -107,7 +117,7 @@ EXCLUDE_PATTERNS = [
     # ANY nested directory structure (libs/, modules/, x-pack/, etc.)
     r"^[^/]+/[^/]+/",
 
-    # Specific component directories that contain LICENSE/README
+    # Specific component directories
     r"^libs/",
     r"^modules/",
     r"^x-pack/",
@@ -119,7 +129,7 @@ EXCLUDE_PATTERNS = [
     r"^test/",
     r"^benchmarks?/",
 
-    # Source code directories (should NEVER match)
+    # Source code directories
     r"^src/",
     r"/src/",
 
@@ -149,7 +159,7 @@ EXCLUDE_PATTERNS = [
     r"\.(zip|tar|gz|bz2|7z|rar)$",
     r"\.(exe|dll|so|dylib|bin)$",
 
-    # Source code files (CRITICAL - should NEVER be docs)
+    # Source code files
     r"\.(java|py|js|ts|go|rs|cpp|c|h|hpp)$",
     r"\.(scala|kt|swift|rb|php|cs|fs)$",
 
@@ -173,36 +183,33 @@ EXCLUDE_PATTERNS = [
     r"\.(zh|ja|ko|fr|de|es|it|pt|ru)\.md$",
 ]
 
-HEALTH_INCLUDE_RX = [re.compile(p, re.IGNORECASE) for p in ROOT_HEALTH_FILES]
-EXCLUDE_RX = [re.compile(p, re.IGNORECASE) for p in EXCLUDE_PATTERNS]
+
+# ---------------------------------------------------------------------------
+# Bot detection
+# ---------------------------------------------------------------------------
+
+BOT_PATTERNS = [
+    r"\bbot\b", r"\bbots\b", r"github-actions", r"dependabot",
+    r"renovate", r"greenkeeper", r"codecov", r"coveralls",
+    r"travis-ci", r"circleci", r"jenkins", r"azure-pipelines",
+    r"\bbors\b", r"homu", r"mergify", r"kodiak", r"auto-merge",
+    r"rust-timer", r"rustbot", r"rust-highfive",
+    r"kubernetes-", r"k8s-ci-robot", r"automation",
+    r"\[bot\]", r"\(bot\)", r"service account",
+    r"noreply@", r"github\.com", r"automated",
+    r"version-bump", r"release-bot", r"changelog-bot",
+    r"homebrew-", r"allcontributors",
+]
+BOT_RX = [re.compile(p, re.IGNORECASE) for p in BOT_PATTERNS]
 
 
-def normalize_path(p: str) -> str:
-    """
-    Normalize and handle simple rename syntax in numstat output:
-      "path/{old => new}/file.md" or "a => b"
-    Keep the right side of '=>' when present.
-    """
-    p = (p or "").strip().replace("\\", "/")
-    if "=>" in p:
-        p = p.split("=>")[-1].strip()
-        p = p.strip("{} ").strip()
-    return p.lstrip("./")
-
-
-def is_excluded(path: str) -> bool:
-    return any(rx.search(path) for rx in EXCLUDE_RX)
-
-
-def is_health_docs(path: str) -> bool:
-    p = normalize_path(path)
-    if is_excluded(p):
-        return False
-    return any(rx.match(p) for rx in HEALTH_INCLUDE_RX)
+def looks_like_bot(name: str, email: str) -> bool:
+    s = f"{(name or '').strip()} <{(email or '').strip()}>".strip()
+    return any(rx.search(s) for rx in BOT_RX)
 
 
 # ---------------------------------------------------------------------------
-# Identity normalization (consistent with your prior scripts)
+# Identity normalization
 # ---------------------------------------------------------------------------
 
 def normalize_email(email: str) -> str:
@@ -222,104 +229,141 @@ def author_id(name: str, email: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Bot detection (default exclude)
+# Git parsing — RHYTHM-IDENTICAL path handling
 # ---------------------------------------------------------------------------
 
-BOT_PATTERNS = [
-     r'\bbot\b', r'\bbots\b', r'github-actions', r'dependabot',
-    r'renovate', r'greenkeeper', r'codecov', r'coveralls',
-    r'travis-ci', r'circleci', r'jenkins', r'azure-pipelines',
-    r'\bbors\b', r'homu', r'mergify', r'kodiak', r'auto-merge',
-    r'rust-timer', r'rustbot', r'rust-highfive',
-    r'kubernetes-', r'k8s-ci-robot', r'automation',
-    r'\[bot\]', r'\(bot\)', r'service account',
-    r'noreply@', r'github\.com', r'automated',
-    r'version-bump', r'release-bot', r'changelog-bot',
-    r'homebrew-', r'allcontributors',
-]
-BOT_RX = [re.compile(p, re.IGNORECASE) for p in BOT_PATTERNS]
+@dataclass(frozen=True)
+class CommitRecord:
+    sha: str
+    commit_dt: datetime
+    author_name: str
+    author_email: str
+    files: Tuple[str, ...]
 
-
-def looks_like_bot(name: str, email: str) -> bool:
-    s = f"{(name or '').strip()} <{(email or '').strip()}>".strip()
-    return any(rx.search(s) for rx in BOT_RX)
-
-
-# ---------------------------------------------------------------------------
-# Git parsing: git log --numstat
-# ---------------------------------------------------------------------------
 
 def run_git(repo: str, args: List[str]) -> str:
     cmd = ["git", "-C", repo] + args
-    return subprocess.check_output(cmd, stderr=subprocess.STDOUT).decode("utf-8", errors="replace")
+    out = subprocess.check_output(cmd, stderr=subprocess.STDOUT)
+    return out.decode("utf-8", errors="replace")
 
 
-def safe_int(s: str) -> Optional[int]:
-    try:
-        return int(s)
-    except Exception:
-        return None
+def iter_commits_with_files(
+    repo: str, since: date, until: date, include_merges: bool
+) -> Iterator[CommitRecord]:
+    """
+    Parses git log in a way that is byte-for-byte consistent with the rhythm
+    script, with author name/email added for ownership attribution.
 
-
-@dataclass
-class CommitRec:
-    dt: datetime
-    sha: str
-    name: str
-    email: str
-    subject: str
-    files: List[Tuple[Optional[int], Optional[int], str]]  # (add, del, path)
-
-
-def iter_commits_with_numstat(repo: str, since: date, until: date) -> Iterator[CommitRec]:
-    marker = "__C__"
-    fmt = f"{marker}%H\t%at\t%an\t%ae\t%s"
-    raw = run_git(repo, [
-        "log", "--no-color",
+    KEY CONSISTENCY POINTS vs. original ownership script:
+      - Files are appended as `s` (stripped of whitespace only), NOT lstripped
+        of "./" — this matches rhythm exactly and prevents path corruption.
+      - %ct (committer time) is used, matching rhythm.
+      - --no-merges is the default, matching rhythm.
+    """
+    log_args = [
+        "log",
+        "--no-color",
         f"--since={since.isoformat()} 00:00:00",
         f"--until={until.isoformat()} 23:59:59",
-        f"--pretty=format:{fmt}",
-        "--numstat",
-    ])
+        "--pretty=format:__COMMIT__%H\t%ct\t%an\t%ae",
+        "--name-only",
+    ]
+    if not include_merges:
+        log_args.insert(1, "--no-merges")
 
-    cur: Optional[CommitRec] = None
+    raw = run_git(repo, log_args)
+
+    sha: Optional[str] = None
+    epoch: Optional[int] = None
+    an: str = ""
+    ae: str = ""
+    files: List[str] = []
 
     for line in raw.splitlines():
-        if line.startswith(marker):
-            if cur is not None:
-                yield cur
+        if line.startswith("__COMMIT__"):
+            # flush previous commit
+            if sha is not None and epoch is not None:
+                dt = datetime.fromtimestamp(epoch, tz=timezone.utc)
+                yield CommitRecord(
+                    sha=sha,
+                    commit_dt=dt,
+                    author_name=an,
+                    author_email=ae,
+                    files=tuple(f for f in files if f),
+                )
 
-            parts = line[len(marker):].split("\t", 4)
-            if len(parts) != 5:
-                cur = None
+            files = []
+            header = line[len("__COMMIT__"):]
+            parts = header.split("\t")
+            if len(parts) != 4:
+                sha, epoch = None, None
+                an, ae = "", ""
                 continue
 
-            sha, epoch_s, name, email, subject = parts
+            sha = parts[0].strip()
             try:
-                epoch = int(epoch_s)
+                epoch = int(parts[1].strip())
             except ValueError:
-                cur = None
+                sha, epoch = None, None
+                an, ae = "", ""
                 continue
-
-            dt = datetime.fromtimestamp(epoch, tz=timezone.utc)
-            cur = CommitRec(dt=dt, sha=sha, name=name, email=email, subject=subject, files=[])
+            an = parts[2].strip()
+            ae = parts[3].strip()
         else:
-            if cur is None or not line.strip():
-                continue
-            parts = line.split("\t")
-            if len(parts) < 3:
-                continue
-            add_s, del_s, path = parts[0], parts[1], "\t".join(parts[2:]).strip()
-            add = None if add_s == "-" else safe_int(add_s)
-            dele = None if del_s == "-" else safe_int(del_s)
-            cur.files.append((add, dele, path))
+            if sha is not None:
+                # *** RHYTHM-IDENTICAL: strip whitespace only, no lstrip("./") ***
+                s = line.strip()
+                if s:
+                    files.append(s)
 
-    if cur is not None:
-        yield cur
+    # flush last commit
+    if sha is not None and epoch is not None:
+        dt = datetime.fromtimestamp(epoch, tz=timezone.utc)
+        yield CommitRecord(
+            sha=sha,
+            commit_dt=dt,
+            author_name=an,
+            author_email=ae,
+            files=tuple(f for f in files if f),
+        )
 
 
 # ---------------------------------------------------------------------------
-# Ownership metrics: Top-K share and Bus-X
+# Health file detection — RHYTHM-IDENTICAL
+# ---------------------------------------------------------------------------
+
+def compile_health_patterns() -> Tuple[List[re.Pattern], List[re.Pattern]]:
+    health_rx = [re.compile(p, re.IGNORECASE) for p in ROOT_HEALTH_FILES]
+    excl_rx = [re.compile(p, re.IGNORECASE) for p in EXCLUDE_PATTERNS]
+    return health_rx, excl_rx
+
+
+def is_excluded(path: str, excl_rx: Sequence[re.Pattern]) -> bool:
+    p = path.replace("\\", "/")
+    return any(rx.search(p) for rx in excl_rx)
+
+
+def is_health_file(path: str, health_rx: Sequence[re.Pattern]) -> bool:
+    p = path.replace("\\", "/")
+    return any(rx.match(p) for rx in health_rx)
+
+
+def get_health_files(
+    files: Sequence[str],
+    health_rx: Sequence[re.Pattern],
+    excl_rx: Sequence[re.Pattern],
+) -> List[str]:
+    health_files: List[str] = []
+    for f in files:
+        if is_excluded(f, excl_rx):
+            continue
+        if is_health_file(f, health_rx):
+            health_files.append(f)
+    return health_files
+
+
+# ---------------------------------------------------------------------------
+# Ownership metrics
 # ---------------------------------------------------------------------------
 
 def top_k_share(counts: List[int], k: int) -> float:
@@ -328,31 +372,23 @@ def top_k_share(counts: List[int], k: int) -> float:
     total = sum(counts)
     if total <= 0:
         return 0.0
-    counts_sorted = sorted(counts, reverse=True)
-    return sum(counts_sorted[:k]) / total
+    return sum(sorted(counts, reverse=True)[:k]) / total
 
 
 def bus_x(counts: List[int], x: float) -> int:
-    """
-    Smallest number of contributors needed to cover >= x fraction of commits.
-    x in (0,1], e.g. 0.5 or 0.8
-    """
+    """Smallest number of contributors needed to cover >= x fraction of commits."""
     if not counts:
         return 0
     total = sum(counts)
     if total <= 0:
         return 0
     target = x * total
-    counts_sorted = sorted(counts, reverse=True)
-
     cum = 0
-    k = 0
-    for c in counts_sorted:
+    for k, c in enumerate(sorted(counts, reverse=True), start=1):
         cum += c
-        k += 1
         if cum >= target - 1e-12:
             return k
-    return k
+    return len(counts)
 
 
 def format_float(x: float) -> str:
@@ -368,13 +404,28 @@ def parse_date(s: str) -> date:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Health_docs ownership summary (Top-K shares and Bus-X) for intention categories")
+    ap = argparse.ArgumentParser(
+        description=(
+            "Health_docs ownership summary (Top-K shares and Bus-X) — "
+            "commit counts match rhythm script exactly; "
+            "bot filtering applies to ownership attribution only."
+        )
+    )
     ap.add_argument("--repo", required=True, help="Path to local git repo")
     ap.add_argument("--since", required=True, type=parse_date, help="Start date YYYY-MM-DD")
     ap.add_argument("--until", required=True, type=parse_date, help="End date YYYY-MM-DD")
-    ap.add_argument("--dominant_threshold", type=float, default=0.5,
-                    help="Doc-dominant threshold by file-share (default 0.5)")
-    ap.add_argument("--include_bots", action="store_true", help="Include bots (default: exclude)")
+    ap.add_argument(
+        "--dominant_threshold", type=float, default=0.5,
+        help="Doc-dominant threshold by file-share (default 0.5)",
+    )
+    ap.add_argument(
+        "--include_bots", action="store_true",
+        help="Include bots in ownership attribution (default: exclude bots from attribution)",
+    )
+    ap.add_argument(
+        "--include_merges", action="store_true",
+        help="Include merge commits (default: exclude, matching rhythm default)",
+    )
     ap.add_argument("--out_prefix", default="ownership", help="Output file prefix")
     args = ap.parse_args()
 
@@ -383,98 +434,125 @@ def main() -> int:
     out_dir = os.path.join("outputs", repo_name)
     os.makedirs(out_dir, exist_ok=True)
 
-    commits = list(iter_commits_with_numstat(repo, args.since, args.until))
+    health_rx, excl_rx = compile_health_patterns()
 
-    # contributor commit counts per category
-    counts_touch: Dict[str, int] = {}
-    counts_only: Dict[str, int] = {}
-    counts_dom: Dict[str, int] = {}
-    counts_nondom: Dict[str, int] = {}
+    # -----------------------------------------------------------------------
+    # Two parallel sets of counters:
+    #   _all  → includes every commit (bots included) → matches rhythm counts
+    #   _attr → bots excluded unless --include_bots   → used for ownership metrics
+    # -----------------------------------------------------------------------
+    counts_touch_all: Dict[str, int] = {}   # aid → commit count (all authors)
+    counts_only_all: Dict[str, int] = {}
+    counts_dom_all: Dict[str, int] = {}
+    counts_nondom_all: Dict[str, int] = {}
+
+    counts_touch_attr: Dict[str, int] = {}  # aid → commit count (humans only)
+    counts_only_attr: Dict[str, int] = {}
+    counts_dom_attr: Dict[str, int] = {}
+    counts_nondom_attr: Dict[str, int] = {}
 
     total_commits_in_range = 0
 
-    for c in commits:
-        if (not args.include_bots) and looks_like_bot(c.name, c.email):
-            continue
-
+    for c in iter_commits_with_files(repo, args.since, args.until, args.include_merges):
         total_commits_in_range += 1
 
-        # classify changed files in this commit
-        health_files = 0
-        other_files = 0
-        for _add, _del, p in c.files:
-            p2 = normalize_path(p)
-            if is_health_docs(p2):
-                health_files += 1
-            else:
-                other_files += 1
+        is_bot = looks_like_bot(c.author_name, c.author_email)
 
-        if health_files == 0:
-            continue  # not doc_touch
+        # Classify files — IDENTICAL logic to rhythm
+        health_files_list = get_health_files(c.files, health_rx, excl_rx)
+        n_health = len(health_files_list)
 
-        aid = author_id(c.name, c.email)
+        if n_health == 0:
+            continue  # not a health-doc-touching commit
 
-        # doc_touch
-        counts_touch[aid] = counts_touch.get(aid, 0) + 1
+        # Count other (non-excluded, non-health) files
+        n_other = sum(
+            1 for f in c.files
+            if not is_excluded(f, excl_rx) and not is_health_file(f, health_rx)
+        )
 
-        # intention sub-categories
-        if other_files == 0:
-            counts_only[aid] = counts_only.get(aid, 0) + 1
+        aid = author_id(c.author_name, c.author_email)
+
+        # Determine sub-category
+        if n_other == 0:
+            category = "only"
         else:
-            total_files = health_files + other_files
-            share = (health_files / total_files) if total_files > 0 else 0.0
-            if share >= args.dominant_threshold:
-                counts_dom[aid] = counts_dom.get(aid, 0) + 1
+            total_files = n_health + n_other
+            share = n_health / total_files
+            category = "dom" if share >= args.dominant_threshold else "nondom"
+
+        # --- Always count for rhythm-matching totals (_all) ---
+        counts_touch_all[aid] = counts_touch_all.get(aid, 0) + 1
+        if category == "only":
+            counts_only_all[aid] = counts_only_all.get(aid, 0) + 1
+        elif category == "dom":
+            counts_dom_all[aid] = counts_dom_all.get(aid, 0) + 1
+        else:
+            counts_nondom_all[aid] = counts_nondom_all.get(aid, 0) + 1
+
+        # --- Count for ownership attribution (_attr), skipping bots unless flagged ---
+        if args.include_bots or not is_bot:
+            counts_touch_attr[aid] = counts_touch_attr.get(aid, 0) + 1
+            if category == "only":
+                counts_only_attr[aid] = counts_only_attr.get(aid, 0) + 1
+            elif category == "dom":
+                counts_dom_attr[aid] = counts_dom_attr.get(aid, 0) + 1
             else:
-                counts_nondom[aid] = counts_nondom.get(aid, 0) + 1
+                counts_nondom_attr[aid] = counts_nondom_attr.get(aid, 0) + 1
 
-    def summarize(prefix: str, d: Dict[str, int]) -> Dict[str, str]:
-        counts = list(d.values())
-        n_commits = sum(counts)
-        n_contrib = len(d)
+    def summarize_counts(prefix: str, all_d: Dict[str, int], attr_d: Dict[str, int]) -> Dict[str, str]:
+        """
+        Commit counts come from all_d (matches rhythm).
+        Contributor counts and concentration metrics come from attr_d (bots excluded).
+        """
+        all_counts = list(all_d.values())
+        attr_counts = list(attr_d.values())
 
-        top1 = top_k_share(counts, 1)
-        top3 = top_k_share(counts, 3)
-        top5 = top_k_share(counts, 5)
-        top10 = top_k_share(counts, 10)
+        n_commits = sum(all_counts)       # ← matches rhythm's health_file_commits
+        n_contrib = len(attr_d)           # ← human contributors only
 
-        b50 = bus_x(counts, 0.5)
-        b80 = bus_x(counts, 0.8)
+        top1  = top_k_share(attr_counts, 1)
+        top3  = top_k_share(attr_counts, 3)
+        top5  = top_k_share(attr_counts, 5)
+        top10 = top_k_share(attr_counts, 10)
+
+        b50 = bus_x(attr_counts, 0.5)
+        b80 = bus_x(attr_counts, 0.8)
 
         return {
-            f"{prefix}_commits": str(n_commits),
+            f"{prefix}_commits":      str(n_commits),
             f"{prefix}_contributors": str(n_contrib),
-            f"{prefix}_top1_share": format_float(top1) if n_commits > 0 else "",
-            f"{prefix}_top3_share": format_float(top3) if n_commits > 0 else "",
-            f"{prefix}_top5_share": format_float(top5) if n_commits > 0 else "",
-            f"{prefix}_top10_share": format_float(top10) if n_commits > 0 else "",
-            f"{prefix}_bus50": str(b50) if n_commits > 0 else "",
-            f"{prefix}_bus80": str(b80) if n_commits > 0 else "",
+            f"{prefix}_top1_share":   format_float(top1)  if n_commits > 0 else "",
+            f"{prefix}_top3_share":   format_float(top3)  if n_commits > 0 else "",
+            f"{prefix}_top5_share":   format_float(top5)  if n_commits > 0 else "",
+            f"{prefix}_top10_share":  format_float(top10) if n_commits > 0 else "",
+            f"{prefix}_bus50":        str(b50) if n_commits > 0 else "",
+            f"{prefix}_bus80":        str(b80) if n_commits > 0 else "",
         }
 
     row: Dict[str, str] = {
-        "repo": repo_name,
-        "since": args.since.isoformat(),
-        "until": args.until.isoformat(),
-        "dominant_threshold": f"{args.dominant_threshold:.3f}",
-        "bots_included": "yes" if args.include_bots else "no",
-        "total_commits_in_range": str(total_commits_in_range),
+        "repo":                    repo_name,
+        "since":                   args.since.isoformat(),
+        "until":                   args.until.isoformat(),
+        "dominant_threshold":      f"{args.dominant_threshold:.3f}",
+        "bots_included_in_attr":   "yes" if args.include_bots else "no",
+        "merges_included":         "yes" if args.include_merges else "no",
+        "total_commits_in_range":  str(total_commits_in_range),
     }
 
-    # Add summaries for each category
-    row.update(summarize("health_docs_touch", counts_touch))
-    row.update(summarize("health_docs_only", counts_only))
-    row.update(summarize("health_docs_dominant", counts_dom))
-    row.update(summarize("health_docs_non_dominant", counts_nondom))
+    row.update(summarize_counts("health_docs_touch",       counts_touch_all,  counts_touch_attr))
+    row.update(summarize_counts("health_docs_only",        counts_only_all,   counts_only_attr))
+    row.update(summarize_counts("health_docs_dominant",    counts_dom_all,    counts_dom_attr))
+    row.update(summarize_counts("health_docs_non_dominant",counts_nondom_all, counts_nondom_attr))
 
-    # sanity: partition check (touch = only + dominant + non_dominant)
-    touch_commits = sum(counts_touch.values())
-    only_commits = sum(counts_only.values())
-    dom_commits = sum(counts_dom.values())
-    nondom_commits = sum(counts_nondom.values())
-    row["health_docs_partition_check"] = str(touch_commits == (only_commits + dom_commits + nondom_commits))
-    row["health_docs_partition_touch"] = str(touch_commits)
-    row["health_docs_partition_sum_parts"] = str(only_commits + dom_commits + nondom_commits)
+    # Partition check (using all-inclusive counts, i.e. rhythm-aligned)
+    touch_all  = sum(counts_touch_all.values())
+    only_all   = sum(counts_only_all.values())
+    dom_all    = sum(counts_dom_all.values())
+    nondom_all = sum(counts_nondom_all.values())
+    row["health_docs_partition_check"]    = str(touch_all == (only_all + dom_all + nondom_all))
+    row["health_docs_partition_touch"]    = str(touch_all)
+    row["health_docs_partition_sum_parts"]= str(only_all + dom_all + nondom_all)
 
     csv_path = os.path.join(out_dir, f"{args.out_prefix}_health_docs_ownership_summary.csv")
     with open(csv_path, "w", newline="") as f:
@@ -483,17 +561,19 @@ def main() -> int:
         w.writerow(row)
 
     summary = {
-        "repo": repo_name,
-        "since": args.since.isoformat(),
-        "until": args.until.isoformat(),
+        "repo":               repo_name,
+        "since":              args.since.isoformat(),
+        "until":              args.until.isoformat(),
         "dominant_threshold": args.dominant_threshold,
-        "bots_included": bool(args.include_bots),
-        "output_csv": csv_path,
+        "bots_included_in_attr": bool(args.include_bots),
+        "merges_included":    bool(args.include_merges),
+        "output_csv":         csv_path,
         "notes": [
-            "Ownership metrics computed over commit counts (not lines changed).",
-            "Top-K shares and Bus50/Bus80 are computed per category: touch/only/dominant/non_dominant.",
-            "Commit categories are based on STRICT health_docs include/exclude rules you provided.",
-            "Partition check verifies: touch = only + dominant + non_dominant (commit-level).",
+            "Commit counts (_commits columns) include ALL authors (bots + humans) to match rhythm script.",
+            "Contributor counts and concentration metrics (top-K, bus-X) exclude bots unless --include_bots.",
+            "Path handling is rhythm-identical: files are appended with strip() only, no lstrip('./').",
+            "Parsing uses %ct (committer time) + --name-only, matching rhythm.",
+            "Partition check uses all-inclusive counts: touch = only + dominant + non_dominant.",
         ],
     }
     summary_path = os.path.join(out_dir, f"{args.out_prefix}_summary.json")
@@ -503,6 +583,11 @@ def main() -> int:
     print("Saved:")
     print(f"  ✓ {csv_path}")
     print(f"  ✓ {summary_path}")
+
+    # Print a quick alignment summary for verification
+    print(f"\nRhythm alignment check:")
+    print(f"  health_docs_touch_commits (all authors) = {touch_all}")
+    print(f"  (This should equal health_file_commits from the rhythm script)")
     return 0
 
 

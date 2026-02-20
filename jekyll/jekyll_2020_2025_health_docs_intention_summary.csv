@@ -1,2 +1,2 @@
-repo,since,until,dominant_threshold,bots_included,total_commits_in_range,health_docs_touch_commits,health_docs_only_commits,health_docs_dominant_mixed_commits,health_docs_mixed_non_dominant_commits,health_docs_only_rate,health_docs_dominant_mixed_rate,health_docs_mixed_non_dominant_rate,health_docs_partition_check_sum
-jekyll,2020-06-30,2025-06-29,0.500,no,586,369,351,3,15,0.951220,0.008130,0.040650,369
+repo,since,until,include_merges,dominant_threshold,total_commits_in_range,health_docs_touch_commits,health_docs_only_commits,health_docs_dominant_mixed_commits,health_docs_mixed_non_dominant_commits,health_docs_only_rate,health_docs_dominant_mixed_rate,health_docs_mixed_non_dominant_rate,partition_check_sum
+jekyll,2020-06-30,2025-06-29,no,0.500,844,388,382,3,3,0.984536,0.007732,0.007732,388
