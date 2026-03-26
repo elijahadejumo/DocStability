@@ -1,0 +1,8 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+ant-design,49699333+dependabot[bot]@users.noreply.github.com,324,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+ant-design,29139614+renovate[bot]@users.noreply.github.com,150,\[bot\];\bbot\b;renovate,name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com' | name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com' | name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com'
+ant-design,41898282+github-actions[bot]@users.noreply.github.com,88,\[bot\];\bbot\b;github-actions,name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com'
+ant-design,nicholas.deschenes@sentry.io,1,codecov,name='nicholas-codecov' email='nicholas.deschenes@sentry.io'
+ant-design,ajenkins@mparticle.com,1,jenkins,name='ajenkins-mparticle' email='ajenkins@mparticle.com'
+ant-design,57840178+lihuan-bot@users.noreply.github.com,1,\bbot\b,name='lihuan-bot' email='57840178+lihuan-bot@users.noreply.github.com'
+ant-design,27856297+dependabot-preview[bot]@users.noreply.github.com,1,\[bot\];\bbot\b;dependabot,name='dependabot-preview[bot]' email='27856297+dependabot-preview[bot]@users.noreply.github.com'

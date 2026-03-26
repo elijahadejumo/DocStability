@@ -1,0 +1,2 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+symfony,41898282+github-actions[bot]@users.noreply.github.com,1,\[bot\];\bbot\b;github-actions,name='carsonbot' email='41898282+github-actions[bot]@users.noreply.github.com'

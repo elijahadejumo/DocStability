@@ -1,0 +1,6 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+AspNetCore.Docs,49699333+dependabot[bot]@users.noreply.github.com,45,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+AspNetCore.Docs,41898282+github-actions[bot]@users.noreply.github.com,28,\[bot\];\bbot\b;github-actions,name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com'
+AspNetCore.Docs,113403604+learn-build-service-prod[bot]@users.noreply.github.com,2,\[bot\];\bbot\b,name='learn-build-service-prod[bot]' email='113403604+learn-build-service-prod[bot]@users.noreply.github.com' | name='learn-build-service-prod[bot]' email='113403604+learn-build-service-prod[bot]@users.noreply.github.com'
+AspNetCore.Docs,konrad-jamrozik@github.com,1,@github\.com$,name='Konrad Jamrozik' email='konrad-jamrozik@github.com'
+AspNetCore.Docs,vcsjones@github.com,1,@github\.com$,name='Kevin Jones' email='vcsjones@github.com'

@@ -1,0 +1,5 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+gitignore,dooleydevin@github.com,5,@github\.com$,name='Devin Dooley' email='dooleydevin@github.com' | name='Devin Dooley' email='dooleydevin@github.com' | name='Devin Dooley' email='dooleydevin@github.com'
+gitignore,martinwoodward@github.com,4,@github\.com$,name='Martin Woodward' email='martinwoodward@github.com' | name='Martin Woodward' email='martinwoodward@github.com' | name='Martin Woodward' email='martinwoodward@github.com'
+gitignore,wirecat@github.com,2,@github\.com$,name='Daniel Johnson' email='wirecat@github.com' | name='Daniel Johnson' email='wirecat@github.com'
+gitignore,thorrsson@github.com,2,@github\.com$,name='Tim Hunter' email='thorrsson@github.com' | name='Tim Hunter' email='thorrsson@github.com'

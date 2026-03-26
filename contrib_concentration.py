@@ -44,7 +44,9 @@ BOT_PATTERNS = [
     r'rust-timer', r'rustbot', r'rust-highfive',
     r'kubernetes-', r'k8s-ci-robot', r'automation',
     r'\[bot\]', r'\(bot\)', r'service account',
-    r'noreply@', r'github\.com', r'automated',
+    r'noreply@github\.com$', r'actions@github\.com$',  # ← tightened
+    r'@github\.com$',                                   # ← tightened
+    r'automated',
     r'version-bump', r'release-bot', r'changelog-bot',
     r'homebrew-', r'allcontributors',
 ]

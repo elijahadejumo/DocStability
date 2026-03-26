@@ -1,0 +1,5 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+numpy,49699333+dependabot[bot]@users.noreply.github.com,273,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+numpy,27856297+dependabot-preview[bot]@users.noreply.github.com,70,\[bot\];\bbot\b;dependabot,name='dependabot-preview[bot]' email='27856297+dependabot-preview[bot]@users.noreply.github.com' | name='dependabot-preview[bot]' email='27856297+dependabot-preview[bot]@users.noreply.github.com' | name='dependabot-preview[bot]' email='27856297+dependabot-preview[bot]@users.noreply.github.com'
+numpy,vahidmech@github.com,1,@github\.com$,name='vahidmech' email='vahidmech@github.com'
+numpy,bot@stepsecurity.io,1,\bbot\b,name='StepSecurity Bot' email='bot@stepsecurity.io'

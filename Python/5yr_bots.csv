@@ -1,0 +1,3 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+Python,49699333+dependabot[bot]@users.noreply.github.com,417,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+Python,168258904+devloai[bot]@users.noreply.github.com,2,\[bot\];\bbot\b,name='devloai[bot]' email='168258904+devloai[bot]@users.noreply.github.com' | name='devloai[bot]' email='168258904+devloai[bot]@users.noreply.github.com'

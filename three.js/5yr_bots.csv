@@ -1,0 +1,5 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+three.js,29139614+renovate[bot]@users.noreply.github.com,233,\[bot\];\bbot\b;renovate,name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com' | name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com' | name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com'
+three.js,49699333+dependabot[bot]@users.noreply.github.com,23,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+three.js,joe@sk8earth.com,1,\bbot\b,name='LUME Bot' email='joe@sk8earth.com'
+three.js,102100353+inclusive-coding-bot@users.noreply.github.com,1,\bbot\b,name='Inclusive Coding Bot' email='102100353+inclusive-coding-bot@users.noreply.github.com'

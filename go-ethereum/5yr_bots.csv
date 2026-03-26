@@ -1,0 +1,3 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+go-ethereum,49699333+dependabot[bot]@users.noreply.github.com,6,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+go-ethereum,47621124+ronething-bot@users.noreply.github.com,1,\bbot\b,name='かげ' email='47621124+ronething-bot@users.noreply.github.com'

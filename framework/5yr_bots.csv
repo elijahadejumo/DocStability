@@ -1,0 +1,3 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+framework,bot@styleci.io,319,\bbot\b,name='StyleCI Bot' email='bot@styleci.io' | name='StyleCI Bot' email='bot@styleci.io' | name='StyleCI Bot' email='bot@styleci.io'
+framework,49699333+dependabot[bot]@users.noreply.github.com,11,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'

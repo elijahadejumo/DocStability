@@ -1,0 +1,2 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+go,tibbes@github.com,1,@github\.com$,name='Julian Tibble' email='tibbes@github.com'

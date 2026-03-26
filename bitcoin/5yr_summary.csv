@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+bitcoin,2020-06-30,2025-06-29,13948,0,0,13948,443,0.8897572473314297,0.2607542299971322,0.36621737883567534,0.5254516776598795

@@ -1,0 +1,4 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+ansible,38501955+xomute@users.noreply.github.com,1,homu,name='Dmytro Khomutnyk' email='38501955+XoMute@users.noreply.github.com'
+ansible,102100353+inclusive-coding-bot@users.noreply.github.com,1,\bbot\b,name='Inclusive Coding Bot' email='102100353+inclusive-coding-bot@users.noreply.github.com'
+ansible,logistic-bot@protonmail.com,1,\bbot\b,name='Logistic Bot' email='logistic-bot@protonmail.com'

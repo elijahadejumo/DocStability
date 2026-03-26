@@ -1,0 +1,2 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+odoo,otis@odoo.com,15,\bbot\b,name='fw-bot' email='otis@odoo.com' | name='fw-bot' email='otis@odoo.com' | name='fw-bot' email='otis@odoo.com'

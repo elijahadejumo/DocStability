@@ -1,0 +1,16 @@
+{
+  "repo": "rails",
+  "since": "2020-06-30",
+  "until": "2025-06-29",
+  "dominant_threshold": 0.5,
+  "bots_included_in_attr": false,
+  "merges_included": false,
+  "output_csv": "outputs/rails/5yr_health_docs_ownership_summary.csv",
+  "notes": [
+    "Commit counts (_commits columns) include ALL authors (bots + humans) to match rhythm script.",
+    "Contributor counts and concentration metrics (top-K, bus-X) exclude bots unless --include_bots.",
+    "Path handling is rhythm-identical: files are appended with strip() only, no lstrip('./').",
+    "Parsing uses %ct (committer time) + --name-only, matching rhythm.",
+    "Partition check uses all-inclusive counts: touch = only + dominant + non_dominant."
+  ]
+}

@@ -1,0 +1,2 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+scrapy,darakian@github.com,1,@github\.com$,name='Jon' email='darakian@github.com'

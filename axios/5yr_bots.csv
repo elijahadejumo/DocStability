@@ -1,0 +1,3 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+axios,41898282+github-actions[bot]@users.noreply.github.com,68,\[bot\];\bbot\b;github-actions,name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com'
+axios,49699333+dependabot[bot]@users.noreply.github.com,29,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'

@@ -1,0 +1,2 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+data,fivethirtyeight.aws@gmail.com,2,\bbot\b,name='FiveThirtyEight Bot' email='fivethirtyeight.aws@gmail.com' | name='FiveThirtyEight Bot' email='fivethirtyeight.aws@gmail.com'

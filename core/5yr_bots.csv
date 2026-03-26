@@ -1,0 +1,7 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+core,49699333+dependabot[bot]@users.noreply.github.com,385,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+core,github@bors-ltd.fr,3,\bbors\b,name='Hervé Cauwelier' email='github@bors-ltd.fr' | name='Hervé Cauwelier' email='github@bors-ltd.fr' | name='Hervé Cauwelier' email='github@bors-ltd.fr'
+core,andersfugmann@github.com,2,@github\.com$,name='Anders Peter Fugmann' email='andersfugmann@github.com' | name='Anders Peter Fugmann' email='andersfugmann@github.com'
+core,joelhawksley@github.com,1,@github\.com$,name='Joel Hawksley' email='joelhawksley@github.com'
+core,timrogers@github.com,1,@github\.com$,name='Tim Rogers' email='timrogers@github.com'
+core,deniseyu@github.com,1,@github\.com$,name='Denise Yu' email='deniseyu@github.com'

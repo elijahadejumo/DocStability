@@ -1,0 +1,3 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+spring-framework,github-actions[bot]@users.noreply.github.com,2,\[bot\];\bbot\b;github-actions,name='github-actions[bot]' email='github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='github-actions[bot]@users.noreply.github.com'
+spring-framework,vonunige@github.com,1,@github\.com$,name='VonUniGE' email='VonUniGE@github.com'

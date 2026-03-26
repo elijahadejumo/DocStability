@@ -1,0 +1,4 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+metasploit-framework,jenkins-metasploit@build-production.r7ops.com,265,jenkins,name='jenkins-metasploit' email='jenkins-metasploit@build-production.r7ops.com' | name='jenkins-metasploit' email='jenkins-metasploit@build-production.r7ops.com' | name='jenkins-metasploit' email='jenkins-metasploit@build-production.r7ops.com'
+metasploit-framework,49699333+dependabot[bot]@users.noreply.github.com,2,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+metasploit-framework,s3cur3th1ssh1t@github.com,1,@github\.com$,name='S3cur3Th1ssh1t' email='S3cur3Th1sSh1t@github.com'

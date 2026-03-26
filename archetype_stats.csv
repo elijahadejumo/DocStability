@@ -1,0 +1,7 @@
+Archetype,n,Metric,Mean,Median,SD,Min,Max
+Consistent,32,H_norm,0.904,0.9,0.052,0.769,0.989
+Consistent,32,AWR,0.854,0.861,0.119,0.672,1.0
+Occasional,51,H_norm,0.719,0.722,0.067,0.563,0.83
+Occasional,51,AWR,0.391,0.393,0.094,0.213,0.574
+Sparse,17,H_norm,0.402,0.46,0.138,0.137,0.57
+Sparse,17,AWR,0.117,0.115,0.06,0.033,0.23

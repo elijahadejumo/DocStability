@@ -1,0 +1,4 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+Marlin,38436470+insanityautomation@users.noreply.github.com,70,automation,name='InsanityAutomation' email='38436470+InsanityAutomation@users.noreply.github.com' | name='InsanityAutomation' email='38436470+InsanityAutomation@users.noreply.github.com' | name='InsanityAutomation' email='38436470+InsanityAutomation@users.noreply.github.com'
+Marlin,d.menzel@insanityautomation.com,1,automation,name='InsanityAutomation' email='d.menzel@insanityautomation.com'
+Marlin,curtis.x.jenkins@gmail.com,1,jenkins,name='Curtis Jenkins' email='curtis.x.jenkins@gmail.com'

@@ -189,16 +189,18 @@ EXCLUDE_PATTERNS = [
 # ---------------------------------------------------------------------------
 
 BOT_PATTERNS = [
-    r"\bbot\b", r"\bbots\b", r"github-actions", r"dependabot",
-    r"renovate", r"greenkeeper", r"codecov", r"coveralls",
-    r"travis-ci", r"circleci", r"jenkins", r"azure-pipelines",
-    r"\bbors\b", r"homu", r"mergify", r"kodiak", r"auto-merge",
-    r"rust-timer", r"rustbot", r"rust-highfive",
-    r"kubernetes-", r"k8s-ci-robot", r"automation",
-    r"\[bot\]", r"\(bot\)", r"service account",
-    r"noreply@", r"github\.com", r"automated",
-    r"version-bump", r"release-bot", r"changelog-bot",
-    r"homebrew-", r"allcontributors",
+    r'\bbot\b', r'\bbots\b', r'github-actions', r'dependabot',
+    r'renovate', r'greenkeeper', r'codecov', r'coveralls',
+    r'travis-ci', r'circleci', r'jenkins', r'azure-pipelines',
+    r'\bbors\b', r'homu', r'mergify', r'kodiak', r'auto-merge',
+    r'rust-timer', r'rustbot', r'rust-highfive',
+    r'kubernetes-', r'k8s-ci-robot', r'automation',
+    r'\[bot\]', r'\(bot\)', r'service account',
+    r'noreply@github\.com$', r'actions@github\.com$',  # ← tightened
+    r'@github\.com$',                                   # ← tightened
+    r'automated',
+    r'version-bump', r'release-bot', r'changelog-bot',
+    r'homebrew-', r'allcontributors',
 ]
 BOT_RX = [re.compile(p, re.IGNORECASE) for p in BOT_PATTERNS]
 

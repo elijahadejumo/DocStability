@@ -1,0 +1,5 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+grpc,41898282+github-actions[bot]@users.noreply.github.com,32,\[bot\];\bbot\b;github-actions,name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com'
+grpc,49699333+dependabot[bot]@users.noreply.github.com,25,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+grpc,grpc-github-bot@google.com,23,\bbot\b,name='gRPC Team Bot' email='grpc-github-bot@google.com' | name='gRPC Team Bot' email='grpc-github-bot@google.com' | name='gRPC Team Bot' email='grpc-github-bot@google.com'
+grpc,hparker@github.com,1,@github\.com$,name='Adam Hess' email='HParker@github.com'

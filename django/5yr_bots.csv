@@ -1,0 +1,2 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+django,ops@djangoproject.com,2,\bbot\b,name='django-bot' email='ops@djangoproject.com' | name='django-bot' email='ops@djangoproject.com'

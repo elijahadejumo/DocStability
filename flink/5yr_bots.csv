@@ -1,0 +1,2 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+flink,49699333+dependabot[bot]@users.noreply.github.com,13,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'

@@ -1,0 +1,3 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+guava,java-team-github-bot@google.com,173,\bbot\b,name='Google Java Core Libraries' email='java-team-github-bot@google.com' | name='Google Java Core Libraries' email='java-team-github-bot@google.com' | name='Google Java Core Libraries' email='java-team-github-bot@google.com'
+guava,49699333+dependabot[bot]@users.noreply.github.com,136,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'

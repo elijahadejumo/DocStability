@@ -1,0 +1,5 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+airflow,49699333+dependabot[bot]@users.noreply.github.com,171,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+airflow,96178949+automationdev85@users.noreply.github.com,29,automation,name='AutomationDev85' email='96178949+AutomationDev85@users.noreply.github.com' | name='AutomationDev85' email='96178949+AutomationDev85@users.noreply.github.com' | name='AutomationDev85' email='96178949+AutomationDev85@users.noreply.github.com'
+airflow,alex-slynko@github.com,1,@github\.com$,name='Oleksandr Slynko' email='alex-slynko@github.com'
+airflow,kimyen@github.com,1,@github\.com$,name='Kimyen Ladia' email='kimyen@github.com'

@@ -1,0 +1,9 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+node,github-bot@iojs.org,752,\bbot\b,name='Node.js GitHub Bot' email='github-bot@iojs.org' | name='Node.js GitHub Bot' email='github-bot@iojs.org' | name='Node.js GitHub Bot' email='github-bot@iojs.org'
+node,49699333+dependabot[bot]@users.noreply.github.com,155,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+node,npm-cli+bot@github.com,50,@github\.com$;\bbot\b,name='npm CLI robot' email='npm-cli+bot@github.com' | name='npm CLI robot' email='npm-cli+bot@github.com' | name='npm CLI robot' email='npm-cli+bot@github.com'
+node,mylesborins@github.com,38,@github\.com$,name='Myles Borins' email='mylesborins@github.com' | name='Myles Borins' email='mylesborins@github.com' | name='Myles Borins' email='mylesborins@github.com'
+node,41898282+github-actions[bot]@users.noreply.github.com,17,\[bot\];\bbot\b;github-actions,name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com'
+node,18269663+nodejs-github-bot@users.noreply.github.com,2,\bbot\b,name='nodejs-github-bot' email='18269663+nodejs-github-bot@users.noreply.github.com' | name='nodejs-github-bot' email='18269663+nodejs-github-bot@users.noreply.github.com'
+node,npm cli robot,2,\bbot\b,name='npm-cli+bot@github.com' email='npm CLI robot' | name='npm-cli+bot@github.com' email='npm CLI robot'
+node,devm33@github.com,1,@github\.com$,name='Devraj Mehta' email='devm33@github.com'

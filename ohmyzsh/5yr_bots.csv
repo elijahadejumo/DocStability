@@ -1,0 +1,4 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+ohmyzsh,49699333+dependabot[bot]@users.noreply.github.com,22,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+ohmyzsh,54982679+ohmyzsh[bot]@users.noreply.github.com,17,\[bot\];\bbot\b,name='ohmyzsh[bot]' email='54982679+ohmyzsh[bot]@users.noreply.github.com' | name='ohmyzsh[bot]' email='54982679+ohmyzsh[bot]@users.noreply.github.com' | name='ohmyzsh[bot]' email='54982679+ohmyzsh[bot]@users.noreply.github.com'
+ohmyzsh,devm33@github.com,1,@github\.com$,name='Devraj Mehta' email='devm33@github.com'

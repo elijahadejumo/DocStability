@@ -1,0 +1,12 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+rust,miri@cron.bot,316,\bbot\b,name='The Miri Cronjob Bot' email='miri@cron.bot' | name='The Miri Cronjob Bot' email='miri@cron.bot' | name='The Miri Cronjob Bot' email='miri@cron.bot'
+rust,47979223+rustbot@users.noreply.github.com,67,rustbot,name='rustbot' email='47979223+rustbot@users.noreply.github.com' | name='rustbot' email='47979223+rustbot@users.noreply.github.com' | name='rustbot' email='47979223+rustbot@users.noreply.github.com'
+rust,41898282+github-actions[bot]@users.noreply.github.com,50,\[bot\];\bbot\b;github-actions,name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com'
+rust,cleancut@github.com,47,@github\.com$,name='Nathan Stocks' email='cleancut@github.com' | name='Nathan Stocks' email='cleancut@github.com' | name='Nathan Stocks' email='cleancut@github.com'
+rust,github-actions@github.com,37,@github\.com$;\bbot\b;actions@github\.com$;github-actions,name='The rustc-dev-guide Cronjob Bot' email='github-actions@github.com' | name='The rustc-dev-guide Cronjob Bot' email='github-actions@github.com' | name='github-actions' email='github-actions@github.com'
+rust,bors@rust-lang.org,32,\bbors\b,name='bors' email='bors@rust-lang.org' | name='bors' email='bors@rust-lang.org' | name='bors' email='bors@rust-lang.org'
+rust,49699333+dependabot[bot]@users.noreply.github.com,22,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+rust,aibaars@github.com,9,@github\.com$,name='Arthur Baars' email='aibaars@github.com' | name='Arthur Baars' email='aibaars@github.com' | name='Arthur Baars' email='aibaars@github.com'
+rust,26634292+bors[bot]@users.noreply.github.com,3,\[bot\];\bbors\b;\bbot\b,name='bors[bot]' email='26634292+bors[bot]@users.noreply.github.com' | name='bors[bot]' email='26634292+bors[bot]@users.noreply.github.com' | name='bors[bot]' email='26634292+bors[bot]@users.noreply.github.com'
+rust,anforowicz@github.com,1,@github\.com$,name='Lukasz Anforowicz' email='anforowicz@github.com'
+rust,jakhh8@github.com,1,@github\.com$,name='jakhh8' email='jakhh8@github.com'

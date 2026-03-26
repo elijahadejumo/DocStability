@@ -1,0 +1,5 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+protobuf,protobuf-github-bot@google.com,2708,\bbot\b,name='Protobuf Team Bot' email='protobuf-github-bot@google.com' | name='Protobuf Team Bot' email='protobuf-github-bot@google.com' | name='Protobuf Team Bot' email='protobuf-github-bot@google.com'
+protobuf,protobuf-team-bot@google.com,1353,\bbot\b,name='Protobuf Team Bot' email='protobuf-team-bot@google.com' | name='Protobuf Team Bot' email='protobuf-team-bot@google.com' | name='Protobuf Team Bot' email='protobuf-team-bot@google.com'
+protobuf,49699333+dependabot[bot]@users.noreply.github.com,9,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+protobuf,homuler@users.noreply.github.com,1,homu,name='Junrou Nishida' email='homuler@users.noreply.github.com'

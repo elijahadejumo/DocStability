@@ -1,0 +1,6 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+react-native,facebook-github-bot@users.noreply.github.com,9,\bbot\b,name='Facebook Community Bot' email='facebook-github-bot@users.noreply.github.com' | name='Facebook Community Bot' email='facebook-github-bot@users.noreply.github.com' | name='Facebook Community Bot' email='facebook-github-bot@users.noreply.github.com'
+react-native,codemodservice bot,6,\bbot\b,name='CodemodService Bot' email='' | name='CodemodService Bot' email='' | name='CodemodService Bot' email=''
+react-native,bot@reactnative.dev,5,\bbot\b,name='React Native Bot' email='bot@reactnative.dev' | name='React Native Bot' email='bot@reactnative.dev' | name='React Native Bot' email='bot@reactnative.dev'
+react-native,robandpdx@github.com,3,@github\.com$,name='Rob Anderson' email='robandpdx@github.com' | name='Rob Anderson' email='robandpdx@github.com' | name='Rob Anderson' email='robandpdx@github.com'
+react-native,generatedunixname2141804232843700@fb.com,1,\bbot\b,name='FBLite Revert Bot' email='generatedunixname2141804232843700@fb.com'

@@ -1,0 +1,2 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+laravel,bot@styleci.io,2,\bbot\b,name='StyleCI Bot' email='bot@styleci.io' | name='StyleCI Bot' email='bot@styleci.io'

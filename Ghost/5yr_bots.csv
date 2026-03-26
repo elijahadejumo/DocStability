@@ -1,0 +1,4 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+Ghost,29139614+renovate[bot]@users.noreply.github.com,2307,\[bot\];\bbot\b;renovate,name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com' | name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com' | name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com'
+Ghost,bot@renovateapp.com,1647,\bbot\b;renovate,name='Renovate Bot' email='bot@renovateapp.com' | name='Renovate Bot' email='bot@renovateapp.com' | name='Renovate Bot' email='bot@renovateapp.com'
+Ghost,41898282+github-actions[bot]@users.noreply.github.com,402,\[bot\];\bbot\b;github-actions,name='Ghost CI' email='41898282+github-actions[bot]@users.noreply.github.com' | name='Ghost CI' email='41898282+github-actions[bot]@users.noreply.github.com' | name='Ghost CI' email='41898282+github-actions[bot]@users.noreply.github.com'

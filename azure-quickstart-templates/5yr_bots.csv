@@ -1,0 +1,10 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+azure-quickstart-templates,no-reply@dokku.com,39,\bbot\b,name='Dokku Bot' email='no-reply@dokku.com' | name='Dokku Bot' email='no-reply@dokku.com' | name='Dokku Bot' email='no-reply@dokku.com'
+azure-quickstart-templates,48254725+dokku-bot@users.noreply.github.com,28,\bbot\b,name='dokku-bot' email='48254725+dokku-bot@users.noreply.github.com' | name='dokku-bot' email='48254725+dokku-bot@users.noreply.github.com' | name='dokku-bot' email='48254725+dokku-bot@users.noreply.github.com'
+azure-quickstart-templates,49699333+dependabot[bot]@users.noreply.github.com,7,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+azure-quickstart-templates,77245923+microsoft-github-policy-service[bot]@users.noreply.github.com,3,\[bot\];\bbot\b,name='microsoft-github-policy-service[bot]' email='77245923+microsoft-github-policy-service[bot]@users.noreply.github.com' | name='microsoft-github-policy-service[bot]' email='77245923+microsoft-github-policy-service[bot]@users.noreply.github.com' | name='microsoft-github-policy-service[bot]' email='77245923+microsoft-github-policy-service[bot]@users.noreply.github.com'
+azure-quickstart-templates,anshii03@github.com,2,@github\.com$,name='anshii03' email='anshii03@github.com' | name='anshii03' email='anshii03@github.com'
+azure-quickstart-templates,kyanny@github.com,1,@github\.com$,name='Kensuke Nagae' email='kyanny@github.com'
+azure-quickstart-templates,48340428+msftbot[bot]@users.noreply.github.com,1,\[bot\];\bbot\b,name='msftbot[bot]' email='48340428+msftbot[bot]@users.noreply.github.com'
+azure-quickstart-templates,mosjef@github.com,1,@github\.com$,name='MosJef' email='mosjef@github.com'
+azure-quickstart-templates,bwestover@github.com,1,@github\.com$,name='Brett Westover' email='bwestover@github.com'

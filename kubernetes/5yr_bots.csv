@@ -1,0 +1,4 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+kubernetes,k8s-ci-robot@users.noreply.github.com,2,k8s-ci-robot,name='Kubernetes Prow Robot' email='k8s-ci-robot@users.noreply.github.com' | name='Kubernetes Prow Robot' email='k8s-ci-robot@users.noreply.github.com'
+kubernetes,20407524+k8s-ci-robot@users.noreply.github.com,1,k8s-ci-robot,name='Kubernetes Prow Robot' email='20407524+k8s-ci-robot@users.noreply.github.com'
+kubernetes,aaronbbrown@github.com,1,@github\.com$,name='Aaron Brown' email='aaronbbrown@github.com'
