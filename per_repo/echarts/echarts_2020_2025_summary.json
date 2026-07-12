@@ -2,15 +2,15 @@
   "repo": "echarts",
   "since": "2020-06-30",
   "until": "2025-06-29",
-  "include_merges": false,
   "dominant_threshold": 0.5,
-  "output_csv": "outputs/echarts/echarts_2020_2025_health_docs_intention_summary.csv",
-  "touch_shas_txt": null,
-  "audit_csv": null,
+  "bots_included_in_attr": false,
+  "merges_included": false,
+  "output_csv": "outputs/echarts/echarts_2020_2025_health_docs_ownership_summary.csv",
   "notes": [
-    "Commit enumeration uses COMMITTER time (%ct) and --name-only, matching doc_touch_rhythm.py.",
-    "health_docs detection uses the same include/exclude logic (exclude first, then match).",
-    "For intention classification, excluded paths are ignored (same worldview as rhythm).",
-    "partition_check_sum should equal health_docs_touch_commits."
+    "Commit counts (_commits columns) include ALL authors (bots + humans) to match rhythm script.",
+    "Contributor counts and concentration metrics (top-K, bus-X) exclude bots unless --include_bots.",
+    "Path handling is rhythm-identical: files are appended with strip() only, no lstrip('./').",
+    "Parsing uses %ct (committer time) + --name-only, matching rhythm.",
+    "Partition check uses all-inclusive counts: touch = only + dominant + non_dominant."
   ]
 }
