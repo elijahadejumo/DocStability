@@ -1,0 +1,200 @@
+repo,commit_sha,full_message,is_reactive,matched_patterns,manual_judgment
+material-ui,b8811a0fa59e7663b240183219db32f9a617e607,"[release] v5.14.13 (#39374)
+
+Signed-off-by: Albert Yu <albert@albertyu.co>
+Co-authored-by: Diego Andai <diego@mui.com>
+Co-authored-by: Siriwat K <siriwatkunaporn@gmail.com>
+Co-authored-by: Matt <github@nospam.33m.co>
+Co-authored-by: Alexandre Fauquette <45398769+alexfauquette@users.noreply.github.com>
+Co-authored-by: Brijesh Bittu <brijeshb42@gmail.com>
+Co-authored-by: Danilo Leal <67129314+danilo-leal@users.noreply.github.com>",True,['issue_number'],FP
+jenkins,43e4efbaf5d7dd321efb5a85304e9c7bb7330cef,Move `MAINTAINERS` to the root folder (#7528),True,['issue_number'],AMB
+node,248679ba31f708156c7bef69d2fc40d318c432d1,"meta: update AUTHORS
+
+PR-URL: https://github.com/nodejs/node/pull/45968
+Reviewed-By: Yagiz Nizipli <yagiz@nizipli.com>
+Reviewed-By: Moshe Atlow <moshe@atlow.co.il>
+Reviewed-By: Rich Trott <rtrott@gmail.com>",True,['github_pr_url'],FP
+grafana,9a00df1e8d382a5a2c3450bf3735e59d96be3cda,ReleaseNotes: Updated changelog and release notes for 8.4.4 (#46702),True,['issue_number'],FP
+go-ethereum,198fa956f4daed3602edd7695759483b1fac9b7a,"README.md: improve grammar (#25646)
+
+
+Co-authored-by: Felix Lange <fjl@twurst.com>",True,['issue_number'],AMB
+zxing,dfb06fa33b17a9e68321be151c22846c7b78048f,add rust port (#1588),True,['issue_number'],AMB
+java-design-patterns,14de6001ae5b104d96612f3d325260c3b9e6b2ad,"docs: add drakulavich as a contributor for code (#2198)
+
+* docs: update README.md [skip ci]
+
+* docs: update .all-contributorsrc [skip ci]
+
+Co-authored-by: allcontributors[bot] <46447321+allcontributors[bot]@users.noreply.github.com>",True,['issue_number'],FP
+rust,290a01e448e9e17710e03fc28c73de19f5889e5a,"Initial impl of `unnecessary_first_then_check`
+
+Fixes #11212",True,"['fixes_issue', 'issue_number']",TP
+node,6edd9a58513f9c392d760d39c526147c0b2e4544,"meta: update AUTHORS
+
+PR-URL: https://github.com/nodejs/node/pull/41763
+Reviewed-By: Rich Trott <rtrott@gmail.com>
+Reviewed-By: Mestery <mestery@protonmail.com>",True,['github_pr_url'],FP
+etcd,62907bc842fac83fc65eab23ec1896e3db90597d,"Update issues links in CONTRIBUTING.md
+
+etcd-io/etcd#16424 Find issues links in CONTRIBUTING.md should search for all repositories under etcd-io organization
+
+Signed-off-by: Xuan <nguyenxndaidev@gmail.com>",True,['issue_number'],TP
+react-router,3738d58eeb33d6fcb286d7da9ad38d3c7bccad0c,"Respect trailing slash when basename is used (#8861)
+
+* #8312 and also #6226
+
+* cla sign
+
+* fix: properly handle trailing slashes in Navigate and Link
+
+* fix: handle useSearchParams use case with undefined to.pathname
+
+Co-authored-by: Leszek Kobus <l.kobus@infinity-group.pl>
+Co-authored-by: Matt Brophy <matt@brophy.org>",True,['issue_number'],TP
+grpc,0b2609a61d50f2dbba4604978ef9243543a2675a,"Update minimum MSVC version to 2019 (#32614)
+
+To be aligned with By https://github.com/google/oss-policies-info/pull/8",True,"['issue_number', 'github_pr_url']",AMB
+angular,42ce3ac0080bc2b93243f161db4d1a99adb5610c,release: cut the v13.2.0-next.2 release (#44701),True,['issue_number'],FP
+angular,c81d5bfb9a6752c520405ec74fd8e29da8cb0475,docs: release notes for the v11.0.6 release (#40329),True,['issue_number'],FP
+jekyll,9f8ac4eb7afc8e5cc47deced4cbe2c56df9d4266,Update history to reflect merge of #8430 [ci skip],True,['issue_number'],AMB
+ohmyzsh,057f3ec67e65661d3c01b757ec5cad0a3718453e,"chore: replace all instances of twitter with X
+
+Closes #12536",True,"['closes_issue', 'issue_number']",TP
+node,f5c508c80550a9c9791582fd27e1fbb38ce279eb,"2020-11-10, Version 15.2.0 (Current)
+
+Notable changes:
+
+* events:
+  * getEventListeners static (Benjamin Gruenbaum) (https://github.com/nodejs/node/pull/35991)
+* fs:
+  * support abortsignal in writeFile (Benjamin Gruenbaum) (https://github.com/nodejs/node/pull/35993)
+  * add support for AbortSignal in readFile (Benjamin Gruenbaum) (https://github.com/nodejs/node/pull/35911)
+* stream:
+  * fix thrown object reference (Gil Pedersen) (https://github.com/nodejs/node/pull/36065)
+
+PR URL: https://github.com/nodejs/node/pull/36055",True,['github_pr_url'],FP
+jekyll,310459370ad8bb9c0b574735dcca4868a5f05803,Update history to reflect merge of #8993 [ci skip],True,['issue_number'],AMB
+grpc,1a264246038e1f979c496e726614c7b1feb000a7,Passing repo manager to markdroth (#25589),True,['issue_number'],AMB
+airflow,768865e10c811bc544590ec268f9f5c334da89b5,Apache Airflow `2.4.0` has been released (#26477),True,['issue_number'],FP
+react-router,8e67a529f1f974d34a9ccf39e6188305c68c397e,"Fix typos (#12957)
+
+* Fix typos
+
+""setup"" is a noun, ""set up"" is a verb. Similarly, ""checkout"" is a noun, ""check out"" is a verb.
+
+* Update contributors.yml",True,['issue_number'],AMB
+node,2c4a332a9fc2cdb586b5a56e1b09f6cfd65a25e1,"2023-10-24, Version 20.9.0 'Iron' (LTS)
+
+Notable changes:
+
+This release marks the transition of Node.js 20.x into Long Term Support (LTS)
+with the codename 'Iron'. The 20.x release line now moves into ""Active LTS""
+and will remain so until October 2024. After that time, it will move into
+""Maintenance"" until end of life in April 2026.
+
+PR-URL: https://github.com/nodejs/node/pull/50298",True,['github_pr_url'],FP
+jekyll,c7ccec20c42eb0dcfeb44a9d29d8f8ce7ae00323,Update history to reflect merge of #8560 [ci skip],True,['issue_number'],AMB
+material-ui,e9bd1830dc4feb4ee1eacbe02d9513ab5618cceb,"[docs][material-ui] Revise and split up ""Styled engine"" doc (#37774)
+
+Signed-off-by: Sam Sycamore <71297412+samuelsycamore@users.noreply.github.com>
+Co-authored-by: Olivier Tassinari <olivier.tassinari@gmail.com>
+Co-authored-by: Brijesh Bittu <brijeshb42@gmail.com>",True,['issue_number'],AMB
+spark,6ab29b37cf1270b139bf93b821e7a6c2f6e27c6f,"[SPARK-32179][SPARK-32188][PYTHON][DOCS] Replace and redesign the documentation base
+
+### What changes were proposed in this pull request?
+
+This PR proposes to redesign the PySpark documentation.
+
+I made a demo site to make it easier to review: https://hyukjin-spark.readthedocs.io/en/stable/reference/index.html.
+
+Here is the initial draft for the final PySpark docs shape: https://hyukjin-spark.readthedocs.io/en/latest/index.html.
+
+In more details, this PR proposes:
+1. Use [pydata_sphinx_theme](https://github.com/pandas-dev/pydata-sphinx-theme) theme - [pandas](https://pandas.pydata.org/docs/) and [Koalas](https://koalas.readthedocs.io/en/latest/) use this theme. The CSS overwrite is ported from Koalas. The colours in the CSS were actually chosen by designers to use in Spark.
+2. Use the Sphinx option to separate `source` and `build` directories as the documentation pages will likely grow.
+3. Port current API documentation into the new style. It mimics Koalas and pandas to use the theme most effectively.
+
+    One disadvantage of this approach is that you should list up APIs or classes; however, I think this isn't a big issue in PySpark since we're being conservative on adding APIs. I also intentionally listed classes only instead of functions in ML and MLlib to make it relatively easier to manage.
+
+### Why are the changes needed?
+
+Often I hear the complaints, from the users, that current PySpark documentation is pretty messy to read - https://spark.apache.org/docs/latest/api/python/index.html compared other projects such as [pandas](https://pandas.pydata.org/docs/) and [Koalas](https://koalas.readthedocs.io/en/latest/).
+
+It would be nicer if we can make it more organised instead of just listing all classes, methods and attributes to make it easier to navigate.
+
+Also, the documentation has been there from almost the very first version of PySpark. Maybe it's time to update it.
+
+### Does this PR introduce _any_ user-facing change?
+
+Yes, PySpark API documentation will be redesigned.
+
+### How was this patch tested?
+
+Manually tested, and the demo site was made to show.
+
+Closes #29188 from HyukjinKwon/SPARK-32179.
+
+Authored-by: HyukjinKwon <gurwls223@apache.org>
+Signed-off-by: HyukjinKwon <gurwls223@apache.org>",True,"['closes_issue', 'issue_number']",AMB
+angular,834962da2dcfee0b6c4590d3998ee4f45c321667,"docs: fix typos in the v11.0.0 release info in `CHANGELOG.md` (#39704)
+
+This commit includes several minor fixes in the v11.0.0 release info in
+`CHANGELOG.md`, such as:
+- Fixing typos/punctuation.
+- Making capitalization consistent.
+- Wrapping code in backticks (for better readability).
+
+PR Close #39704",True,"['closes_issue', 'issue_number']",TP
+flutter,6b6ee4b45aa80ddd28717b2f7a01d841d18221dd,"Add Valentin Vignal to AUTHORS (#147314)
+
+This PR adds my name to AUTHORS.
+
+Reference: [author:ValentinVignal](https://github.com/flutter/flutter/issues?q=author%3AValentinVignal)",True,['issue_number'],FP
+angular,e3f4360ebf48baf0d9cc60b46f7f9b5162b44ac4,"release: cut the v13.2.0-next.0 release (#44421)
+
+PR Close #44421",True,"['closes_issue', 'issue_number']",FP
+jenkins,2b9d4d62a60366318a6bb87edc8156bcf445557b,Require a changelog label (#10273),True,['issue_number'],AMB
+bootstrap,f2c504397e5d5c59c088946cc26da370853673a9,Bump copyright year to 2021 (#32713),True,['issue_number'],FP
+material-ui,954a8790aaa8865e058d885675139e6f678be2a5,[CONTRIBUTING] Document using codesandbox-ci (#23800),True,['issue_number'],AMB
+angular,e3d72646e028d52d888971ba8e59abac4384e6d9,docs: release notes for the v13.0.0-rc.1 release (#43912),True,['issue_number'],FP
+airflow,34c06d7c30e04c239742e36d4d7f3f2e820acb1d,"Separates out user documentation for production images. (#10998)
+
+We have now much better user-facing documentation.
+
+Only the parts interesting for users of the image are
+separated out to the ""docs"" of Airflow.
+The README and IMAGES.rst contains links to those
+docs and internal details of the images respectively.
+
+Fixes #10997.",True,"['fixes_issue', 'issue_number']",AMB
+grafana,7d9617e07c7395e487b66d19d06965d799788e26,"Changelog: Updated changelog for 10.1.5 (#76441)
+
+Co-authored-by: grafanabot <bot@grafana.com>",True,['issue_number'],FP
+jekyll,956701f96cb173ff54a65c4860b8252325548b33,Update history to reflect merge of #8900 [ci skip],True,['issue_number'],AMB
+ant-design,c231e139cdfd83842e47d48831fc8f7efcb276d1,docs: 4.22.1 changelog (#36732),True,['issue_number'],FP
+grpc,00ce40373b0e077fa4eeb8b15153c331e9ab48fa,"Change repo mgr to @nicolasnoble (#25648)
+
+I won't merge until next Monday",True,['issue_number'],AMB
+minimal-mistakes,e21035e62d32ddc1dfff076f7f45b19c1f29f7ae,"Fix typo
+
+Close #2678",True,"['closes_issue', 'issue_number', 'fix_with_error_term']",TP
+ant-design,fd002d733326852fa5d9bf137871d1bc95ed008a,"docs: changelog 5.13.1 (#46973)
+
+* docs: changelog 5.13.1
+
+* Update CHANGELOG.zh-CN.md
+
+Co-authored-by: afc163 <afc163@gmail.com>
+Signed-off-by: MadCcc <1075746765@qq.com>
+
+* Update CHANGELOG.en-US.md
+
+Signed-off-by: MadCcc <1075746765@qq.com>
+
+---------
+
+Signed-off-by: MadCcc <1075746765@qq.com>
+Co-authored-by: afc163 <afc163@gmail.com>",True,['issue_number'],FP
+material-ui,184dfb6e6963a777424af2a830f4da2aabaa4a90,[docs] Fix typo in CONTRIBUTING.md (#41670),True,"['issue_number', 'fix_with_error_term']",TP

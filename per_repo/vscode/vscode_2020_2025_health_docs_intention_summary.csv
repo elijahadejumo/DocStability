@@ -1,0 +1,2 @@
+repo,since,until,include_merges,dominant_threshold,total_commits_in_range,health_docs_touch_commits,health_docs_only_commits,health_docs_dominant_mixed_commits,health_docs_mixed_non_dominant_commits,health_docs_only_rate,health_docs_dominant_mixed_rate,health_docs_mixed_non_dominant_rate,partition_check_sum
+vscode,2020-06-30,2025-06-29,no,0.500,59032,34,28,3,3,0.823529,0.088235,0.088235,34

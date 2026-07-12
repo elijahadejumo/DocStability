@@ -1,0 +1,12 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+vscode,49699333+dependabot[bot]@users.noreply.github.com,142,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+vscode,198982749+copilot@users.noreply.github.com,31,\[bot\];\bbot\b,name='copilot-swe-agent[bot]' email='198982749+Copilot@users.noreply.github.com' | name='copilot-swe-agent[bot]' email='198982749+Copilot@users.noreply.github.com' | name='copilot-swe-agent[bot]' email='198982749+Copilot@users.noreply.github.com'
+vscode,daviddossett@github.com,5,@github\.com$,name='David Dossett' email='daviddossett@github.com' | name='David Dossett' email='daviddossett@github.com' | name='David Dossett' email='daviddossett@github.com'
+vscode,josh@github.com,4,@github\.com$,name='Josh Abernathy' email='josh@github.com' | name='Josh Abernathy' email='josh@github.com' | name='Josh Abernathy' email='josh@github.com'
+vscode,77245923+microsoft-github-policy-service[bot]@users.noreply.github.com,2,\[bot\];\bbot\b,name='microsoft-github-policy-service[bot]' email='77245923+microsoft-github-policy-service[bot]@users.noreply.github.com' | name='microsoft-github-policy-service[bot]' email='77245923+microsoft-github-policy-service[bot]@users.noreply.github.com'
+vscode,devm33@github.com,2,@github\.com$,name='Devraj Mehta' email='devm33@github.com' | name='Devraj Mehta' email='devm33@github.com'
+vscode,hbons@github.com,1,@github\.com$,name='Hylke Bons' email='hbons@github.com'
+vscode,greggroth@github.com,1,@github\.com$,name='Greggory Rothmeier' email='greggroth@github.com'
+vscode,102100353+inclusive-coding-bot@users.noreply.github.com,1,\bbot\b,name='Inclusive Coding Bot' email='102100353+inclusive-coding-bot@users.noreply.github.com'
+vscode,lee@github.com,1,@github\.com$,name='Lee Reilly' email='lee@github.com'
+vscode,erik-krogh@github.com,1,@github\.com$,name='Erik Krogh Kristensen' email='erik-krogh@github.com'
