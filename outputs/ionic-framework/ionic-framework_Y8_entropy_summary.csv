@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+ionic-framework,2023-05-30,2024-05-29,13,no,800,93,13,1.000000,0.959913,0.150538,0.376344,0.612903,0.231596

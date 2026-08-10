@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+shadowsocks-windows,2016-05-30,2026-05-29,121,no,630,38,24,0.198347,0.633913,0.105263,0.289474,0.447368,0.854284

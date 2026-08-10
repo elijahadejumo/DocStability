@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+protobuf,month,121,78,0.6446280991735537,1.1169863034987746,1.7327608041455351,0.0,0.371900826446281,unstable

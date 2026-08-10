@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+azure-quickstart-templates,month,121,57,0.47107438016528924,1.844245013392062,3.9149762564989388,0.0,0.18181818181818182,unstable

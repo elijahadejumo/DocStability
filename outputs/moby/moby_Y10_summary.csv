@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+moby,2025-05-30,2026-05-29,2543,98,1,2445,106,0.9086584095381409,0.7173824130879346,0.8094069529652351,0.9112474437627812

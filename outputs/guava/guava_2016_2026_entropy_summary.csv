@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+guava,2016-05-30,2026-05-29,121,no,3913,116,62,0.512397,0.823593,0.060345,0.146552,0.250000,0.646908

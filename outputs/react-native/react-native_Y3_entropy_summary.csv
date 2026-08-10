@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+react-native,2018-05-30,2019-05-29,13,no,3280,31,11,0.846154,0.847323,0.225806,0.548387,0.806452,0.466501

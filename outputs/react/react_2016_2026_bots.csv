@@ -1,0 +1,5 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+react,49699333+dependabot[bot]@users.noreply.github.com,95,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+react,facebook-github-bot@users.noreply.github.com,2,\bbot\b,name='Facebook Community Bot' email='facebook-github-bot@users.noreply.github.com' | name='Facebook Community Bot' email='facebook-github-bot@users.noreply.github.com'
+react,robandpdx@github.com,2,@github\.com$,name='Rob Anderson' email='robandpdx@github.com' | name='Rob Anderson' email='robandpdx@github.com'
+react,dependabot[bot]@users.noreply.github.com,1,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='dependabot[bot]@users.noreply.github.com'

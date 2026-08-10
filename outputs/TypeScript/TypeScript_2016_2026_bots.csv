@@ -1,0 +1,7 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+TypeScript,typescriptbot@microsoft.com,793,\bbot\b,name='TypeScript Bot' email='typescriptbot@microsoft.com' | name='TypeScript Bot' email='typescriptbot@microsoft.com' | name='TypeScript Bot' email='typescriptbot@microsoft.com'
+TypeScript,ts_bot@rcavanaugh.com,208,\bbot\b,name='TypeScript Bot' email='ts_bot@rcavanaugh.com' | name='TypeScript Bot' email='ts_bot@rcavanaugh.com' | name='TypeScript Bot' email='ts_bot@rcavanaugh.com'
+TypeScript,49699333+dependabot[bot]@users.noreply.github.com,69,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+TypeScript,typescript@microsoft.com,24,\bbot\b,name='typescript-bot' email='typescript@microsoft.com' | name='typescript-bot' email='typescript@microsoft.com' | name='typescript-bot' email='typescript@microsoft.com'
+TypeScript,tjenkinson@users.noreply.github.com,1,jenkins,name='Tom Jenkinson' email='tjenkinson@users.noreply.github.com'
+TypeScript,ethomson@github.com,1,@github\.com$,name='Edward Thomson' email='ethomson@github.com'

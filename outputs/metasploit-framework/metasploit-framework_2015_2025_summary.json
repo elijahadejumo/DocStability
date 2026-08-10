@@ -1,0 +1,26 @@
+{
+  "repo": "metasploit-framework",
+  "since": "2015-06-30",
+  "until": "2025-06-29",
+  "include_merges": false,
+  "months": 121,
+  "total_commits_in_range": 33294,
+  "health_file_commits": 115,
+  "active_months": 49,
+  "active_month_rate": 0.4049586776859504,
+  "entropy_norm": 0.764876712102023,
+  "top1_month_share": 0.0782608695652174,
+  "top3_month_share": 0.19130434782608696,
+  "top6_month_share": 0.3130434782608696,
+  "gini_month_concentration": 0.7400646784045994,
+  "outputs": {
+    "monthly_distribution_csv": "outputs/metasploit-framework/metasploit-framework_2015_2025_monthly_distribution.csv",
+    "entropy_summary_csv": "outputs/metasploit-framework/metasploit-framework_2015_2025_entropy_summary.csv",
+    "sha_list": null
+  },
+  "notes": [
+    "Aligned with doc_touch_rhythm.py: git log --name-only, same include/exclude patterns.",
+    "entropy_norm is normalized Shannon entropy over monthly health-file commit distribution (0..1).",
+    "Lower entropy => activity concentrated into fewer months; higher entropy => spread across months."
+  ]
+}

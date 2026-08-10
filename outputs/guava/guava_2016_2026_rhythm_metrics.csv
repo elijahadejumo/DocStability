@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+guava,month,121,116,0.9586776859504132,1.2935525644188568,1.3493091404713937,0.0,0.512396694214876,unstable

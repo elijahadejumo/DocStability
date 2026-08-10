@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+dubbo,2022-05-30,2023-05-29,1160,219,1,941,144,0.7547895265084426,0.485653560042508,0.5409139213602551,0.6397449521785334

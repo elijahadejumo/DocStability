@@ -1,0 +1,7 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+jekyll,ben.balter@github.com,22,@github\.com$,name='Ben Balter' email='ben.balter@github.com' | name='Ben Balter' email='ben.balter@github.com' | name='Ben Balter' email='ben.balter@github.com'
+jekyll,49699333+dependabot[bot]@users.noreply.github.com,6,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+jekyll,mattr-@github.com,2,@github\.com$,name='Matt Rogers' email='mattr-@github.com' | name='Matt Rogers' email='mattr-@github.com'
+jekyll,pnsk@github.com,1,@github\.com$,name='Junko Suzuki' email='pnsk@github.com'
+jekyll,ethomson@github.com,1,@github\.com$,name='Edward Thomson' email='ethomson@github.com'
+jekyll,pmarsceill@github.com,1,@github\.com$,name='Patrick Marsceill' email='pmarsceill@github.com'

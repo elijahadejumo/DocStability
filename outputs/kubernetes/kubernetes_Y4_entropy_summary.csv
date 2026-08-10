@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+kubernetes,2019-05-30,2020-05-29,13,no,7291,16,9,0.692308,0.785215,0.250000,0.625000,0.812500,0.519231

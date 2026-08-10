@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+WordPress,month,121,55,0.45454545454545453,0.7302967433402214,1.6066528353484872,0.0,0.34710743801652894,unstable

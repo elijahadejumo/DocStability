@@ -1,0 +1,5 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+netty,netty-project-bot@users.noreply.github.com,409,\bbot\b,name='Netty Project Bot' email='netty-project-bot@users.noreply.github.com' | name='Netty Project Bot' email='netty-project-bot@users.noreply.github.com' | name='Netty Project Bot' email='netty-project-bot@users.noreply.github.com'
+netty,49699333+dependabot[bot]@users.noreply.github.com,23,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+netty,78738768+netty-project-bot@users.noreply.github.com,8,\bbot\b,name='Netty Project Bot' email='78738768+netty-project-bot@users.noreply.github.com' | name='Netty Project Bot' email='78738768+netty-project-bot@users.noreply.github.com' | name='Netty Project Bot' email='78738768+netty-project-bot@users.noreply.github.com'
+netty,kevin@inductiveautomation.com,1,automation,name='Kevin Herron' email='kevin@inductiveautomation.com'

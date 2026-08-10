@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+WordPress,2016-05-30,2026-05-29,18261,0,0,18261,90,0.771003778544439,0.4498658342916598,0.5421389847215377,0.668145227534089

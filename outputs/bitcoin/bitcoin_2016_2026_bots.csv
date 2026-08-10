@@ -1,0 +1,2 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+bitcoin,ka7@github.com,1,@github\.com$,name='klemens' email='ka7@github.com'

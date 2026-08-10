@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+TypeScript,2016-05-30,2017-05-29,4157,0,0,4157,141,0.8601538548155125,0.3865768583112822,0.5241760885253789,0.7341833052682223

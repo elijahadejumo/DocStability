@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+dotfiles,2016-05-30,2026-05-29,87,0,0,87,29,0.6246531906460562,0.6781609195402298,0.7241379310344828,0.7816091954022989

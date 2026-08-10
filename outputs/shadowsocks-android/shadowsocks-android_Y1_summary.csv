@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+shadowsocks-android,2016-05-30,2017-05-29,746,0,0,746,15,0.7987488829311886,0.9423592493297587,0.967828418230563,0.9919571045576407

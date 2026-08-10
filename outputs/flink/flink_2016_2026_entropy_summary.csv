@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+flink,2016-05-30,2026-05-29,121,no,29039,77,59,0.487603,0.835346,0.038961,0.103896,0.181818,0.598476

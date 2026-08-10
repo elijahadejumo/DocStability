@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+material-ui,2025-05-30,2026-05-29,1413,629,1,784,117,0.7647174254317113,0.35714285714285715,0.4987244897959184,0.7270408163265306

@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+node,2017-05-30,2018-05-29,4895,1,1,4894,907,0.7727415474881152,0.22558234572946465,0.3103800572129138,0.459950960359624

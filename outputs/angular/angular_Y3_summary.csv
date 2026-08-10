@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+angular,2018-05-30,2019-05-29,3916,3,1,3913,416,0.8409019982700661,0.25862509583439813,0.35369281880909786,0.5162279580884233

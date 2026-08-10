@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+grafana,2023-05-30,2024-05-29,8418,957,5,7461,511,0.76843788614035,0.08551132555957647,0.12706071572175312,0.21123173837287226

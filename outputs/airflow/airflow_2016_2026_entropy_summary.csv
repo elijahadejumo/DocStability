@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+airflow,2016-05-30,2026-05-29,121,no,35254,1199,121,1.000000,0.960558,0.022519,0.065888,0.123436,0.344929

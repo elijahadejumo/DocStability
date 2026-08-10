@@ -1,0 +1,26 @@
+{
+  "repo": "ant-design",
+  "since": "2016-05-30",
+  "until": "2026-05-29",
+  "analysis_type": "project_health_files",
+  "tracked_files": [
+    "README",
+    "CONTRIBUTING",
+    "CHANGELOG",
+    "SECURITY",
+    "CODE_OF_CONDUCT",
+    "LICENSE",
+    "GOVERNANCE",
+    "etc."
+  ],
+  "granularities": [
+    "month"
+  ],
+  "output_directory": "outputs/ant-design",
+  "total_health_file_commits": 1540,
+  "outputs": {
+    "metrics_csv": "outputs/ant-design/ant-design_2016_2026_rhythm_metrics.csv",
+    "timeseries_csv": null,
+    "file_details_csv": "outputs/ant-design/ant-design_2016_2026_file_details.csv"
+  }
+}

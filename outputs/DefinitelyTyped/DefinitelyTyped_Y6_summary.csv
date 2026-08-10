@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+DefinitelyTyped,2021-05-30,2022-05-29,4756,86,7,4670,2317,0.4685978971183109,0.12740899357601712,0.1753747323340471,0.22312633832976445

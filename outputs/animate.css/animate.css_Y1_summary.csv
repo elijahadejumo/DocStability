@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+animate.css,2016-05-30,2017-05-29,21,0,0,21,9,0.3386243386243386,0.5714285714285714,0.7619047619047619,1.0

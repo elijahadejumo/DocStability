@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+react-router,month,121,1065,8.801652892561984,10.363091426396167,1.1774028756750574,0.0,0.743801652892562,unstable

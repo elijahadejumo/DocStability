@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+ionic-framework,2018-05-30,2019-05-29,1413,0,0,1413,127,0.8465263498113691,0.5031847133757962,0.6482661004953999,0.8018400566171267

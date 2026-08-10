@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+reveal.js,2016-05-30,2026-05-29,1276,0,0,1276,161,0.8495687221324404,0.7844827586206896,0.8009404388714734,0.829153605015674

@@ -1,0 +1,13 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+core,49699333+dependabot[bot]@users.noreply.github.com,541,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+core,29139614+renovate[bot]@users.noreply.github.com,66,\[bot\];\bbot\b;renovate,name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com' | name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com' | name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com'
+core,daniel@open-homeautomation.com,29,automation,name='Open Home Automation' email='daniel@open-homeautomation.com' | name='Open Home Automation' email='daniel@open-homeautomation.com' | name='Open Home Automation' email='daniel@open-homeautomation.com'
+core,jesse@github.com,13,@github\.com$,name='Jesse Newland' email='jesse@github.com' | name='Jesse Newland' email='jesse@github.com' | name='Jesse Newland' email='jesse@github.com'
+core,nma83@github.com,13,@github\.com$,name='NMA' email='nma83@github.com' | name='NMA' email='nma83@github.com' | name='NMA' email='nma83@github.com'
+core,ahayworth@github.com,10,@github\.com$,name='Andrew Hayworth' email='ahayworth@github.com' | name='Andrew Hayworth' email='ahayworth@github.com' | name='Andrew Hayworth' email='ahayworth@github.com'
+core,github@bors-ltd.fr,3,\bbors\b,name='Hervé Cauwelier' email='github@bors-ltd.fr' | name='Hervé Cauwelier' email='github@bors-ltd.fr' | name='Hervé Cauwelier' email='github@bors-ltd.fr'
+core,joelhawksley@github.com,2,@github\.com$,name='Joel Hawksley' email='joelhawksley@github.com' | name='Joel Hawksley' email='joelhawksley@github.com'
+core,andersfugmann@github.com,2,@github\.com$,name='Anders Peter Fugmann' email='andersfugmann@github.com' | name='Anders Peter Fugmann' email='andersfugmann@github.com'
+core,timrogers@github.com,1,@github\.com$,name='Tim Rogers' email='timrogers@github.com'
+core,deniseyu@github.com,1,@github\.com$,name='Denise Yu' email='deniseyu@github.com'
+core,dan@nimblea.pe,1,jenkins,name='Dan Jenkins' email='dan@nimblea.pe'

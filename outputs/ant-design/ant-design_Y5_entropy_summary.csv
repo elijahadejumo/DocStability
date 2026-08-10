@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+ant-design,2020-05-30,2021-05-29,13,no,2033,139,13,1.000000,0.905643,0.287770,0.482014,0.690647,0.345324

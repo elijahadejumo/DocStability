@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+spring-boot,2018-05-30,2019-05-29,3085,0,0,3085,203,0.9089364555971609,0.6978930307941653,0.8087520259319287,0.8982171799027553

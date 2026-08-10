@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+todomvc,2023-05-30,2024-05-29,35,0,0,35,3,0.5904761904761906,1.0,1.0,1.0

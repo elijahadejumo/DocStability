@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+pandas,2023-05-30,2024-05-29,2585,27,3,2558,355,0.8123181622966886,0.3874120406567631,0.4792806880375293,0.6391712275215011

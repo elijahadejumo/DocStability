@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+spring-boot,2017-05-30,2018-05-29,13,no,3471,31,11,0.846154,0.887476,0.193548,0.451613,0.741935,0.382134

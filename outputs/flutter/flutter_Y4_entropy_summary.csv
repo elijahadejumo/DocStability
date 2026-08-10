@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+flutter,2019-05-30,2020-05-29,13,no,9309,33,10,0.769231,0.836922,0.242424,0.484848,0.787879,0.456876

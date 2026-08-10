@@ -1,0 +1,14 @@
+repo,month,health_file_commit_count
+ansible,2018-05,0
+ansible,2018-06,0
+ansible,2018-07,1
+ansible,2018-08,1
+ansible,2018-09,1
+ansible,2018-10,1
+ansible,2018-11,3
+ansible,2018-12,2
+ansible,2019-01,0
+ansible,2019-02,1
+ansible,2019-03,0
+ansible,2019-04,1
+ansible,2019-05,2

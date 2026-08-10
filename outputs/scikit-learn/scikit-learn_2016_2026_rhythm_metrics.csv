@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+scikit-learn,month,121,204,1.6859504132231404,1.4777971097280782,0.8765365209661641,0.0,0.7768595041322314,unstable

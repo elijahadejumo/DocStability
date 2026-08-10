@@ -1,0 +1,2 @@
+repo,since,until,include_merges,dominant_threshold,total_commits_in_range,health_docs_touch_commits,health_docs_only_commits,health_docs_dominant_mixed_commits,health_docs_mixed_non_dominant_commits,health_docs_only_rate,health_docs_dominant_mixed_rate,health_docs_mixed_non_dominant_rate,partition_check_sum
+AspNetCore.Docs,2016-05-30,2017-05-29,no,0.500,1508,29,26,2,1,0.896552,0.068966,0.034483,29

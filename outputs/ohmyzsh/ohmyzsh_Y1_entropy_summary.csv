@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+ohmyzsh,2016-05-30,2017-05-29,13,no,325,22,7,0.538462,0.580998,0.500000,0.818182,0.954545,0.727273

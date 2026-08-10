@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+flask,2015-06-30,2025-06-29,121,no,1920,94,45,0.371901,0.735144,0.127660,0.234043,0.361702,0.768419

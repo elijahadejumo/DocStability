@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+elasticsearch,2019-05-30,2020-05-29,6398,1,1,6397,364,0.8328951414382084,0.1758636861028607,0.24511489760825386,0.3853368766609348

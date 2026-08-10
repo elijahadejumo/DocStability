@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+Marlin,2016-05-30,2026-05-29,121,no,15484,85,55,0.454545,0.808555,0.070588,0.141176,0.247059,0.659212

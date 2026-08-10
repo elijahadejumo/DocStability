@@ -1,0 +1,9 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+jenkins,29139614+renovate[bot]@users.noreply.github.com,1797,\[bot\];\bbot\b;renovate,name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com' | name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com' | name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com'
+jenkins,49699333+dependabot[bot]@users.noreply.github.com,927,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+jenkins,66998184+jenkins-release-bot@users.noreply.github.com,650,\bbot\b;jenkins;release-bot,name='Jenkins Release Bot' email='66998184+jenkins-release-bot@users.noreply.github.com' | name='Jenkins Release Bot' email='66998184+jenkins-release-bot@users.noreply.github.com' | name='Jenkins Release Bot' email='66998184+jenkins-release-bot@users.noreply.github.com'
+jenkins,41898282+github-actions[bot]@users.noreply.github.com,25,\[bot\];\bbot\b;github-actions,name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com'
+jenkins,release@jenkins.io,22,\bbot\b;jenkins;release-bot,name='release-bot' email='release@jenkins.io' | name='release-bot' email='release@jenkins.io' | name='release-bot' email='release@jenkins.io'
+jenkins,jenkins-jclouds@fritz-elfert.de,1,jenkins,name='Fritz Elfert' email='jenkins-jclouds@fritz-elfert.de'
+jenkins,rick@jenkins-zh.cn,1,jenkins,name='Zhao Xiaojie' email='rick@jenkins-zh.cn'
+jenkins,daniel-beck@github.com,1,@github\.com$,name='Daniel Beck' email='daniel-beck@github.com'

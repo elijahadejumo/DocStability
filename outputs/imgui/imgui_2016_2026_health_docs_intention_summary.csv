@@ -1,0 +1,2 @@
+repo,since,until,include_merges,dominant_threshold,total_commits_in_range,health_docs_touch_commits,health_docs_only_commits,health_docs_dominant_mixed_commits,health_docs_mixed_non_dominant_commits,health_docs_only_rate,health_docs_dominant_mixed_rate,health_docs_mixed_non_dominant_rate,partition_check_sum
+imgui,2016-05-30,2026-05-29,no,0.500,7278,292,275,16,1,0.941781,0.054795,0.003425,292

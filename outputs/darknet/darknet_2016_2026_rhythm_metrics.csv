@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+darknet,month,121,21,0.17355371900826447,0.6147856801413701,3.5423365379574183,0.0,0.11570247933884298,unstable

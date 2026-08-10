@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+FFmpeg,2019-05-30,2020-05-29,13,no,4051,98,13,1.000000,0.939854,0.153061,0.408163,0.683673,0.301413

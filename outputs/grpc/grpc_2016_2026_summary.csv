@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+grpc,2016-05-30,2026-05-29,30967,108,5,30859,1032,0.9192453811547445,0.27894617453579185,0.3745098674616805,0.5151171457273405

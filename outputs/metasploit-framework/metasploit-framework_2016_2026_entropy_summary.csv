@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+metasploit-framework,2016-05-30,2026-05-29,121,no,33141,111,51,0.421488,0.772333,0.081081,0.198198,0.315315,0.727571

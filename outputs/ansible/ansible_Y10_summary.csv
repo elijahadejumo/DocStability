@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+ansible,2025-05-30,2026-05-29,505,0,0,505,66,0.7633063306330634,0.44752475247524753,0.6039603960396039,0.8257425742574257

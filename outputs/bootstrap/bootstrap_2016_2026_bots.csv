@@ -1,0 +1,5 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+bootstrap,49699333+dependabot[bot]@users.noreply.github.com,833,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+bootstrap,27856297+dependabot-preview[bot]@users.noreply.github.com,221,\[bot\];\bbot\b;dependabot,name='dependabot-preview[bot]' email='27856297+dependabot-preview[bot]@users.noreply.github.com' | name='dependabot-preview[bot]' email='27856297+dependabot-preview[bot]@users.noreply.github.com' | name='dependabot-preview[bot]' email='27856297+dependabot-preview[bot]@users.noreply.github.com'
+bootstrap,otto@github.com,72,@github\.com$,name='Mark Otto' email='otto@github.com' | name='Mark Otto' email='otto@github.com' | name='Mark Otto' email='otto@github.com'
+bootstrap,jasonetco@github.com,2,@github\.com$,name='Jason Etcovitch' email='jasonetco@github.com' | name='Jason Etcovitch' email='jasonetco@github.com'

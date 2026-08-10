@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+electron,2016-05-30,2026-05-29,18046,3048,33,14998,1181,0.8887201330485048,0.3005067342312308,0.39505267368982533,0.5740098679823976

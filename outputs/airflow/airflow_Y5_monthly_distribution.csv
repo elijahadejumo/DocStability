@@ -1,0 +1,14 @@
+repo,month,health_file_commit_count
+airflow,2020-05,1
+airflow,2020-06,21
+airflow,2020-07,20
+airflow,2020-08,27
+airflow,2020-09,17
+airflow,2020-10,18
+airflow,2020-11,26
+airflow,2020-12,22
+airflow,2021-01,18
+airflow,2021-02,15
+airflow,2021-03,7
+airflow,2021-04,12
+airflow,2021-05,17

@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+guava,2024-05-30,2025-05-29,431,65,2,366,26,0.8589743589743588,0.8633879781420765,0.907103825136612,0.9562841530054644

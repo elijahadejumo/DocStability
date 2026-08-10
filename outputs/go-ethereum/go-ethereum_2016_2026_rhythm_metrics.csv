@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+go-ethereum,month,121,122,1.0082644628099173,1.228114189646027,1.21804767989483,0.0,0.5619834710743802,unstable

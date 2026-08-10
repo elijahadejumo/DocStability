@@ -1,0 +1,6 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+angular,bot@renovateapp.com,535,\bbot\b;renovate,name='Renovate Bot' email='bot@renovateapp.com' | name='Renovate Bot' email='bot@renovateapp.com' | name='Renovate Bot' email='bot@renovateapp.com'
+angular,29139614+renovate[bot]@users.noreply.github.com,105,\[bot\];\bbot\b;renovate,name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com' | name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com' | name='renovate[bot]' email='29139614+renovate[bot]@users.noreply.github.com'
+angular,56403804+angular-robot[bot]@users.noreply.github.com,7,\[bot\];\bbot\b,name='angular-robot[bot]' email='56403804+angular-robot[bot]@users.noreply.github.com' | name='angular-robot[bot]' email='56403804+angular-robot[bot]@users.noreply.github.com' | name='angular-robot[bot]' email='56403804+angular-robot[bot]@users.noreply.github.com'
+angular,49699333+dependabot[bot]@users.noreply.github.com,3,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+angular,ghost@github.com,1,@github\.com$,name='ghost' email='ghost@github.com'

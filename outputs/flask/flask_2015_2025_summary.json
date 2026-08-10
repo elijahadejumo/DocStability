@@ -1,0 +1,26 @@
+{
+  "repo": "flask",
+  "since": "2015-06-30",
+  "until": "2025-06-29",
+  "include_merges": false,
+  "months": 121,
+  "total_commits_in_range": 1920,
+  "health_file_commits": 94,
+  "active_months": 45,
+  "active_month_rate": 0.371900826446281,
+  "entropy_norm": 0.7351442595329669,
+  "top1_month_share": 0.1276595744680851,
+  "top3_month_share": 0.23404255319148937,
+  "top6_month_share": 0.3617021276595745,
+  "gini_month_concentration": 0.7684192016880604,
+  "outputs": {
+    "monthly_distribution_csv": "outputs/flask/flask_2015_2025_monthly_distribution.csv",
+    "entropy_summary_csv": "outputs/flask/flask_2015_2025_entropy_summary.csv",
+    "sha_list": null
+  },
+  "notes": [
+    "Aligned with doc_touch_rhythm.py: git log --name-only, same include/exclude patterns.",
+    "entropy_norm is normalized Shannon entropy over monthly health-file commit distribution (0..1).",
+    "Lower entropy => activity concentrated into fewer months; higher entropy => spread across months."
+  ]
+}

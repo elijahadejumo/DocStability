@@ -1,0 +1,2 @@
+repo,since,until,include_merges,dominant_threshold,total_commits_in_range,health_docs_touch_commits,health_docs_only_commits,health_docs_dominant_mixed_commits,health_docs_mixed_non_dominant_commits,health_docs_only_rate,health_docs_dominant_mixed_rate,health_docs_mixed_non_dominant_rate,partition_check_sum
+homebrew-cask,2016-05-30,2017-05-29,no,0.500,12044,57,54,3,0,0.947368,0.052632,0.000000,57

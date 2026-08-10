@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+react-native,2016-05-30,2026-05-29,34240,58,6,34182,3410,0.8514734907895996,0.09200748932186531,0.14016148850272073,0.2441050845474226

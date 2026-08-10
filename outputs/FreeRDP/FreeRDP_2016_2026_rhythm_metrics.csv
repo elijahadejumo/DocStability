@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+FreeRDP,month,121,88,0.7272727272727273,1.284523257866513,1.7662194795664552,0.0,0.35537190082644626,unstable

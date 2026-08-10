@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+protobuf,2016-05-30,2026-05-29,121,no,16526,78,45,0.371901,0.754659,0.076923,0.205128,0.333333,0.743166

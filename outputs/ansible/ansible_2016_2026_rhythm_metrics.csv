@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+ansible,month,121,504,4.1652892561983474,9.312489022309428,2.2357364517846046,0.0,0.4297520661157025,unstable

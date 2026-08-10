@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+kubernetes,2023-05-30,2024-05-29,4032,0,0,4032,506,0.7282334211682038,0.14583333333333334,0.20287698412698413,0.3053075396825397

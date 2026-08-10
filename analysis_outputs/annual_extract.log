@@ -1,0 +1,22 @@
+[50/1000] (29s elapsed) last: FFmpeg Y10
+[100/1000] (54s elapsed) last: go Y10
+[150/1000] (99s elapsed) last: WordPress Y10
+[200/1000] (186s elapsed) last: grpc Y10
+[250/1000] (212s elapsed) last: redis Y10
+[300/1000] (239s elapsed) last: imgui Y10
+[350/1000] (366s elapsed) last: jquery Y10
+[400/1000] (411s elapsed) last: grafana Y10
+[450/1000] (438s elapsed) last: ansible Y10
+[500/1000] (787s elapsed) last: nixpkgs Y10
+[550/1000] (809s elapsed) last: socket.io Y10
+[600/1000] (829s elapsed) last: kafka Y10
+[650/1000] (859s elapsed) last: etcd Y10
+[700/1000] (957s elapsed) last: symfony Y10
+[750/1000] (1015s elapsed) last: qmk_firmware Y10
+[800/1000] (1066s elapsed) last: vscode Y10
+[850/1000] (1081s elapsed) last: shadowsocks-windows Y10
+[900/1000] (1133s elapsed) last: zxing Y10
+[950/1000] (1175s elapsed) last: pandas Y10
+[1000/1000] (1201s elapsed) last: spring-boot Y10
+
+Done in 1201.2s. Total slice-runs=1000, failures=0

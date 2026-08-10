@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+openssl,2024-05-30,2025-05-29,2054,6,1,2048,240,0.8022908528645833,0.33642578125,0.451171875,0.62939453125

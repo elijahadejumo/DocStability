@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+laravel,2025-05-30,2026-05-29,13,no,125,35,12,0.923077,0.902239,0.200000,0.485714,0.714286,0.369231

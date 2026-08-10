@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+ohmyzsh,2022-05-30,2023-05-29,293,0,0,293,179,0.3794306633363205,0.3412969283276451,0.36177474402730375,0.3993174061433447

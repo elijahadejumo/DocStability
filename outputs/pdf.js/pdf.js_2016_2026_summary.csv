@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+pdf.js,2016-05-30,2026-05-29,7896,96,3,7800,270,0.9529335232668565,0.8896153846153846,0.916025641025641,0.945

@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+HanLP,2016-05-30,2017-05-29,136,0,0,136,10,0.8220588235294117,0.9411764705882353,0.9632352941176471,1.0

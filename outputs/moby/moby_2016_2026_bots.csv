@@ -1,0 +1,3 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+moby,bot@renovateapp.com,98,\bbot\b;renovate,name='Mend Renovate' email='bot@renovateapp.com' | name='Mend Renovate' email='bot@renovateapp.com' | name='Mend Renovate' email='bot@renovateapp.com'
+moby,pete.woods@circleci.com,1,circleci,name='Pete Woods' email='pete.woods@circleci.com'

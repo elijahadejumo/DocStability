@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+Rocket.Chat,2025-05-30,2026-05-29,1982,132,3,1850,90,0.7548348348348348,0.2664864864864865,0.3902702702702703,0.6135135135135135

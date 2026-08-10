@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+HanLP,month,121,120,0.9917355371900827,2.0062231006238025,2.0229416264623343,0.0,0.47107438016528924,unstable

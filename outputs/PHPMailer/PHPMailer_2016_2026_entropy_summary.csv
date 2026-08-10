@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+PHPMailer,2016-05-30,2026-05-29,121,no,1427,277,82,0.677686,0.862113,0.054152,0.137184,0.227437,0.595459

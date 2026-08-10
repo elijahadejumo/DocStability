@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+FFmpeg,month,121,974,8.049586776859504,4.786876573280712,0.5946735784055094,0.0,0.9917355371900827,unstable

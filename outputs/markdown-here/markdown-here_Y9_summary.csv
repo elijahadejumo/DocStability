@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+markdown-here,2024-05-30,2025-05-29,21,0,0,21,2,0.45238095238095233,1.0,1.0,1.0

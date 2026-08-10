@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+Ghost,2016-05-30,2026-05-29,40666,7619,7,33047,570,0.9434500782776682,0.30390050534087815,0.4394347444548673,0.6235059158168669

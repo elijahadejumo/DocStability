@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+zxing,2016-05-30,2026-05-29,654,108,1,546,89,0.8041321973906244,0.7197802197802198,0.7765567765567766,0.8186813186813187

@@ -1,0 +1,4 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+scikit-learn,tjpfdev@gmail.com,459,\bbot\b,name='scikit-learn-bot' email='tjpfdev@gmail.com' | name='scikit-learn-bot' email='tjpfdev@gmail.com' | name='scikit-learn-bot' email='tjpfdev@gmail.com'
+scikit-learn,49699333+dependabot[bot]@users.noreply.github.com,17,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+scikit-learn,102100353+inclusive-coding-bot@users.noreply.github.com,1,\bbot\b,name='Inclusive Coding Bot' email='102100353+inclusive-coding-bot@users.noreply.github.com'

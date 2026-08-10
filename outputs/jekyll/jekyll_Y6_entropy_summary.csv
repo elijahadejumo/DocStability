@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+jekyll,2021-05-30,2022-05-29,13,no,182,85,11,0.846154,0.850603,0.176471,0.470588,0.835294,0.448869

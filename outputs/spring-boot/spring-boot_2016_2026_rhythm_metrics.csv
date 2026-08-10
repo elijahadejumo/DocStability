@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+spring-boot,month,121,143,1.1818181818181819,1.559914527573012,1.319927677177164,0.0,0.5206611570247934,unstable

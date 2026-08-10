@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+azure-quickstart-templates,2016-05-30,2026-05-29,121,no,26071,57,22,0.181818,0.534483,0.315789,0.508772,0.649123,0.906771

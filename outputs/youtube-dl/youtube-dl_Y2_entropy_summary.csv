@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+youtube-dl,2017-05-30,2018-05-29,13,no,1233,205,13,1.000000,0.954147,0.126829,0.336585,0.619512,0.234146

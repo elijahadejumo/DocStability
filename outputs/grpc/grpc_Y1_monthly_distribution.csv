@@ -1,0 +1,14 @@
+repo,month,health_file_commit_count
+grpc,2016-05,0
+grpc,2016-06,2
+grpc,2016-07,0
+grpc,2016-08,1
+grpc,2016-09,0
+grpc,2016-10,1
+grpc,2016-11,0
+grpc,2016-12,0
+grpc,2017-01,1
+grpc,2017-02,0
+grpc,2017-03,2
+grpc,2017-04,3
+grpc,2017-05,2

@@ -1,0 +1,10 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+erpnext,developers@erpnext.com,475,\bbot\b,name='frappe-pr-bot' email='developers@erpnext.com' | name='frappe-pr-bot' email='developers@erpnext.com' | name='frappe-pr-bot' email='developers@erpnext.com'
+erpnext,37929162+mergify[bot]@users.noreply.github.com,129,\[bot\];\bbot\b;mergify,name='mergify[bot]' email='37929162+mergify[bot]@users.noreply.github.com' | name='mergify[bot]' email='37929162+mergify[bot]@users.noreply.github.com' | name='mergify[bot]' email='37929162+mergify[bot]@users.noreply.github.com'
+erpnext,frappe.pr.bot@gmail.com,110,\bbot\b,name='Frappe PR Bot' email='frappe.pr.bot@gmail.com' | name='Frappe PR Bot' email='frappe.pr.bot@gmail.com' | name='Frappe PR Bot' email='frappe.pr.bot@gmail.com'
+erpnext,developers@frappe.io,31,\bbot\b,name='Frappe PR Bot' email='developers@frappe.io' | name='Frappe PR Bot' email='developers@frappe.io' | name='Frappe PR Bot' email='developers@frappe.io'
+erpnext,49699333+dependabot[bot]@users.noreply.github.com,7,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+erpnext,frappe@frappe.io,3,\bbot\b,name='frappe-pr-bot' email='frappe@frappe.io' | name='frappe-pr-bot' email='frappe@frappe.io' | name='frappe-pr-bot' email='frappe@frappe.io'
+erpnext,27856297+dependabot-preview[bot]@users.noreply.github.com,2,\[bot\];\bbot\b;dependabot,name='dependabot-preview[bot]' email='27856297+dependabot-preview[bot]@users.noreply.github.com' | name='dependabot-preview[bot]' email='27856297+dependabot-preview[bot]@users.noreply.github.com'
+erpnext,snyk-bot@snyk.io,1,\bbot\b,name='snyk-bot' email='snyk-bot@snyk.io'
+erpnext,github+bot@snyk.io,1,\bbot\b,name='Snyk bot' email='github+bot@snyk.io'

@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+shadowsocks-windows,month,121,38,0.3140495867768595,0.7531385203626186,2.398151604312549,0.0,0.19834710743801653,unstable

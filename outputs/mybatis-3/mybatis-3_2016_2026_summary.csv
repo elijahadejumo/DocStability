@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+mybatis-3,2016-05-30,2026-05-29,2562,681,3,1881,223,0.836006989889454,0.69377990430622,0.7272727272727273,0.7687400318979266

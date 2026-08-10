@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+Chart.js,2017-05-30,2018-05-29,197,0,0,197,59,0.6449281596833865,0.5126903553299492,0.6294416243654822,0.751269035532995

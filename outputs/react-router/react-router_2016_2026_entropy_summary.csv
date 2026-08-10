@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+react-router,2016-05-30,2026-05-29,121,no,7492,1065,90,0.743802,0.858653,0.038498,0.112676,0.203756,0.611508

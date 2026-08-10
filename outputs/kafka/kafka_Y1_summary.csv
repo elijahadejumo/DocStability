@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+kafka,2016-05-30,2017-05-29,1229,0,0,1229,210,0.7285869270409546,0.26525630593978844,0.3824247355573637,0.5565500406834825

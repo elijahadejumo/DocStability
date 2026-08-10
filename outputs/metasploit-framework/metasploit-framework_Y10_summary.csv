@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+metasploit-framework,2025-05-30,2026-05-29,3383,431,1,2952,153,0.7504251022902386,0.2750677506775068,0.4054878048780488,0.5663956639566395

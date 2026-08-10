@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+ionic-framework,month,121,664,5.487603305785124,4.30525977241664,0.7845428199735143,0.0,0.9173553719008265,unstable

@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+erpnext,month,121,90,0.743801652892562,1.5839240597317932,2.1294979025283,0.0,0.33884297520661155,unstable

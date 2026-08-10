@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+moby,month,121,224,1.8512396694214877,2.482140061267002,1.3407988723808357,0.0,0.628099173553719,unstable

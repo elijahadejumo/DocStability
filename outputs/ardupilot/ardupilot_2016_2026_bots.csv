@@ -1,0 +1,5 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+ardupilot,49699333+dependabot[bot]@users.noreply.github.com,7,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+ardupilot,davehowie@github.com,2,@github\.com$,name='David Howie' email='DaveHowie@github.com' | name='David Howie' email='DaveHowie@github.com'
+ardupilot,nghianguyen.automation@gmail.com,2,automation,name='Nghia Nguyen' email='nghianguyen.automation@gmail.com' | name='Nghia Nguyen' email='nghianguyen.automation@gmail.com'
+ardupilot,ccamdqt9q5sfndgnjiw0on1iu7ahhg@bots.bitbucket.org,1,\bbots\b,name='rishabsingh3003' email='ccamdqt9q5sfndgnjiw0on1iu7ahhg@bots.bitbucket.org'

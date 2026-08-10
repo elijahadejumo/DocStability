@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+FreeRDP,2024-05-30,2025-05-29,1924,0,0,1924,60,0.9370928620928622,0.9371101871101871,0.9475051975051975,0.9620582120582121

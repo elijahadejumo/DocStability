@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+nixpkgs,2024-05-30,2025-05-29,13,no,107154,33,11,0.846154,0.859482,0.242424,0.484848,0.787879,0.438228

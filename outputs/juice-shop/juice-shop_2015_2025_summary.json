@@ -1,0 +1,26 @@
+{
+  "repo": "juice-shop",
+  "since": "2015-06-30",
+  "until": "2025-06-29",
+  "include_merges": false,
+  "months": 121,
+  "total_commits_in_range": 17964,
+  "health_file_commits": 506,
+  "active_months": 104,
+  "active_month_rate": 0.859504132231405,
+  "entropy_norm": 0.8717422611152073,
+  "top1_month_share": 0.08498023715415019,
+  "top3_month_share": 0.16403162055335968,
+  "top6_month_share": 0.2727272727272727,
+  "gini_month_concentration": 0.5758337960996962,
+  "outputs": {
+    "monthly_distribution_csv": "outputs/juice-shop/juice-shop_2015_2025_monthly_distribution.csv",
+    "entropy_summary_csv": "outputs/juice-shop/juice-shop_2015_2025_entropy_summary.csv",
+    "sha_list": null
+  },
+  "notes": [
+    "Aligned with doc_touch_rhythm.py: git log --name-only, same include/exclude patterns.",
+    "entropy_norm is normalized Shannon entropy over monthly health-file commit distribution (0..1).",
+    "Lower entropy => activity concentrated into fewer months; higher entropy => spread across months."
+  ]
+}

@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+flink,2017-05-30,2018-05-29,2638,0,0,2638,168,0.8432389255929817,0.378316906747536,0.49848369977255497,0.6978771796815769

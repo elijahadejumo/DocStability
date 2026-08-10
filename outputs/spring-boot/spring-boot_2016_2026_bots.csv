@@ -1,0 +1,3 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+spring-boot,49699333+dependabot[bot]@users.noreply.github.com,100,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+spring-boot,michaldo@github.com,2,@github\.com$,name='michaldo' email='michaldo@github.com' | name='michaldo' email='michaldo@github.com'

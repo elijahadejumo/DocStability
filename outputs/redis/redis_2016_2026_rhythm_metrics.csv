@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+redis,month,121,97,0.8016528925619835,2.0232804827422544,2.523885963008379,0.0,0.39669421487603307,unstable

@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+jenkins,2022-05-30,2023-05-29,13,no,1353,20,10,0.769231,0.833464,0.200000,0.550000,0.800000,0.469231

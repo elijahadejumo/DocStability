@@ -1,0 +1,13 @@
+[1/100] ALREADY-DONE metasploit-framework
+[2/100] ALREADY-DONE juice-shop
+[3/100] ALREADY-DONE flask
+[4/100] OK   terraform (7.0s)
+[5/100] OK   FFmpeg (20.8s)
+[6/100] FAIL aspnetcore (19.4s): ProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/aspnetcore', 'log', '--no-merges', '--no-color', '--since=2015-06-30 00:00:00', '--until=2025-06-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[7/100] FAIL Marlin (12.2s): lledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/Marlin', 'log', '--no-merges', '--no-color', '--since=2015-06-30 00:00:00', '--until=2025-06-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[8/100] OK   jekyll (5.6s)
+[9/100] OK   PHPMailer (2.5s)

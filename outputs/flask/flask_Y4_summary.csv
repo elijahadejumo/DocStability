@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+flask,2019-05-30,2020-05-29,156,2,1,154,65,0.551848151848152,0.5194805194805194,0.564935064935065,0.6298701298701299

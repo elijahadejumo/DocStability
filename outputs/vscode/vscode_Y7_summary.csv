@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+vscode,2022-05-30,2023-05-29,10736,26,2,10710,356,0.8977816594802714,0.24351073762838468,0.3625583566760037,0.534547152194211

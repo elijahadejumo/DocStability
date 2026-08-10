@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+jekyll,month,121,1747,14.438016528925619,14.498214006090238,1.0041693730606291,0.0,0.9338842975206612,unstable

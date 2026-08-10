@@ -1,0 +1,26 @@
+{
+  "repo": "Vue-core",
+  "since": "2016-05-30",
+  "until": "2026-05-29",
+  "include_merges": false,
+  "months": 121,
+  "total_commits_in_range": 7022,
+  "health_file_commits": 432,
+  "active_months": 75,
+  "active_month_rate": 0.6198347107438017,
+  "entropy_norm": 0.8352437756181776,
+  "top1_month_share": 0.05092592592592592,
+  "top3_month_share": 0.1412037037037037,
+  "top6_month_share": 0.23842592592592593,
+  "gini_month_concentration": 0.6507499234771963,
+  "outputs": {
+    "monthly_distribution_csv": "outputs/Vue-core/Vue-core_2016_2026_monthly_distribution.csv",
+    "entropy_summary_csv": "outputs/Vue-core/Vue-core_2016_2026_entropy_summary.csv",
+    "sha_list": null
+  },
+  "notes": [
+    "Aligned with doc_touch_rhythm.py: git log --name-only, same include/exclude patterns.",
+    "entropy_norm is normalized Shannon entropy over monthly health-file commit distribution (0..1).",
+    "Lower entropy => activity concentrated into fewer months; higher entropy => spread across months."
+  ]
+}

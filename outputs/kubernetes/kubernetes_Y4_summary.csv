@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+kubernetes,2019-05-30,2020-05-29,7291,4,3,7287,895,0.7365012921917273,0.09921778509674763,0.1327020721833402,0.1987100315630575

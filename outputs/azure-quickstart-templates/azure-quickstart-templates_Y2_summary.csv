@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+azure-quickstart-templates,2017-05-30,2018-05-29,3200,0,0,3200,276,0.7120901268115942,0.163125,0.236875,0.3596875

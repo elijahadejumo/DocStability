@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+go-ethereum,2018-05-30,2019-05-29,1149,0,0,1149,207,0.7377808049848009,0.299390774586597,0.39251523063533506,0.5674499564838991

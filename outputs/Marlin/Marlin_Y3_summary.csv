@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+Marlin,2018-05-30,2019-05-29,1729,88,2,1641,167,0.8272522596488925,0.570993296770262,0.6502132845825715,0.7446678854357099

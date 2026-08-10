@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+juice-shop,2017-05-30,2018-05-29,1980,32,1,1948,28,0.9131710178938104,0.944558521560575,0.9676591375770021,0.9856262833675564

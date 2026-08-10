@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+bitcoin,2018-05-30,2019-05-29,13,no,2019,14,9,0.692308,0.821294,0.214286,0.500000,0.785714,0.461538

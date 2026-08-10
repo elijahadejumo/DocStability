@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+etcd,2017-05-30,2018-05-29,1917,0,0,1917,115,0.9096278152003812,0.8419405320813772,0.8643714136671883,0.9045383411580594

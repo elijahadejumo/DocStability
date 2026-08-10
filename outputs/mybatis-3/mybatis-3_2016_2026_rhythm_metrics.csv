@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+mybatis-3,month,121,26,0.21487603305785125,0.5803247879456229,2.700742282362322,0.0,0.15702479338842976,unstable

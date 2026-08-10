@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+opencv,2018-05-30,2019-05-29,1432,2,1,1430,240,0.7762587412587412,0.46573426573426574,0.5482517482517483,0.6412587412587413

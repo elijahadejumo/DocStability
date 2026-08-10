@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+FFmpeg,2016-05-30,2017-05-29,5349,0,0,5349,287,0.8544265332085257,0.31519910263600676,0.4383997008786689,0.6066554496167508

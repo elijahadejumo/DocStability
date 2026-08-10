@@ -1,0 +1,9 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+ansible,jordemort@github.com,2,@github\.com$,name='Jordan Webb' email='jordemort@github.com' | name='Jordan Webb' email='jordemort@github.com'
+ansible,rhydian@drjenkins.org.uk,2,jenkins,name='rhydian76' email='rhydian@drjenkins.org.uk' | name='rhydian76' email='rhydian@drjenkins.org.uk'
+ansible,38501955+xomute@users.noreply.github.com,1,homu,name='Dmytro Khomutnyk' email='38501955+XoMute@users.noreply.github.com'
+ansible,102100353+inclusive-coding-bot@users.noreply.github.com,1,\bbot\b,name='Inclusive Coding Bot' email='102100353+inclusive-coding-bot@users.noreply.github.com'
+ansible,logistic-bot@protonmail.com,1,\bbot\b,name='Logistic Bot' email='logistic-bot@protonmail.com'
+ansible,iamhughes@github.com,1,@github\.com$,name='Thomas Hughes' email='iamhughes@github.com'
+ansible,peterjenkins1@users.noreply.github.com,1,jenkins,name='Peter Jenkins' email='peterjenkins1@users.noreply.github.com'
+ansible,khomutoff@gmail.com,1,homu,name='Dmitriy Khomutov' email='khomutoff@gmail.com'

@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+laravel,2018-05-30,2019-05-29,226,0,0,226,89,0.5778065029332802,0.5176991150442478,0.5575221238938053,0.6194690265486725

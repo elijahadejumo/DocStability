@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+zxing,2016-05-30,2026-05-29,121,no,654,46,33,0.272727,0.703242,0.086957,0.217391,0.369565,0.789795

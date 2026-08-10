@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+rails,month,121,135,1.115702479338843,3.739853122438162,3.3520165023334636,0.0,0.371900826446281,unstable

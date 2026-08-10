@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+jenkins,2021-05-30,2022-05-29,1058,337,2,721,86,0.7753281940457375,0.478502080443828,0.5866851595006934,0.7489597780859917

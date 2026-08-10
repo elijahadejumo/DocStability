@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+scikit-learn,2021-05-30,2022-05-29,1664,1,1,1663,440,0.6779792816924508,0.2717979555021046,0.35057125676488277,0.4798556825015033

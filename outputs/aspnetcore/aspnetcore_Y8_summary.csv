@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+aspnetcore,2023-05-30,2024-05-29,1899,880,8,1019,189,0.7268563951586522,0.26594700686947986,0.3758586849852797,0.5986261040235525

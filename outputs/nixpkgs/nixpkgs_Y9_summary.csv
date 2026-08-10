@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+nixpkgs,2024-05-30,2025-05-29,107154,27609,8,79545,4336,0.8641412940388125,0.18746621409265196,0.2186435351059149,0.28031931611037775

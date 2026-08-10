@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+axios,2018-05-30,2019-05-29,54,0,0,54,41,0.22854561878952118,0.2777777777777778,0.3333333333333333,0.42592592592592593

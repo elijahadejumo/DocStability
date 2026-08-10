@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+kafka,2016-05-30,2017-05-29,13,no,1229,12,9,0.692308,0.816675,0.250000,0.500000,0.750000,0.448718

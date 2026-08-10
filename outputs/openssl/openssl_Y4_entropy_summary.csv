@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+openssl,2019-05-30,2020-05-29,13,no,2287,11,6,0.461538,0.600521,0.454545,0.727273,1.000000,0.699301

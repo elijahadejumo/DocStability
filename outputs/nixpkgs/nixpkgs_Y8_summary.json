@@ -1,0 +1,16 @@
+{
+  "repo": "nixpkgs",
+  "since": "2023-05-30",
+  "until": "2024-05-29",
+  "include_merges": false,
+  "dominant_threshold": 0.5,
+  "output_csv": "outputs/nixpkgs/nixpkgs_Y8_health_docs_intention_summary.csv",
+  "touch_shas_txt": null,
+  "audit_csv": null,
+  "notes": [
+    "Commit enumeration uses COMMITTER time (%ct) and --name-only, matching doc_touch_rhythm.py.",
+    "health_docs detection uses the same include/exclude logic (exclude first, then match).",
+    "For intention classification, excluded paths are ignored (same worldview as rhythm).",
+    "partition_check_sum should equal health_docs_touch_commits."
+  ]
+}

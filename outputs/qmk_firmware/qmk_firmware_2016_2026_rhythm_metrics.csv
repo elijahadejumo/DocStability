@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+qmk_firmware,month,121,160,1.322314049586777,2.947357223098511,2.2289388999682487,0.0,0.4628099173553719,unstable

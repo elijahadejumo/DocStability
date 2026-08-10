@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+grpc,2017-05-30,2018-05-29,13,no,4150,21,9,0.692308,0.813534,0.190476,0.476190,0.857143,0.476190

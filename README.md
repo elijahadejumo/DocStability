@@ -2,7 +2,45 @@
 
 Replication package for the empirical study of health documentation governance
 across 100 open source repositories (rhythm, intention, ownership, and
-outcome-validation lenses), over a 5-year observation window (2020-2025).
+outcome-validation lenses), over a decade-long observation window
+(2016-05-30 to 2026-05-29).
+
+---
+
+## Reproducing the paper's results
+
+`scripts/reproduce/reproduce_all_results.py` reproduces every statistic
+reported in the paper (RQ1-RQ4) from the already-extracted intermediate CSVs
+in `analysis_outputs/`. It does not re-clone or re-mine the 100 repositories;
+that extraction step is the expensive, environment-dependent part, while the
+statistical layer reproduced here — clustering, regressions, trend tests — is
+fully deterministic given the same input CSVs, and is the part a reviewer
+most needs to check.
+
+```bash
+pip install pandas numpy scipy statsmodels scikit-learn pymannkendall
+
+# reproduce everything (RQ1-RQ4)
+python3 scripts/reproduce/reproduce_all_results.py
+
+# or just one section
+python3 scripts/reproduce/reproduce_all_results.py --section rq1
+python3 scripts/reproduce/reproduce_all_results.py --section rq2
+python3 scripts/reproduce/reproduce_all_results.py --section rq3              # ownership descriptives
+python3 scripts/reproduce/reproduce_all_results.py --section rq3_predictive   # predictive-validity 
+python3 scripts/reproduce/reproduce_all_results.py --section rq4             # evolution: transitions + trend tests
+```
+
+Each printed value is shown next to the paper's published value so results
+can be diffed by eye. RQ1's living/process-vs-static/attribution robustness
+check and the four-way purpose taxonomy (Table IV) additionally regenerate
+from raw per-commit data (`outputs/<repo>/<repo>_2016_2026_file_details.csv`
++ `full_commit_logs/<repo>_full_commit_log.csv`); if those directories aren't
+present, that sub-check is skipped with a message rather than failing the run.
+
+Run with `--data_dir` to point at a different `analysis_outputs/` location,
+or `--repo_root` if `outputs/` and `full_commit_logs/` live somewhere other
+than two directories above the script.
 
 ---
 
@@ -17,46 +55,32 @@ See `repos-names.csv` for the full list of the 100 studied repositories
 
 ```
 .
-├── repos-names.csv          # list of 100 study repositories (repo, owner)
-├── per_repo/                # one folder per repository (x100), raw per-repo extraction outputs
-│   └── <repo_name>/
-│       ├── 5yr_summary.csv / .json
-│       ├── 5yr_contributors.csv
-│       ├── 5yr_bots.csv
-│       ├── <repo>_health_2020_2025_file_details.csv
-│       ├── <repo>_health_2020_2025_rhythm_metrics.csv
-│       ├── <repo>_2020_2025_entropy_summary.csv
-│       ├── <repo>_2020_2025_health_docs_intention_summary.csv
-│       ├── <repo>_2020_2025_health_docs_ownership_summary.csv
-│       └── <repo>_2020_2025_monthly_distribution.csv
-├── combined/                 # cross-repo aggregated CSVs (outputs of scripts/aggregation/*)
-│   ├── combined_doc_stability_metrics.csv
-│   ├── combined_docs_intention.csv
-│   ├── combined_doc_contributors.csv
-│   ├── combined_contributors.csv
-│   ├── combined_reactive_analysis.csv
-│   ├── combined_doc_done.csv
-│   └── archetype_*.csv
+├── repos-names.csv           # 100 study repositories (repo, owner)
+├── main.tex                  # paper source (IEEEtran, SANER submission)
+├── outputs/<repo>/            # raw per-commit health-file touch records, decade window
+│   └── <repo>_2016_2026_file_details.csv    # repo, commit_sha, commit_date, health_file
+├── full_commit_logs/          # full per-author commit history + bot flags, decade window
+│   └── <repo>_full_commit_log.csv
+├── analysis_outputs/          # canonical intermediate CSVs the paper's numbers are built from
+│   ├── decade_archetype_assignments_final.csv     # RQ1: per-repo entropy/AWR/archetype
+│   ├── decade_intent_agg.csv                      # RQ2: DocOnly/DocDominant/DocNonDominant per repo
+│   ├── decade_rq3_full.csv                        # RQ3: participation/concentration/bus-factor per repo
+│   ├── decade_staleness.csv                       # RQ3 outcome: documentation staleness
+│   ├── decade_newcomer_retention.csv              # RQ3 outcome: documentation-newcomer retention
+│   ├── decade_general_outcomes.csv                # RQ3 outcome: repo-wide activity trend, etc.
+│   ├── annual_archetype_classified.csv            # RQ4: per-repo-year archetype label
+│   ├── annual_bus50_doconly.csv                   # RQ4: per-repo-year DocOnly rate
+│   └── annual_participation.csv                   # RQ4: per-repo-year participation rate
 ├── scripts/
 │   ├── extraction/            # per-repo git-mining scripts (operate on a local clone)
-│   │   ├── Doc_rhythm.py                    # rhythm metrics (entropy, AWR)
-│   │   ├── doc_entropy.py                   # normalized Shannon entropy + monthly distribution
-│   │   ├── doc_commit_ownership.py          # ownership/concentration metrics (Bus-50/80)
-│   │   ├── Intention_docs.py                # DocOnly / DocDominant / DocNonDominant classification
-│   │   ├── commit_message_external_links.py # external coordination linkage heuristic
-│   │   ├── contrib_concentration.py         # contributor concentration + bot filtering
-│   │   └── extract_full_commit_log.py       # full per-author commit history (retention/RQ4 + bot-filter join key)
-│   ├── aggregation/            # combine_*.py: merge per-repo outputs into cross-repo CSVs
-│   └── analysis/               # cross-repo statistical analysis
-│       ├── Archetype.py                # k-means rhythm archetype assignment
-│       ├── artifact_stratification.py  # living vs. static/attribution doc-type stratification + robustness
-│       ├── artifact_reclustering.py    # re-clusters archetypes on living-only rhythm, compares to combined
-│       └── confounding_controls.py     # regression: do RQ2/RQ3 findings survive controlling for size?
-├── analysis_outputs/          # outputs of scripts/analysis/*
+│   │   └── extract_full_commit_log.py   # produces full_commit_logs/
+│   ├── analysis/               # supporting statistical analysis scripts
+│   └── reproduce/
+│       └── reproduce_all_results.py    # reproduces every reported RQ1-RQ4 number
 ├── notebooks/
-│   └── Detailed_Analysis_Scripts.ipynb   # full statistical analysis, figures, and tables
+│   └── Detailed_Analysis_Scripts.ipynb
 └── figures/
-    └── silhouette_heatmap_combined_v2.pdf
+    └── silhouette_heatmap_combined.pdf
 ```
 
 ---
@@ -65,10 +89,7 @@ See `repos-names.csv` for the full list of the 100 studied repositories
 
 `scripts/extraction/extract_full_commit_log.py` re-clones each repo (blobless,
 bare -- no file contents downloaded) and extracts full per-author commit
-history. This is needed for anything the existing per-repo CSVs don't already
-capture at commit-level granularity with author identity (e.g. contributor
-retention analysis, or bot-filtering the rhythm computation, which -- unlike
-the ownership scripts -- does not currently exclude bot commits). Run:
+history with bot flags; this is what produced `full_commit_logs/`. Run:
 
 ```
 python3 scripts/extraction/extract_full_commit_log.py \
@@ -78,18 +99,10 @@ python3 scripts/extraction/extract_full_commit_log.py \
     --resume
 ```
 
-`_clones/` and `full_commit_logs/` are gitignored (large, regenerable).
+`_clones/` is gitignored (100 full clones, large and regenerable).
 
----
-
-## Known replication-package/paper consistency notes
-
-- `commit_message_external_links.py` includes a third classification rule
-  (`^revert\b` -> reactive) beyond the two criteria described in the paper's
-  external-coordination-linkage methodology section. Flagged for reconciliation
-  before the next submission.
-- `Doc_rhythm.py` / `doc_entropy.py` do not filter bot commits (unlike
-  `contrib_concentration.py` / `doc_commit_ownership.py`, which do). A small
-  number of rhythm archetype labels are affected by bot-automated
-  `AUTHORS`/`CONTRIBUTORS` file churn -- see `scripts/analysis/artifact_stratification.py`
-  and `artifact_reclustering.py` for the diagnostic.
+Bot handling is an intentional split: rhythm metrics (entropy, AWR,
+archetypes -- RQ1) are computed bot-inclusive, while ownership and
+structural-fragility metrics (participation rate, top-k concentration, bus
+factor -- RQ3) exclude bots throughout, since the risk of interest there is
+specific to human maintainership.

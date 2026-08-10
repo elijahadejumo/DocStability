@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+django,month,121,395,3.2644628099173554,2.253769416782036,0.6903951884319655,0.0,0.9008264462809917,unstable

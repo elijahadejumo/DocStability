@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+ansible,2016-05-30,2026-05-29,121,no,35670,504,52,0.429752,0.685259,0.103175,0.244048,0.426587,0.834022

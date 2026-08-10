@@ -1,0 +1,4 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+godot,49699333+dependabot[bot]@users.noreply.github.com,3,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+godot,snyk-bot@snyk.io,1,\bbot\b,name='snyk-bot' email='snyk-bot@snyk.io'
+godot,noreply@github.com,1,@github\.com$;noreply@github\.com$,name='qonnop' email='noreply@github.com'

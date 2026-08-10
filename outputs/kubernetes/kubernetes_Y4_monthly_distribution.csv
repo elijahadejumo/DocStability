@@ -1,0 +1,14 @@
+repo,month,health_file_commit_count
+kubernetes,2019-05,0
+kubernetes,2019-06,3
+kubernetes,2019-07,1
+kubernetes,2019-08,3
+kubernetes,2019-09,1
+kubernetes,2019-10,4
+kubernetes,2019-11,1
+kubernetes,2019-12,0
+kubernetes,2020-01,0
+kubernetes,2020-02,1
+kubernetes,2020-03,0
+kubernetes,2020-04,1
+kubernetes,2020-05,1

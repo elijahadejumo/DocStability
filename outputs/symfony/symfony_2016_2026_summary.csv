@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+symfony,2016-05-30,2026-05-29,25198,3,3,25195,3179,0.8395008396601507,0.3275253026394126,0.393768604881921,0.49462194879936494

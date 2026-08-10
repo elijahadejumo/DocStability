@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+godot,2020-05-30,2021-05-29,13,no,3408,25,11,0.846154,0.875323,0.200000,0.480000,0.760000,0.412308

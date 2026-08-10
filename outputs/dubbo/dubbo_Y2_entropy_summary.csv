@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+dubbo,2017-05-30,2018-05-29,13,no,479,38,10,0.769231,0.829562,0.210526,0.526316,0.815789,0.481781

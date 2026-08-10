@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+DefinitelyTyped,2018-05-30,2019-05-29,13,no,12280,26,8,0.615385,0.730633,0.269231,0.653846,0.923077,0.603550

@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+three.js,2025-05-30,2026-05-29,1933,128,2,1805,176,0.8611842105263159,0.6980609418282548,0.7462603878116344,0.8083102493074792

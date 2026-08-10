@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+qmk_firmware,2024-05-30,2025-05-29,852,23,2,829,223,0.6857903249363055,0.4680337756332931,0.5186972255729795,0.5971049457177322

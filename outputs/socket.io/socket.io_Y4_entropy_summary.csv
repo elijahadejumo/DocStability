@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+socket.io,2019-05-30,2020-05-29,13,no,87,20,5,0.384615,0.524087,0.400000,0.850000,1.000000,0.761538

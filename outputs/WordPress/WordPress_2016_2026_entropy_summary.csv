@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+WordPress,2016-05-30,2026-05-29,121,no,18261,55,42,0.347107,0.759334,0.054545,0.163636,0.290909,0.720361

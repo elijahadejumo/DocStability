@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+moby,2017-05-30,2018-05-29,13,no,1714,30,10,0.769231,0.864064,0.200000,0.433333,0.733333,0.394872

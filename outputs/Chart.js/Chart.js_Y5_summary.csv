@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+Chart.js,2020-05-30,2021-05-29,761,3,1,758,48,0.8730760773966579,0.8179419525065963,0.895778364116095,0.9313984168865436

@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+flutter,2025-05-30,2026-05-29,5422,217,5,5205,378,0.8431173728964316,0.43707973102785785,0.4910662824207493,0.5811719500480308

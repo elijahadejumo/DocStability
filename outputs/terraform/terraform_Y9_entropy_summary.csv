@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+terraform,2024-05-30,2025-05-29,13,no,1219,91,13,1.000000,0.949989,0.153846,0.395604,0.670330,0.280642

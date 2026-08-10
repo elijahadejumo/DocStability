@@ -1,0 +1,12 @@
+[10/100] (9s elapsed) last: go
+[20/100] (22s elapsed) last: grpc
+[30/100] (31s elapsed) last: imgui
+[40/100] (52s elapsed) last: grafana
+[50/100] (111s elapsed) last: nixpkgs
+[60/100] (120s elapsed) last: kafka
+[70/100] (134s elapsed) last: symfony
+[80/100] (151s elapsed) last: vscode
+[90/100] (162s elapsed) last: zxing
+[100/100] (173s elapsed) last: spring-boot
+
+Done in 173.4s. failures=0

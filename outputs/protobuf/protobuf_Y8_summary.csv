@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+protobuf,2023-05-30,2024-05-29,2956,1413,3,1543,152,0.8257879387386158,0.3966299416720674,0.5320803629293583,0.7342838626053143

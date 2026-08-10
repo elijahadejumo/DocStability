@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+todomvc,2016-05-30,2026-05-29,121,no,174,12,9,0.074380,0.445877,0.166667,0.500000,0.750000,0.938017

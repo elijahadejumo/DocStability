@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+aspnetcore,2016-05-30,2026-05-29,121,no,38766,584,64,0.528926,0.709928,0.145548,0.294521,0.458904,0.808785

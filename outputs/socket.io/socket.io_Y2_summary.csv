@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+socket.io,2017-05-30,2018-05-29,120,0,0,120,31,0.7161290322580645,0.7666666666666667,0.7833333333333333,0.825

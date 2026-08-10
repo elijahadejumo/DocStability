@@ -1,0 +1,14 @@
+repo,month,health_file_commit_count
+terraform,2019-05,1
+terraform,2019-06,33
+terraform,2019-07,32
+terraform,2019-08,28
+terraform,2019-09,24
+terraform,2019-10,24
+terraform,2019-11,29
+terraform,2019-12,17
+terraform,2020-01,19
+terraform,2020-02,17
+terraform,2020-03,17
+terraform,2020-04,28
+terraform,2020-05,16

@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+juice-shop,2015-06-30,2025-06-29,121,no,17964,506,104,0.859504,0.871742,0.084980,0.164032,0.272727,0.575834

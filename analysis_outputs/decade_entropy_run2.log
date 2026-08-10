@@ -1,0 +1,139 @@
+[1/100] RETRY metasploit-framework: attempting git fetch --refetch...
+[1/100] OK   metasploit-framework (58.2s)
+[2/100] OK   juice-shop (6.1s)
+[3/100] OK   flask (0.2s)
+[4/100] OK   terraform (6.5s)
+[5/100] OK   FFmpeg (12.9s)
+[6/100] RETRY aspnetcore: attempting git fetch --refetch...
+[6/100] FAIL aspnetcore (96.9s): ocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/aspnetcore', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[7/100] RETRY Marlin: attempting git fetch --refetch...
+[7/100] FAIL Marlin (49.5s): ubprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/Marlin', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[8/100] OK   jekyll (0.4s)
+[9/100] OK   PHPMailer (0.1s)
+[10/100] OK   go (48.9s)
+[11/100] RETRY core: attempting git fetch --refetch...
+[11/100] OK   core (238.9s)
+[12/100] OK   bootstrap (18.8s)
+[13/100] OK   dotfiles (0.1s)
+[14/100] OK   Chart.js (6.1s)
+[15/100] OK   WordPress (9.3s)
+[16/100] OK   react-native (3.2s)
+[17/100] OK   pdf.js (8.7s)
+[18/100] TIMEOUT DefinitelyTyped (>180.0s)
+[19/100] RETRY Python: attempting git fetch --refetch...
+[19/100] FAIL Python (153.0s): ubprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/Python', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[20/100] RETRY grpc: attempting git fetch --refetch...
+[20/100] FAIL grpc (93.4s): 
+subprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/grpc', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[21/100] OK   framework (20.7s)
+[22/100] OK   guava (6.3s)
+[23/100] OK   flink (6.5s)
+[24/100] OK   minimal-mistakes (4.6s)
+[25/100] OK   redis (2.1s)
+[26/100] OK   ardupilot (29.1s)
+[27/100] OK   material-ui (4.4s)
+[28/100] OK   mybatis-3 (6.7s)
+[29/100] OK   ionic-framework (75.8s)
+[30/100] OK   imgui (4.3s)
+[31/100] TIMEOUT TypeScript (>180.0s)
+[32/100] RETRY odoo: attempting git fetch --refetch...
+[32/100] FAIL odoo (0.1s): 
+subprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/odoo', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[33/100] OK   rust (20.7s)
+[34/100] OK   animate.css (0.9s)
+[35/100] OK   jquery (3.0s)
+[36/100] RETRY Vue-core: attempting git fetch --refetch...
+[36/100] OK   Vue-core (16.4s)
+[37/100] SKIP lantern (excluded: truncated history)
+[38/100] OK   three.js (88.5s)
+[39/100] RETRY angular: attempting git fetch --refetch...
+[39/100] FAIL angular (175.2s): bprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/angular', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[40/100] OK   grafana (10.4s)
+[41/100] RETRY netty: attempting git fetch --refetch...
+[41/100] FAIL netty (22.6s): subprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/netty', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[42/100] OK   scrapy (6.8s)
+[43/100] OK   numpy (22.3s)
+[44/100] OK   Ghost (3.0s)
+[45/100] RETRY ansible: attempting git fetch --refetch...
+[45/100] FAIL ansible (193.5s): bprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/ansible', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[46/100] OK   bitcoin (16.7s)
+[47/100] OK   airflow (4.2s)
+[48/100] OK   FreeRDP (6.0s)
+[49/100] OK   todomvc (3.3s)
+[50/100] OK   nixpkgs (106.7s)
+[51/100] OK   markdown-here (0.5s)
+[52/100] RETRY flutter: attempting git fetch --refetch...
+[52/100] FAIL flutter (138.4s): bprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/flutter', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[53/100] RETRY go-ethereum: attempting git fetch --refetch...
+[53/100] OK   go-ethereum (61.8s)
+[54/100] RETRY opencv: attempting git fetch --refetch...
+[54/100] OK   opencv (43.4s)
+[55/100] OK   socket.io (1.5s)
+[56/100] OK   shadowsocks-android (10.5s)
+[57/100] RETRY spring-framework: attempting git fetch --refetch...
+[57/100] FAIL spring-framework (118.5s): CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/spring-framework', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[58/100] OK   erpnext (55.5s)
+[59/100] OK   ohmyzsh (4.9s)
+[60/100] RETRY kafka: attempting git fetch --refetch...
+[60/100] FAIL kafka (70.8s): subprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/kafka', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[61/100] OK   d3 (0.5s)
+[62/100] OK   Rocket.Chat (3.8s)
+[63/100] OK   azure-quickstart-templates (4.0s)
+[64/100] RETRY moby: attempting git fetch --refetch...
+[64/100] FAIL moby (96.8s): 
+subprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/moby', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[65/100] RETRY etcd: attempting git fetch --refetch...
+[65/100] FAIL etcd (25.2s): 
+subprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/etcd', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[66/100] TIMEOUT homebrew-cask (>180.0s)
+[67/100] OK   html5-boilerplate (3.8s)
+[68/100] OK   youtube-dl (4.2s)
+[69/100] RETRY java-design-patterns: attempting git fetch --refetch...
+[69/100] OK   java-design-patterns (10.9s)
+[70/100] RETRY symfony: attempting git fetch --refetch...
+[70/100] FAIL symfony (109.6s): bprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/symfony', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[71/100] RETRY dubbo: attempting git fetch --refetch...
+[71/100] OK   dubbo (58.3s)
+[72/100] RETRY jenkins: attempting git fetch --refetch...
+[72/100] OK   jenkins (38.5s)
+[73/100] TIMEOUT node (>180.0s)
+[74/100] TIMEOUT kubernetes (>180.0s)
+[75/100] OK   qmk_firmware (4.7s)
+[76/100] OK   darknet (1.5s)
+[77/100] OK   HanLP (3.0s)
+[78/100] RETRY electron: attempting git fetch --refetch...
+[78/100] FAIL electron (65.6s): process.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/electron', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[79/100] RETRY openssl: attempting git fetch --refetch...
+[79/100] FAIL openssl (50.8s): bprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/openssl', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[80/100] OK   vscode (12.4s)
+[81/100] OK   echarts (15.3s)
+[82/100] OK   reveal.js (5.1s)
+[83/100] RETRY AspNetCore.Docs: attempting git fetch --refetch...
+[83/100] FAIL AspNetCore.Docs (81.5s): .CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/AspNetCore.Docs', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[84/100] OK   django (5.7s)
+[85/100] OK   shadowsocks-windows (3.5s)
+[86/100] OK   react (1.4s)
+[87/100] OK   axios (2.2s)
+[88/100] OK   elasticsearch (15.7s)
+[89/100] RETRY protobuf: attempting git fetch --refetch...
+[89/100] OK   protobuf (28.0s)
+[90/100] OK   zxing (0.9s)
+[91/100] OK   godot (7.1s)
+[92/100] RETRY spark: attempting git fetch --refetch...
+[92/100] FAIL spark (182.7s): subprocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/spark', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[93/100] OK   laravel (2.6s)
+[94/100] OK   gitignore (1.5s)
+[95/100] RETRY pandas: attempting git fetch --refetch...
+[95/100] OK   pandas (85.1s)
+[96/100] OK   AdminLTE (12.9s)
+[97/100] RETRY react-router: attempting git fetch --refetch...
+[97/100] FAIL react-router (47.2s): ess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/react-router', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[98/100] RETRY ant-design: attempting git fetch --refetch...
+[98/100] FAIL ant-design (55.1s): ocess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/ant-design', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+[99/100] OK   rails (25.9s)
+[100/100] RETRY spring-boot: attempting git fetch --refetch...
+[100/100] FAIL spring-boot (191.9s): cess.CalledProcessError: Command '['git', '-C', '/Users/elijahadejumo/Documents/DocStability/_clones/spring-boot', 'log', '--no-merges', '--no-color', '--since=2016-05-30 00:00:00', '--until=2026-05-29 23:59:59', '--pretty=format:__COMMIT__%H\t%ct', '--name-only']' returned non-zero exit status 128.
+
+Done in 4342.4s. OK=73 FAIL=26 AUTO-REPAIRED=10
+Auto-repaired via refetch: ['metasploit-framework', 'core', 'Vue-core', 'go-ethereum', 'opencv', 'java-design-patterns', 'dubbo', 'jenkins', 'protobuf', 'pandas']
+Failed repos (need manual look): ['aspnetcore', 'Marlin', 'DefinitelyTyped', 'Python', 'grpc', 'TypeScript', 'odoo', 'angular', 'netty', 'ansible', 'flutter', 'spring-framework', 'kafka', 'moby', 'etcd', 'homebrew-cask', 'symfony', 'node', 'kubernetes', 'electron', 'openssl', 'AspNetCore.Docs', 'spark', 'react-router', 'ant-design', 'spring-boot']

@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+airflow,2025-05-30,2026-05-29,7944,309,4,7635,815,0.8158221943664348,0.21912246234446628,0.29273084479371314,0.40641781270464966

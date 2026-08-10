@@ -1,0 +1,14 @@
+repo,month,health_file_commit_count
+django,2020-05,0
+django,2020-06,2
+django,2020-07,3
+django,2020-08,2
+django,2020-09,5
+django,2020-10,4
+django,2020-11,1
+django,2020-12,1
+django,2021-01,3
+django,2021-02,2
+django,2021-03,3
+django,2021-04,4
+django,2021-05,4

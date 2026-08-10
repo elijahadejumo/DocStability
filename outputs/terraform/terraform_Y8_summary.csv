@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+terraform,2023-05-30,2024-05-29,1448,8,4,1440,117,0.8420821462488128,0.5145833333333333,0.6770833333333334,0.8

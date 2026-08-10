@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+django,2024-05-30,2025-05-29,924,0,0,924,220,0.692483274301456,0.31277056277056275,0.44155844155844154,0.5692640692640693

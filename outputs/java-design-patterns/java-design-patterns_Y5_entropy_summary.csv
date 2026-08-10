@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+java-design-patterns,2020-05-30,2021-05-29,13,no,581,193,12,0.923077,0.560032,0.637306,0.787565,0.891192,0.700678

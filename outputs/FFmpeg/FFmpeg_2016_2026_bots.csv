@@ -1,0 +1,2 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+FFmpeg,1012587+depthfirst-dev[bot]@users.noreply.github.com,9,\[bot\];\bbot\b,name='depthfirst-dev[bot]' email='1012587+depthfirst-dev[bot]@users.noreply.github.com' | name='depthfirst-dev[bot]' email='1012587+depthfirst-dev[bot]@users.noreply.github.com' | name='depthfirst-dev[bot]' email='1012587+depthfirst-dev[bot]@users.noreply.github.com'

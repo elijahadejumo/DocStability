@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+ardupilot,2016-05-30,2026-05-29,49677,12,4,49665,1057,0.9485783700652461,0.556669686902245,0.6331621866505588,0.7322057787174067

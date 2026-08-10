@@ -1,0 +1,14 @@
+repo,month,health_file_commit_count
+grpc,2020-05,0
+grpc,2020-06,4
+grpc,2020-07,5
+grpc,2020-08,2
+grpc,2020-09,8
+grpc,2020-10,3
+grpc,2020-11,5
+grpc,2020-12,3
+grpc,2021-01,8
+grpc,2021-02,4
+grpc,2021-03,6
+grpc,2021-04,4
+grpc,2021-05,3

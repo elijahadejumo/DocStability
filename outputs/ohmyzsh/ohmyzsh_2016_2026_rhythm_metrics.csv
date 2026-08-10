@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+ohmyzsh,month,121,117,0.9669421487603306,1.5702116858220139,1.6238941366193478,0.0,0.47107438016528924,unstable

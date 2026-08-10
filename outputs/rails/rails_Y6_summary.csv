@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+rails,2021-05-30,2022-05-29,2072,23,10,2049,498,0.6961717048770975,0.24109321620302587,0.3206442166910688,0.4387506100536847

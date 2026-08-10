@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+youtube-dl,2024-05-30,2025-05-29,108,0,0,108,7,0.8015873015873016,0.9629629629629629,0.9814814814814815,1.0

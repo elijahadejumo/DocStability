@@ -1,0 +1,7 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+juice-shop,greenkeeper[bot]@users.noreply.github.com,150,\[bot\];\bbot\b;greenkeeper,name='greenkeeper[bot]' email='greenkeeper[bot]@users.noreply.github.com' | name='greenkeeper[bot]' email='greenkeeper[bot]@users.noreply.github.com' | name='greenkeeper[bot]' email='greenkeeper[bot]@users.noreply.github.com'
+juice-shop,action@github.com,4,@github\.com$,name='GitHub Action' email='action@github.com' | name='GitHub Action' email='action@github.com' | name='GitHub Action' email='action@github.com'
+juice-shop,nickliffen@github.com,2,@github\.com$,name='Nick Liffen' email='nickliffen@github.com' | name='Nick Liffen' email='nickliffen@github.com'
+juice-shop,rneatherway@github.com,1,@github\.com$,name='Robin Neatherway' email='rneatherway@github.com'
+juice-shop,23040076+greenkeeper[bot]@users.noreply.github.com,1,\[bot\];\bbot\b;greenkeeper,name='greenkeeper[bot]' email='23040076+greenkeeper[bot]@users.noreply.github.com'
+juice-shop,whitesource-bolt-for-github[bot]@users.noreply.github.com,1,\[bot\];\bbot\b,name='whitesource-bolt-for-github[bot]' email='whitesource-bolt-for-github[bot]@users.noreply.github.com'

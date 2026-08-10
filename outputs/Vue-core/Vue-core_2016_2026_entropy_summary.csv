@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+Vue-core,2016-05-30,2026-05-29,121,no,7022,432,75,0.619835,0.835244,0.050926,0.141204,0.238426,0.650750

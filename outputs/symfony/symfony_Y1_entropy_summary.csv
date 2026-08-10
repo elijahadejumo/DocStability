@@ -1,0 +1,2 @@
+repo,since,until,months,include_merges,total_commits_in_range,health_file_commits,active_months,active_month_rate,entropy_norm,top1_month_share,top3_month_share,top6_month_share,gini_month_concentration
+symfony,2016-05-30,2017-05-29,13,no,2437,33,13,1.000000,0.958780,0.151515,0.363636,0.636364,0.247086

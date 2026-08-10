@@ -1,0 +1,8 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+pandas,49699333+dependabot[bot]@users.noreply.github.com,82,\[bot\];\bbot\b;dependabot,name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com' | name='dependabot[bot]' email='49699333+dependabot[bot]@users.noreply.github.com'
+pandas,41898282+github-actions[bot]@users.noreply.github.com,32,\[bot\];\bbot\b;github-actions,name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com' | name='github-actions[bot]' email='41898282+github-actions[bot]@users.noreply.github.com'
+pandas,66853113+pre-commit-ci[bot]@users.noreply.github.com,28,\[bot\];\bbot\b,name='pre-commit-ci[bot]' email='66853113+pre-commit-ci[bot]@users.noreply.github.com' | name='pre-commit-ci[bot]' email='66853113+pre-commit-ci[bot]@users.noreply.github.com' | name='pre-commit-ci[bot]' email='66853113+pre-commit-ci[bot]@users.noreply.github.com'
+pandas,72292940+nanashi-bot@users.noreply.github.com,1,\bbot\b,name='Aditya Ghosh' email='72292940+Nanashi-bot@users.noreply.github.com'
+pandas,azure-pipelines[bot]@users.noreply.github.com,1,\[bot\];\bbot\b;azure-pipelines,name='azure-pipelines[bot]' email='azure-pipelines[bot]@users.noreply.github.com'
+pandas,35302948+codetriage-readme-bot@users.noreply.github.com,1,\bbot\b,name='README Bot' email='35302948+codetriage-readme-bot@users.noreply.github.com'
+pandas,pandas-docs-bot@localhost.foo,1,\bbot\b,name='pandas-docs-bot' email='pandas-docs-bot@localhost.foo'

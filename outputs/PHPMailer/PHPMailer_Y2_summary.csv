@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+PHPMailer,2017-05-30,2018-05-29,138,0,0,138,22,0.7859025032938076,0.8333333333333334,0.8623188405797102,0.9130434782608695

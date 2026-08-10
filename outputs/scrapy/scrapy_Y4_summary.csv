@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+scrapy,2019-05-30,2020-05-29,828,0,0,828,92,0.7985192186515437,0.5990338164251208,0.6654589371980676,0.7801932367149759

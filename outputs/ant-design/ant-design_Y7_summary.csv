@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+ant-design,2022-05-30,2023-05-29,2581,83,2,2498,359,0.8173424533498665,0.47037630104083267,0.6136909527622098,0.6973578863090473

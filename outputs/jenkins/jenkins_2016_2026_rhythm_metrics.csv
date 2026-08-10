@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+jenkins,month,121,238,1.9669421487603307,4.159194401759232,2.1145484143397777,0.0,0.49586776859504134,unstable

@@ -1,0 +1,2 @@
+repo,contributor_id,bot_commits,matched_patterns,samples
+youtube-dl,vukkk@github.com,1,@github\.com$,name='Vukkk' email='Vukkk@github.com'

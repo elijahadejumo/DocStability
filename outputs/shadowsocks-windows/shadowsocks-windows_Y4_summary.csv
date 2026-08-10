@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+shadowsocks-windows,2019-05-30,2020-05-29,144,0,0,144,22,0.7297979797979799,0.7708333333333334,0.8472222222222222,0.9166666666666666

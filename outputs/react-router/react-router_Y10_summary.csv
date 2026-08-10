@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+react-router,2025-05-30,2026-05-29,1111,273,4,838,119,0.8281622911694511,0.7004773269689738,0.7947494033412887,0.834128878281623

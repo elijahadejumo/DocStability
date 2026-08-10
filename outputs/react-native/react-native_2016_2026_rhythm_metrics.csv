@@ -1,0 +1,2 @@
+repo,granularity,window_count,health_file_commits,mu,sigma,cv,phi_c,active_window_rate,label
+react-native,month,121,409,3.3801652892561984,2.958761560594532,0.8753304372419031,0.0,0.8925619834710744,unstable

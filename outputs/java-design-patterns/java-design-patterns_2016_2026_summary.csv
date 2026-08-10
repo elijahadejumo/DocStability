@@ -1,0 +1,2 @@
+repo,since,until,total_commits_all,bot_commits_classified,unique_bot_contributor_ids,commits_counted_for_metrics,unique_contributors_for_metrics,gini,top3_share,top5_share,top10_share
+java-design-patterns,2016-05-30,2026-05-29,2755,580,6,2175,447,0.7276484352901849,0.42528735632183906,0.46022988505747126,0.5255172413793103
