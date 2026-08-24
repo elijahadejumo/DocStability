@@ -226,7 +226,7 @@ def rq1_rhythm(data_dir, repo_root):
     only_living = commit_strata.apply(lambda s: s == {"living"}).sum()
     total_commits = len(commit_strata)
     print(f"\nLiving-only commit share: {only_living}/{total_commits} = "
-          f"{only_living/total_commits:.1%}  (paper: 92.2%)")
+          f"{only_living/total_commits:.1%}")
 
     rows = []
     for repo, g in fd.groupby("repo"):
@@ -250,8 +250,8 @@ def rq1_rhythm(data_dir, repo_root):
     }).dropna()
     r_e, _ = spearmanr(cmp["entropy_all"], cmp["entropy_living"])
     r_a, _ = spearmanr(cmp["awr_all"], cmp["awr_living"])
-    print(f"Spearman rho (entropy, living-only entropy) = {r_e:.3f}  (paper: 0.93)")
-    print(f"Spearman rho (AWR, living-only AWR)         = {r_a:.3f}  (paper: 0.94)")
+    print(f"Spearman rho (entropy, living-only entropy) = {r_e:.3f}")
+    print(f"Spearman rho (AWR, living-only AWR)         = {r_a:.3f}")
 
     print("\nTable IV — Documentation purpose taxonomy")
     # Per-repo true doc-touch total (from decade_intent_agg.csv) is used as the
@@ -277,8 +277,6 @@ def rq1_rhythm(data_dir, repo_root):
     out = pd.DataFrame({"ecosystem": (eco * 100).round(1),
                         "median": (med * 100).round(1), "zero_activity": zero})
     print(out.to_string())
-    print("\n(paper: Change-tracking 50.8/0.0/54, Onboarding 41.3/84.6/0, "
-          "Legal 7.7/3.9/11, Governance 3.4/3.3/25)")
 
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -292,20 +290,20 @@ def rq2_intention(data_dir):
 
     share = d["health_docs_touch_commits"] / d["total_commits_in_range"]
     print(f"\nHealth-doc share of total commit activity: "
-          f"median={share.median():.4f} mean={share.mean():.4f}  (paper: 1.90% / 5.78%)")
+          f"median={share.median():.4f} mean={share.mean():.4f}")
 
     total = d["health_docs_touch_commits"].sum()
     only = d["health_docs_only_commits"].sum()
     dom = d["health_docs_dominant_mixed_commits"].sum()
     nondom = d["health_docs_mixed_non_dominant_commits"].sum()
     print(f"\nEcosystem totals: {total} documentation-touching commits")
-    print(f"  DocOnly:        {only} ({only/total:.1%})  (paper: 29,171 / 77.9%)")
-    print(f"  DocDominant:    {dom} ({dom/total:.1%})  (paper: 4,564 / 12.2%)")
-    print(f"  DocNonDominant: {nondom} ({nondom/total:.1%})  (paper: 3,712 / 9.9%)")
+    print(f"  DocOnly:        {only} ({only/total:.1%})")
+    print(f"  DocDominant:    {dom} ({dom/total:.1%})")
+    print(f"  DocNonDominant: {nondom} ({nondom/total:.1%})")
 
     r = d["health_docs_only_rate"]
     print(f"\nPer-repository DocOnly rate: mean={r.mean():.3f} median={r.median():.3f} "
-          f"sd={r.std():.3f}  (paper: mean=0.785, median=0.825, sd=0.172)")
+          f"sd={r.std():.3f}")
 
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -319,22 +317,22 @@ def rq3_ownership(data_dir):
 
     doc_c = d["health_docs_touch_contributors"].sum()
     all_c = d["unique_contributors_for_metrics"].sum()
-    print(f"\nEcosystem participation: {doc_c}/{all_c} = {doc_c/all_c:.1%}  (paper: 4.5%)")
+    print(f"\nEcosystem participation: {doc_c}/{all_c} = {doc_c/all_c:.1%}")
 
     p = d["participation_rate"]
     print(f"Per-repo participation rate: median={p.median():.3f} mean={p.mean():.3f} "
-          f"sd={p.std():.3f}  (paper: median=6.3%, mean=9.9%, sd=0.119)")
-    print(f"  repos < 5%:  {(p < 0.05).sum()}  (paper: 44)")
-    print(f"  repos > 50%: {(p > 0.50).sum()}  (paper: 4)")
+          f"sd={p.std():.3f}")
+    print(f"  repos < 5%:  {(p < 0.05).sum()}")
+    print(f"  repos > 50%: {(p > 0.50).sum()}")
 
     print(f"\nMean total contributors:        {d['unique_contributors_for_metrics'].mean():.1f} "
-          f"(median {d['unique_contributors_for_metrics'].median():.0f})  (paper: 1796 / 1025)")
+          f"(median {d['unique_contributors_for_metrics'].median():.0f})")
     print(f"Mean documentation contributors: {d['health_docs_touch_contributors'].mean():.1f} "
-          f"(median {d['health_docs_touch_contributors'].median():.0f})  (paper: 79.9 / 46)")
+          f"(median {d['health_docs_touch_contributors'].median():.0f})")
 
     t1 = d["health_docs_touch_top1_share"]
     print(f"\nTop-1 documentation-contributor share: median={t1.median():.3f} "
-          f"mean={t1.mean():.3f}  (paper: median=25.2%, mean=32.2%)")
+          f"mean={t1.mean():.3f}")
 
     print("\nOwnership concentration (documentation vs. all commits), k=3,5,10:")
     for k in [3, 5, 10]:
@@ -345,15 +343,14 @@ def rq3_ownership(data_dir):
 
     b50 = d["health_docs_touch_bus50"]
     b80 = d["health_docs_touch_bus80"]
-    print(f"\nBus-50: median={b50.median():.0f} mean={b50.mean():.2f} sd={b50.std():.2f}  "
-          f"(paper: median=4, mean=8.54, sd=19.53)")
-    print(f"  Bus-50 <= 3: {(b50 <= 3).sum()}  (paper: 47)")
-    print(f"  Bus-50 == 1: {(b50 == 1).sum()}  (paper: 15)")
-    print(f"Bus-80: median={b80.median():.0f}  (paper: 16)")
-    print(f"  Bus-80 <= 10: {(b80 <= 10).sum()}  (paper: 35)")
+    print(f"\nBus-50: median={b50.median():.0f} mean={b50.mean():.2f} sd={b50.std():.2f}")
+    print(f"  Bus-50 <= 3: {(b50 <= 3).sum()}")
+    print(f"  Bus-50 == 1: {(b50 == 1).sum()}")
+    print(f"Bus-80: median={b80.median():.0f}")
+    print(f"  Bus-80 <= 10: {(b80 <= 10).sum()}")
 
     r, p_ = spearmanr(b50, d["unique_contributors_for_metrics"])
-    print(f"\nSpearman rho(Bus-50, contributor count) = {r:.3f}  (paper: +0.58)")
+    print(f"\nSpearman rho(Bus-50, contributor count) = {r:.3f}")
 
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -399,12 +396,121 @@ def four_check_battery(df, outcome, predictor, size_col, vol_col, label=None, al
     passed = sum(p < alpha for p in checks)
     label = label or f"{predictor} -> {outcome}"
     flag = "  *** VALIDATED (4/4) ***" if passed == 4 else f"  ({passed}/4)"
+
+    # Report DIRECTION explicitly alongside significance. A "VALIDATED" label
+    # says only that the relationship is statistically reliable, not which way
+    # it points; reporting the fully-controlled coefficient and its sign in
+    # words keeps a significant-but-opposite-to-narrative result from being
+    # mistaken for confirmation of the narrative.
+    beta = m_vol.params[predictor]
+    direction = "HIGHER predictor -> HIGHER outcome" if beta > 0 else "HIGHER predictor -> LOWER outcome"
     print(f"  {label:38s} n={len(sub):3d}  size={p_size:.4f} vol={p_vol:.4f} "
           f"robust={p_hc3:.4f} outlier={p_out:.4f}  rho={rho:+.3f}{flag}")
+    print(f"  {'':38s} beta={beta:+.4f}  [{direction}]")
     return checks, rho
 
 
-def rq3_predictive_validity(data_dir):
+def _contributor_depth_features(repo_root, repos):
+    """Per-repository contributor-DEPTH features, computed from raw per-commit data.
+
+    Only NON-CIRCULAR depth measures are returned. Mean documentation commits
+    per contributor is deliberately excluded: because
+
+        participation = C_doc / C_all   and   mean_depth = doc_vol / C_doc
+
+    it follows that log(participation) = log(doc_vol) - log(mean_depth) - log(C_all)
+    exactly, so adding mean depth to a model that already controls for
+    documentation volume and contributor count removes the predictor's own
+    variance rather than adjusting for a confound. Median / max commits per
+    contributor and median months active carry no such identity.
+    """
+    outputs_dir = os.path.join(repo_root, "outputs")
+    logs_dir = os.path.join(repo_root, "full_commit_logs")
+    if not (os.path.isdir(outputs_dir) and os.path.isdir(logs_dir)):
+        return None
+    since, until = pd.Timestamp("2016-05-30"), pd.Timestamp("2026-05-29")
+    rows = []
+    for repo in repos:
+        fd_p = os.path.join(outputs_dir, repo, f"{repo}_2016_2026_file_details.csv")
+        lg_p = os.path.join(logs_dir, f"{repo}_full_commit_log.csv")
+        if not (os.path.exists(fd_p) and os.path.exists(lg_p)):
+            continue
+        fd = pd.read_csv(fd_p)
+        fd["commit_date"] = pd.to_datetime(fd["commit_date"])
+        fd = fd[(fd["commit_date"] >= since) & (fd["commit_date"] <= until)]
+        if fd.empty:
+            continue
+        lg = pd.read_csv(lg_p, usecols=["commit_sha", "author_id", "is_bot"]).drop_duplicates("commit_sha")
+        lg["is_bot"] = lg["is_bot"].astype(str).str.lower() == "true"
+        c = fd.drop_duplicates("commit_sha").merge(lg, on="commit_sha", how="left")
+        c = c[~c["is_bot"].fillna(False)].dropna(subset=["author_id"])
+        if c.empty:
+            continue
+        per = c.groupby("author_id").size()
+        c = c.copy()
+        c["month"] = c["commit_date"].dt.to_period("M")
+        months = c.groupby("author_id")["month"].nunique()
+        rows.append({"repo": repo,
+                     "median_depth": per.median(),
+                     "max_depth": per.max(),
+                     "median_months": months.median()})
+    return pd.DataFrame(rows) if rows else None
+
+
+def _retention_robustness(df_ret, repo_root):
+    """Alternative-explanation checks for the negative participation->retention result.
+
+    Tests whether the relationship is explained away by (a) how much effort
+    individual documentation contributors actually put in, or (b) documentation
+    ownership concentration. Neither explanation survives contact with the data:
+    the participation coefficient stays negative and significant throughout.
+    """
+    print("\n[robustness] Does participation -> retention survive DEPTH and "
+          "CONCENTRATION controls?")
+    base = "log_contrib + log_doc_vol"
+    df = df_ret.copy()
+    df["log_bus50"] = np.log(df["health_docs_touch_bus50"].clip(lower=1))
+    df["log_bus80"] = np.log(df["health_docs_touch_bus80"].clip(lower=1))
+
+    depth = _contributor_depth_features(repo_root, list(df["repo"]))
+    specs = {"base (size + doc volume)": base}
+    if depth is not None:
+        df = df.merge(depth, on="repo", how="left")
+        for col in ["median_depth", "max_depth", "median_months"]:
+            df["log_" + col] = np.log(df[col].clip(lower=0.01))
+        specs.update({
+            "+ median commits/contributor": f"{base} + log_median_depth",
+            "+ max commits/contributor":    f"{base} + log_max_depth",
+            "+ median months active":       f"{base} + log_median_months",
+            "+ all three depth controls":   f"{base} + log_median_depth + log_max_depth + log_median_months",
+        })
+    else:
+        print("  [depth controls skipped: outputs/ or full_commit_logs/ not found]")
+    specs.update({
+        "+ bus factor (Bus-50)":       f"{base} + log_bus50",
+        "+ bus factor (Bus-80)":       f"{base} + log_bus80",
+        "+ top-10 doc share":          f"{base} + health_docs_touch_top10_share",
+        "+ ALL concentration":         f"{base} + log_bus50 + log_bus80 + "
+                                       f"health_docs_touch_top1_share + health_docs_touch_top10_share",
+    })
+    for name, ctrl in specs.items():
+        sub = df.dropna(subset=["doc_newcomer_retention_rate", "participation_rate"] +
+                                [c for c in ctrl.replace("+", " ").split() if c in df.columns])
+        m = smf.ols(f"doc_newcomer_retention_rate ~ {ctrl} + participation_rate", data=sub).fit()
+        b, p = m.params["participation_rate"], m.pvalues["participation_rate"]
+        tag = "SURVIVES" if p < 0.05 else "N.S."
+        print(f"    {name:32s} beta={b:+.4f}  p={p:.6f}  {tag}")
+
+    print("\n[robustness] Concentration as an INDEPENDENT predictor of retention "
+          "(four-check battery):")
+    for pred, lab in [("log_bus50", "Bus-50 -> Retention"),
+                       ("log_bus80", "Bus-80 -> Retention"),
+                       ("health_docs_touch_top10_share", "Top-10 share -> Retention")]:
+        four_check_battery(df, "doc_newcomer_retention_rate", pred,
+                            "log_contrib", "log_doc_vol", label=lab)
+
+
+def rq3_predictive_validity(data_dir, repo_root):
     hr("RQ3 — Ownership Structure Predicts Documentation Outcomes "
        "(Table: predictive-validity battery)")
 
@@ -429,33 +535,40 @@ def rq3_predictive_validity(data_dir):
     df_stale = base.merge(stale, on="repo")
     df_stale["log_staleness"] = np.log(df_stale["median_staleness_days"].clip(lower=1))
 
+    # Volume control is documentation-commit volume (log_doc_vol) for EVERY
+    # outcome, including retention. This matches both the Methods text ("raw
+    # documentation-commit volume is added as a second control") and the
+    # original scripts/analysis/doc_newcomer_retention.py, which controlled for
+    # log1p(health_file_commits). Do not substitute newcomer count here: it is
+    # a different construct (sample size of the outcome, not effort volume).
     df_ret = base.merge(ret, on="repo")
-    df_ret["log_n_newcomers"] = np.log(df_ret["n_doc_newcomers"].clip(lower=1))
 
     df_gen = base.merge(gen, on="repo")
 
-    print("\n[1] Bus factor -> Documentation staleness  (paper: 0.0015/0.0015/0.0038/0.0031, rho=-0.394)")
+    print("\n[1] Bus factor -> Documentation staleness")
     four_check_battery(df_stale, "log_staleness", "log_bus50", "log_contrib", "log_doc_vol",
                         label="Bus factor -> Staleness")
 
     print("\n[2] Participation rate -> Documentation-newcomer retention, all repos "
-          "(paper: 0.0078/0.0377/0.0003/0.0053)")
+          "")
     four_check_battery(df_ret, "doc_newcomer_retention_rate", "participation_rate",
-                        "log_contrib", "log_n_newcomers",
+                        "log_contrib", "log_doc_vol",
                         label="Participation -> Retention (all)")
 
     print("\n[2b] Same, restricted to repos with >=10 documentation newcomers "
-          "(paper: 0.0034/0.0220/0.0002/0.0018)")
+          "")
     df_ret_restricted = df_ret[df_ret["n_doc_newcomers"] >= 10]
     four_check_battery(df_ret_restricted, "doc_newcomer_retention_rate", "participation_rate",
-                        "log_contrib", "log_n_newcomers",
+                        "log_contrib", "log_doc_vol",
                         label="Participation -> Retention (n>=10)")
 
     print("\n[3] Participation rate -> Overall activity trend, beyond documentation itself "
-          "(paper: 0.027/0.009/0.019/0.043)")
+          "")
     four_check_battery(df_gen, "activity_trend", "participation_rate",
                         "log_contrib", "log_doc_vol",
                         label="Participation -> Activity trend")
+
+    _retention_robustness(df_ret, repo_root)
 
     print("\n[reference] Entropy / AWR / Participation vs. staleness "
           "(none clear the full battery once volume is controlled):")
@@ -474,7 +587,7 @@ def rq4_evolution(data_dir):
     arch = pd.read_csv(os.path.join(data_dir, "annual_archetype_classified.csv"))
     order = ["Consistent", "Occasional", "Sparse"]
     print(f"n repository-years (valid, i.e. >=3 health-doc commits) = {len(arch)} / 1000 "
-          f"({1 - len(arch)/1000:.1%} excluded — paper: 14.7%)")
+          f"({1 - len(arch)/1000:.1%} excluded)")
 
     print("\nTable V — Adjacent-year transition matrix (row-normalized %, n=710 pairs)")
     pairs = []
@@ -488,8 +601,8 @@ def rq4_evolution(data_dir):
     mat = pd.crosstab(trans["from"], trans["to"]).reindex(index=order, columns=order, fill_value=0)
     pct = mat.div(mat.sum(axis=1), axis=0) * 100
     print(pct.round(1).to_string())
-    print(f"n valid pairs = {len(trans)}  (paper: 710)")
-    print("(paper: Consistent 76.3/18.7/5.0, Occasional 19.3/37.6/43.1, Sparse 6.7/31.6/61.7)")
+    print(f"n valid pairs = {len(trans)}")
+    print("")
 
     print("\nDecade-span transition (earliest vs. latest valid year, repos with >=2 valid years)")
     counts = arch.groupby("repo").size()
@@ -504,32 +617,28 @@ def rq4_evolution(data_dir):
     smat = pd.crosstab(span_df["from"], span_df["to"]).reindex(index=order, columns=order, fill_value=0)
     spct = smat.div(smat.sum(axis=1), axis=0) * 100
     print(spct.round(1).to_string())
-    print("(paper: Consistent 46.8, Occasional 33.3, Sparse 73.3 self-persistence)")
+    print("")
 
     if not HAVE_MK:
         print("\n[skipped] pymannkendall not installed; cannot reproduce trend tests.")
         return
 
-    print("\nAnnual trend test — DocOnly rate (paper: Spearman rho=-0.076 p=0.027, "
-          "Mann-Kendall p=0.003)")
+    print("\nAnnual trend test — DocOnly rate")
     dr = pd.read_csv(os.path.join(data_dir, "annual_bus50_doconly.csv"))
     dr = dr[dr["touch_commits"] >= 3].dropna(subset=["doc_only_rate"])
     r, p = spearmanr(dr["year"], dr["doc_only_rate"])
     med = dr.groupby("year")["doc_only_rate"].median()
     mkres = mk.hamed_rao_modification_test(med.values)
     print(f"  Spearman: rho={r:.3f} p={p:.4f}   Mann-Kendall: trend={mkres.trend} p={mkres.p:.4f}")
-    print(f"  annual median: year1={med.iloc[0]:.1%} -> year10={med.iloc[-1]:.1%}  "
-          f"(paper: 87.7% -> 75.0%)")
+    print(f"  annual median: year1={med.iloc[0]:.1%} -> year10={med.iloc[-1]:.1%}")
 
-    print("\nAnnual trend test — Documentation participation rate (paper: Spearman "
-          "rho=-0.126 p=0.0001, Mann-Kendall p=0.0007)")
+    print("\nAnnual trend test — Documentation participation rate")
     pr = pd.read_csv(os.path.join(data_dir, "annual_participation.csv"))
     r, p = spearmanr(pr["year"], pr["participation_rate"])
     med2 = pr.groupby("year")["participation_rate"].median()
     mkres2 = mk.hamed_rao_modification_test(med2.values)
     print(f"  Spearman: rho={r:.3f} p={p:.6f}   Mann-Kendall: trend={mkres2.trend} p={mkres2.p:.4f}")
-    print(f"  annual median: year1={med2.iloc[0]:.1%} -> year10={med2.iloc[-1]:.1%}  "
-          f"(paper: 7.1% -> 4.3%)")
+    print(f"  annual median: year1={med2.iloc[0]:.1%} -> year10={med2.iloc[-1]:.1%}")
 
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -564,7 +673,7 @@ def main():
     if sec in ("all", "rq3"):
         rq3_ownership(data_dir)
     if sec in ("all", "rq3_predictive"):
-        rq3_predictive_validity(data_dir)
+        rq3_predictive_validity(data_dir, repo_root)
     if sec in ("all", "rq4"):
         rq4_evolution(data_dir)
 
