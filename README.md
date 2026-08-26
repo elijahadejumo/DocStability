@@ -1,4 +1,6 @@
-# DocStability
+DOI: https://doi.org/10.5281/zenodo.22118355
+
+# Empirical Study of Health Documentation
 
 Replication package for the empirical study of health documentation governance
 across 100 open source repositories (rhythm, intention, ownership, and
